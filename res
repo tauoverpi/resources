@@ -1,5 +1,5 @@
-#actor
-#paper
+#topic:actor
+#medium:paper
 Actor Model of Computation: Scalable Robust Information Systems
 The Actor Model is a mathematical theory that treats “Actors” as the
 universal primitives of digital computation.  The model has been used
@@ -9,8 +9,8 @@ systems. The advent of massive concurrency through client-cloud computing
 and many-core computer architectures has galvanized interest in the Actor Model
 ^
 @https://arxiv.org/pdf/1008.1459.pdf
-#actor
-#paper
+#topic:actor
+#medium:paper
 Formalizing common sense reasoning for scalable inconsistency-robust information integration using Direct LogicTM Reasoning and the Actor Model
 People use common sense in their interactions with large information systems.
 This common sense needs to be formalized so that it can be used by computer
@@ -21,9 +21,9 @@ large-scale Internet applications (including sense making for natural
 language)
 ^
 @https://arxiv.org/pdf/0812.4852.pdf
-#bigraphs
-#category theory
-#paper
+#topic:bigraphs
+#topic:category theory
+#medium:paper
 Bigraphical reactive systems: basic theory
 A notion of bigraph is proposed as the basis for a model of mobile
 interaction. A bigraph consists of two independent structures: a topograph
@@ -36,10 +36,10 @@ with a notion of width, which expresses that agents, contexts and reactions
 may all be widely distributed entities
 ^
 @https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-523.pdf
-#mbus
-#wireless mbus
-#security
-#paper
+#topic:mbus
+#topic:wireless mbus
+#topic:security
+#medium:paper
 Wireless M-Bus Security Whitepaper
 This work aims to analyse the security of the Meter Bus as specified
 in the relevant International organisation for Standardization (ISO)
@@ -54,18 +54,18 @@ metering companies and manufacturers tend to more frequently choose wireless
 protocols for communication. Accordingly, the analysis will mainly concentrate
 on M-Bus wireless based communication – wM-Bus
 @https://www.compass-security.com/fileadmin/Datein/Research/Praesentationen/blackhat_2013_wmbus_security_whitepaper.pdf
-#fpga
-#neural network
-#machine learning
-#paper
+#topic:fpga
+#topic:neural network
+#topic:machine learning
+#medium:paper
 FPGA Implementations of Neural Networks
 
 ^
 @http://lab.fs.uni-lj.si/lasin/wp/IMIT_files/neural/doc/Omondi2006.pdf
-#fpga
-#neural network
-#machine learning
-#paper
+#topic:fpga
+#topic:neural network
+#topic:machine learning
+#medium:paper
 A General Neural Network Hardware Architecture on FPGA
 Field Programmable Gate Arrays (FPGAs) plays an increasingly important
 role in data sampling and processing industries due to its highly
@@ -85,21 +85,21 @@ neural networks (DNN) with high performance and easily be adjusted according
 to the type and scale of the neural networks.
 ^
 @https://arxiv.org/ftp/arxiv/papers/1711/1711.05860.pdf
-#file system
-#paper
+#topic:file system
+#medium:paper
 TagFS: A simple tag-based filesystem
 TagFS is a simple yet effective tag-based filesystem. Instead of organizing files and documents in
 a strict hierarchy (like traditional filesystems), TagFS allows users to assign descriptive attributes
 (called tags) to files and subsequently locate those files by searching for tags of interest.
 ^
 @https://web.mit.edu/6.033/2011/wwwdocs/writing-samples/sbezek_dp1.pdf
-#optimisation
-#neural network
-#genetic algorithms
-#differential evolution
-#bee swarm algorithm
-#ant colony optimisation
-#book
+#topic:optimisation
+#topic:neural network
+#topic:genetic algorithms
+#topic:differential evolution
+#topic:bee swarm algorithm
+#topic:ant colony optimisation
+#medium:book
 Clever Algorithms: Nature-Inspired Programming Recipes
 Implementing an Artificial Intelligence algorithm is difficult. Algorithm
 descriptions may be incomplete, inconsistent, and distributed across a
