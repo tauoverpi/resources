@@ -5,15 +5,16 @@ const std = @import("std");
 const Blake3 = std.crypto.Blake3;
 
 const Token = union(enum) {
+    TagType: usize,
     Tag: usize,
     Title: usize,
     Description: usize,
     Hash: usize,
     Link: usize,
 
-    pub fn slice(self: Token, index: usize, text: []const u8) usize {
+    pub fn slice(self: Token, index: usize, text: []const u8) []const u8 {
         switch (self) {
-            .Tag, .Title, .Description, .Hash, .Link => |x| return text[0..],
+            .TagType, .Tag, .Title, .Description, .Hash, .Link => |x| return text[0..],
         }
     }
 };
@@ -24,7 +25,9 @@ const StreamingParser = struct {
 
     const State = enum {
         LinkEnd,
+        TagType,
         Tag,
+        TagEnd,
         Title,
         Desc,
         DescCont,
@@ -50,18 +53,37 @@ const StreamingParser = struct {
             .LinkEnd => switch (c) {
                 '#' => {
                     self.count = 0;
-                    self.state = .Tag;
+                    self.state = .TagType;
                 },
                 else => return error.InvalidSection,
+            },
+            .TagType => switch (c) {
+                '\n' => return error.MissingTagBody,
+                ':' => {
+                    const token = Token{ .TagType = self.count };
+                    self.state = .Tag;
+                    self.count = 0;
+                    return token;
+                },
+                else => {},
             },
             .Tag => switch (c) {
                 '\n' => {
                     const token = Token{ .Tag = self.count };
-                    self.count = 0;
-                    self.state = .Title;
+                    self.state = .TagEnd;
                     return token;
                 },
                 else => {},
+            },
+            .TagEnd => switch (c) {
+                '#' => {
+                    self.count = 0;
+                    self.state = .TagType;
+                },
+                else => {
+                    self.count = 1;
+                    self.state = .Title;
+                },
             },
             .Title => switch (c) {
                 '\n' => {
@@ -115,13 +137,13 @@ const StreamingParser = struct {
 
 test "" {
     const resources =
-        \\#thing
+        \\#topic:thing
         \\stuff
         \\described
         \\^hashed
         \\@linked
-        \\#morething
-        \\#withtags
+        \\#topic:morething
+        \\#medium:withtags
         \\and a tile with spaces!
         \\then a very short description
         \\which spans more than one line
