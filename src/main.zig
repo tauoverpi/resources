@@ -3,9 +3,13 @@
 
 const std = @import("std");
 const Blake3 = std.crypto.Blake3;
+const b64 = std.base64.standard_encoder;
+const fnv = std.hash.Fnv1a_64;
+
+const TagType = enum { Topic, Medium, Author, License };
 
 const Token = union(enum) {
-    TagType: usize,
+    TagType: struct { len: usize, tag: TagType },
     Tag: usize,
     Title: usize,
     Description: usize,
@@ -14,7 +18,8 @@ const Token = union(enum) {
 
     pub fn slice(self: Token, index: usize, text: []const u8) []const u8 {
         switch (self) {
-            .TagType, .Tag, .Title, .Description, .Hash, .Link => |x| return text[0..],
+            .Tag, .Title, .Description, .Hash, .Link => |x| return text[index .. index - x],
+            .TagType => |x| return text[index .. index - x.len],
         }
     }
 };
@@ -22,6 +27,7 @@ const Token = union(enum) {
 const StreamingParser = struct {
     count: usize,
     state: State,
+    hash: fnv,
 
     const State = enum {
         LinkEnd,
@@ -45,6 +51,7 @@ const StreamingParser = struct {
     pub fn reset(self: *StreamingParser) void {
         self.count = 0;
         self.state = .LinkEnd;
+        self.hash = fnv.init();
     }
 
     pub fn feed(self: *StreamingParser, c: u8) !?Token {
@@ -60,12 +67,26 @@ const StreamingParser = struct {
             .TagType => switch (c) {
                 '\n' => return error.MissingTagBody,
                 ':' => {
-                    const token = Token{ .TagType = self.count };
+                    const token = Token{
+                        .TagType = .{
+                            .len = self.count,
+                            .tag = switch (self.hash.final()) {
+                                fnv.hash("topic") => .Topic,
+                                fnv.hash("medium") => .Medium,
+                                fnv.hash("author") => .Author,
+                                fnv.hash("license") => .License,
+                                else => return error.InvalidTagType,
+                            },
+                        },
+                    };
+                    self.hash = fnv.init();
                     self.state = .Tag;
                     self.count = 0;
                     return token;
                 },
-                else => {},
+                else => {
+                    self.hash.update(([1]u8{c})[0..]);
+                },
             },
             .Tag => switch (c) {
                 '\n' => {
@@ -157,16 +178,7 @@ test "" {
 
     for (resources) |byte| {
         if (try p.feed(byte)) |item| {
-            _ = item.slice(9, resources[0..]);
             std.debug.warn("{}\n", .{item});
         }
     }
-}
-
-const Resource = struct {
-    topics: TopicIterator,
-};
-
-pub fn main() anyerror!void {
-    std.debug.warn("All your codebase are belong to us.\n", .{});
 }
