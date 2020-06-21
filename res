@@ -1,4 +1,5 @@
 #actor
+#paper
 Actor Model of Computation: Scalable Robust Information Systems
 The Actor Model is a mathematical theory that treats “Actors” as the
 universal primitives of digital computation.  The model has been used
@@ -9,6 +10,7 @@ and many-core computer architectures has galvanized interest in the Actor Model
 ^
 @https://arxiv.org/pdf/1008.1459.pdf
 #actor
+#paper
 Formalizing common sense reasoning for scalable inconsistency-robust information integration using Direct LogicTM Reasoning and the Actor Model
 People use common sense in their interactions with large information systems.
 This common sense needs to be formalized so that it can be used by computer
@@ -21,6 +23,7 @@ language)
 @https://arxiv.org/pdf/0812.4852.pdf
 #bigraphs
 #category theory
+#paper
 Bigraphical reactive systems: basic theory
 A notion of bigraph is proposed as the basis for a model of mobile
 interaction. A bigraph consists of two independent structures: a topograph
@@ -36,6 +39,7 @@ may all be widely distributed entities
 #mbus
 #wireless mbus
 #security
+#paper
 Wireless M-Bus Security Whitepaper
 This work aims to analyse the security of the Meter Bus as specified
 in the relevant International organisation for Standardization (ISO)
@@ -53,6 +57,7 @@ on M-Bus wireless based communication – wM-Bus
 #fpga
 #neural network
 #machine learning
+#paper
 FPGA Implementations of Neural Networks
 
 ^
@@ -60,6 +65,7 @@ FPGA Implementations of Neural Networks
 #fpga
 #neural network
 #machine learning
+#paper
 A General Neural Network Hardware Architecture on FPGA
 Field Programmable Gate Arrays (FPGAs) plays an increasingly important
 role in data sampling and processing industries due to its highly
@@ -80,9 +86,36 @@ to the type and scale of the neural networks.
 ^
 @https://arxiv.org/ftp/arxiv/papers/1711/1711.05860.pdf
 #file system
+#paper
 TagFS: A simple tag-based filesystem
 TagFS is a simple yet effective tag-based filesystem. Instead of organizing files and documents in
 a strict hierarchy (like traditional filesystems), TagFS allows users to assign descriptive attributes
 (called tags) to files and subsequently locate those files by searching for tags of interest.
 ^
 @https://web.mit.edu/6.033/2011/wwwdocs/writing-samples/sbezek_dp1.pdf
+#optimisation
+#neural network
+#genetic algorithms
+#differential evolution
+#bee swarm algorithm
+#ant colony optimisation
+#book
+Clever Algorithms: Nature-Inspired Programming Recipes
+Implementing an Artificial Intelligence algorithm is difficult. Algorithm
+descriptions may be incomplete, inconsistent, and distributed across a
+number of papers, chapters and even websites. This can result in varied
+interpretations of algorithms, undue attrition of algorithms, and ultimately
+bad science. This book is an effort to address these issues by providing
+a handbook of algorithmic recipes drawn from the fields of Metaheuristics,
+Biologically Inspired Computation and Computational Intelligence, described in
+a complete, consistent, and centralized manner. These standardized descriptions
+were carefully designed to be accessible, usable, and understandable. Most
+of the algorithms described were originally inspired by biological and
+natural systems, such as the adaptive capabilities of genetic evolution
+and the acquired immune system, and the foraging behaviors of birds, bees,
+ants and bacteria. An encyclopedic algorithm reference, this book is intended
+for research scientists, engineers, students, and interested amateurs. Each
+algorithm description provides a working code example in the Ruby Programming
+Language.
+^
+@https://raw.githubusercontent.com/clever-algorithms/CleverAlgorithms/master/release/clever_algorithms.pdf
