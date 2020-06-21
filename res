@@ -20,6 +20,7 @@ language)
 ^
 @https://arxiv.org/pdf/0812.4852.pdf
 #bigraphs
+#category theory
 Bigraphical reactive systems: basic theory
 A notion of bigraph is proposed as the basis for a model of mobile
 interaction. A bigraph consists of two independent structures: a topograph
@@ -32,3 +33,56 @@ with a notion of width, which expresses that agents, contexts and reactions
 may all be widely distributed entities
 ^
 @https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-523.pdf
+#mbus
+#wireless mbus
+#security
+Wireless M-Bus Security Whitepaper
+This work aims to analyse the security of the Meter Bus as specified
+in the relevant International organisation for Standardization (ISO)
+documentation. M-Bus has its roots in the heat metering industries and
+was continuously adopted to fit more complex applications. M-Bus is the
+communication bus of choice of several meter manufacturers and its applications
+span from drive-by wireless meter reading over to meter-to-meter and mesh
+networking to meter-to-collector communication. M-Bus implementations support
+different media types such as power line carrier (PLC) or twisted-pair
+bus. To avoid the wiring efforts at the distribution level, utilities,
+metering companies and manufacturers tend to more frequently choose wireless
+protocols for communication. Accordingly, the analysis will mainly concentrate
+on M-Bus wireless based communication – wM-Bus
+@https://www.compass-security.com/fileadmin/Datein/Research/Praesentationen/blackhat_2013_wmbus_security_whitepaper.pdf
+#fpga
+#neural network
+#machine learning
+FPGA Implementations of Neural Networks
+
+^
+@http://lab.fs.uni-lj.si/lasin/wp/IMIT_files/neural/doc/Omondi2006.pdf
+#fpga
+#neural network
+#machine learning
+A General Neural Network Hardware Architecture on FPGA
+Field Programmable Gate Arrays (FPGAs) plays an increasingly important
+role in data sampling and processing industries due to its highly
+parallel architecture, low power consumption, and flexibility in custom
+algorithms. Especially, in the artificial intelligence field, for training and
+implement the neural networks and machine learning algorithms, high energy
+efficiency hardware implement and massively parallel computing capacity are
+heavily demanded. Therefore, many global companies have applied FPGAs into
+AI and Machine learning fields such as autonomous driving and Automatic
+Spoken Language Recognition (Baidu) [1] [2] and Bing search (Microsoft)
+[3]. Considering the FPGAs great potential in these fields, we tend to
+implement a general neural network hardware architecture on XILINX ZU9CG
+System On Chip (SOC) platform [4], which contains abundant hardware resource
+and powerful processing capacity. The general neural network architecture
+on the FPGA SOC platform can perform forward and backward algorithms in deep
+neural networks (DNN) with high performance and easily be adjusted according
+to the type and scale of the neural networks.
+^
+@https://arxiv.org/ftp/arxiv/papers/1711/1711.05860.pdf
+#file system
+TagFS: A simple tag-based filesystem
+TagFS is a simple yet effective tag-based filesystem. Instead of organizing files and documents in
+a strict hierarchy (like traditional filesystems), TagFS allows users to assign descriptive attributes
+(called tags) to files and subsequently locate those files by searching for tags of interest.
+^
+@https://web.mit.edu/6.033/2011/wwwdocs/writing-samples/sbezek_dp1.pdf

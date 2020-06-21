@@ -1,4 +1,8 @@
+// Copyright: 2020 Simon A. Nielsen Knights
+// License: ISC
+
 const std = @import("std");
+const Blake3 = std.crypto.Blake3;
 
 const Token = union(enum) {
     Tag: usize,
