@@ -119,3 +119,80 @@ algorithm description provides a working code example in the Ruby Programming
 Language.
 ^
 @https://raw.githubusercontent.com/clever-algorithms/CleverAlgorithms/master/release/clever_algorithms.pdf
+#topic:category theory
+#topic:haskell
+#topic:c++
+#topic:template metaprogramming
+#topic:type system
+#author:Bartosz Milewski
+Category Theory for Programmers
+For some time now I’ve been floating the idea of writing a book about
+category theory that would be targeted at programmers. Mind you, not computer
+scientists but programmers — engineers rather than scientists. I know
+this sounds crazy and I am properly scared. I can’t deny that there is
+a huge gap between science and engineering because I have worked on both
+sides of the divide. But I’ve always felt a very strong compulsion to
+explain things. I have tremendous admiration for Richard Feynman who was
+the master of simple explanations. I know I’m no Feynman, but I will try
+my best. I’m starting by publishing this preface — which is supposed
+to motivate the reader to learn category theory — in hopes of starting a
+discussion and soliciting feedback.
+^
+@https://github.com/hmemcpy/milewski-ctfp-pdf/releases/download/v1.3.0/category-theory-for-programmers.pdf
+#topic:category theory
+#topic:version control
+#author:Samuel Mimram
+#author:Cinzia Di Giusto
+#medium:paper
+A Categorical Theory of Patches
+When working with distant collaborators on the same documents, one often
+uses a version control system, which is a program tracking the history of
+files and helping importing modifications brought by others as patches. The
+implementation of such a system requires to handle lots of situations depending
+on the operations performed by users on files, and it is thus difficult to
+ensure that all the corner cases have been correctly addressed. Here, instead
+of verifying the implementation of such a system, we adopt a complementary
+approach: we introduce a theoretical model, which is defined abstractly
+by the universal property that it should satisfy, and work out a concrete
+description of it. We begin by defining a category of files and patches,
+where the operation of merging the effect of two coinitial patches is defined
+by pushout. Since two patches can be incompatible, such a pushout does not
+necessarily exist in the category, which raises the question of which is the
+correct category to represent and manipulate files in conflicting state. We
+provide an answer by investigating the free completion of the category of files
+under finite colimits, and give an explicit description of this category:
+its objects are finite sets labeled by lines equipped with a transitive
+relation and morphisms are partial functions respecting labeling and relations.
+^
+@https://arxiv.org/pdf/1311.3903
+#topic:algorithm
+#author:Eugene W. Myers
+#medium:paper
+An O(ND) Difference Algorithm and Its Variations∗
+The problems of finding a longest common subsequence of two sequences A
+and B and a shortest edit script for transforming A into B have long been
+known to be dual problems. In this paper, they are shown to be equivalent to
+finding a shortest/longest path in an edit graph. Using this perspective,
+a simple O(ND) time and space algorithm is developed where N is the sum of
+the lengths of A and B and D is the size of the minimum edit script for A
+and B. The algorithm performs well when differences are small (sequences are
+similar) and is consequently fast in typical applications. The algorithm is
+shown to have O(N + D^2) expected-time performance under a basic stochastic
+model. A refinement of the algorithm requires only O(N) space, and the use
+of suffix trees leads to an O(NlgN + D^2) time variation
+^
+@http://www.xmailserver.org/diff2.pdf
+#topic:sorting
+#author:Sergei Bespamyatnikh
+#author:Michael Segal
+#medium:paper
+Enumerating Longest Increasing Subsequences and Patience Sorting (2000)
+In this paper we present three algorithms that solve three combinatorial
+optimization problems related to each other. One of them is the patience
+sorting game, invented as a practical method of sorting real decks of
+cards. The second problem is computing the longest monotone increasing
+subsequence of the given sequence of n positive integers in the range 1; : :
+: ; n. The third problem is to enumerate all the longest monotone increasing
+subsequences of the given permutation.
+^
+@http://www.ii.uni.wroc.pl/~lorys/IPL/article76-1-1.pdf
