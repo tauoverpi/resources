@@ -157,23 +157,7 @@ const StreamingParser = struct {
 };
 
 test "" {
-    const resources =
-        \\#topic:thing
-        \\stuff
-        \\described
-        \\^hashed
-        \\@linked
-        \\#topic:morething
-        \\#medium:withtags
-        \\and a tile with spaces!
-        \\then a very short description
-        \\which spans more than one line
-        \\as it must be able to handle it
-        \\^that unused hash
-        \\@oh noes, a link
-        \\
-    ;
-
+    const resources = @embedFile("../res");
     var p = StreamingParser.init();
 
     for (resources) |byte| {

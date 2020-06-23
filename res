@@ -53,13 +53,28 @@ bus. To avoid the wiring efforts at the distribution level, utilities,
 metering companies and manufacturers tend to more frequently choose wireless
 protocols for communication. Accordingly, the analysis will mainly concentrate
 on M-Bus wireless based communication – wM-Bus
+^
 @https://www.compass-security.com/fileadmin/Datein/Research/Praesentationen/blackhat_2013_wmbus_security_whitepaper.pdf
 #topic:fpga
 #topic:neural network
 #topic:machine learning
 #medium:paper
 FPGA Implementations of Neural Networks
-
+During the 1980s and early 1990s there was significant work in the design
+and implementation of hardware neurocomputers. Nevertheless, most of
+these efforts may be judged to have been unsuccessful: at no time have
+have hardware neurocomputers been in wide use. This lack of success may be
+largely attributed to the fact that earlier work was almost entirely aimed
+at developing custom neurocomputers, based on ASIC technology, but for such
+niche areas this technology was never sufficiently developed or competitive
+enough to justify large-scale adoption. On the other hand, gate-arrays of
+the period mentioned were never large enough nor fast enough for serious
+artificial-neuralnetwork (ANN) applications. But technology has now improved:
+the capacity and performance of current FPGAs are such that they present
+a much more realistic alternative. Consequently neurocomputers based on
+FPGAs are now a much more practical proposition than they have been in the
+past. This book summarizes some work towards this goal and consists of 12
+papers that were selected, after review, from a number of submissions.
 ^
 @http://lab.fs.uni-lj.si/lasin/wp/IMIT_files/neural/doc/Omondi2006.pdf
 #topic:fpga
