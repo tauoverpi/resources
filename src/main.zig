@@ -16,10 +16,10 @@ const Token = union(enum) {
     Hash: usize,
     Link: usize,
 
-    pub fn slice(self: Token, index: usize, text: []const u8) []const u8 {
+    pub fn slice(self: Token, text: []const u8, index: usize) []const u8 {
         switch (self) {
-            .Tag, .Title, .Description, .Hash, .Link => |x| return text[index .. index - x],
-            .TagType => |x| return text[index .. index - x.len],
+            .Tag, .Title, .Description, .Hash, .Link => |x| return text[index - x .. index],
+            .TagType => |x| return text[index - x.len .. index],
         }
     }
 };
@@ -161,9 +161,9 @@ test "" {
     const resources = @embedFile("../res");
     var p = StreamingParser.init();
 
-    for (resources) |byte| {
+    for (resources) |byte, i| {
         if (try p.feed(byte)) |item| {
-            std.debug.warn("{}\n", .{item});
+            std.debug.warn("{}\n", .{item.slice(resources, i)});
         }
     }
 }
