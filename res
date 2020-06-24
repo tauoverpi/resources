@@ -310,3 +310,49 @@ visualize the capabilities and limitations of VAEs using a code example
 (with an accompanying Jupyter notebook) on toy 2D data.
 ^
 @https://arxiv.org/pdf/2006.10273.pdf
+#topic:signed distance field
+#author:Chris Green
+Improved Alpha-Tested Magnification for Vector Textures and Special Effects
+A simple and efficient method is presented which allows improved rendering
+of glyphs composed of curved and linear elements. A distance field is
+generated from a high resolution image, and then stored into a channel of
+a lower-resolution texture. In the simplest case, this texture can then be
+rendered simply by using the alphatesting and alpha-thresholding feature of
+modern GPUs, without a custom shader. This allows the technique to be used
+on even the lowest-end 3D graphics hardware.  With the use of programmable
+shading, the technique is extended to perform various special effect
+renderings, including soft edges, outlining, drop shadows, multi-colored
+images, and sharp corners.
+^
+@https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf
+#topic:signed distance field
+#author:Yue Jiang
+#author:Dantong Ji
+#author:Zhizhong Han
+#author:Matthias Zwicker
+SDFDiff: Differentiable Rendering of Signed Distance Fields for 3D Shape Optimization
+We propose SDFDiff, a novel approach for image-based shape optimization using
+differentiable rendering of 3D shapes represented by signed distance functions
+(SDF).  Compared to other representations, SDFs have the advantage that
+they can represent shapes with arbitrary topology, and that they guarantee
+watertight surfaces. We apply our approach to the problem of multi-view 3D
+reconstruction, where we achieve high reconstruction quality and can capture
+complex topology of 3D objects. In addition, we employ a multi-resolution
+strategy to obtain a robust optimization algorithm. We further demonstrate
+that our SDF-based differentiable renderer can be integrated with deep
+learning models, which opens up options for learning approaches on 3D objects
+without 3D supervision. In particular, we apply our method to single-view
+3D reconstruction and achieve state-of-the-art results.
+^
+@http://www.cs.umd.edu/~yuejiang/papers/SDFDiff.pdf
+#topic:signed distance field
+#topic:multi-channel signed distance field
+#author:Viktor Chlumsk´
+Shape Decomposition for Multi-channel Distance Fields
+This work explores the possible improvements to a popular text rendering
+technique widely used in 3D applications and video games. It proposes a
+universal and efficient method of constructing a multi-channel distance
+field for vector-based shapes, such as font glyphs, and describes its usage
+in rendering with improved fidelity.
+^
+@https://github.com/Chlumsky/msdfgen/files/3050967/thesis.pdf
