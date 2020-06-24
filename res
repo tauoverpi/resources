@@ -238,3 +238,75 @@ speculation and control height reduction reduces execution time from 10%
 to 58%.
 ^
 @http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.18.7756&rep=rep1&type=pdf
+#topic:single static assignment
+#topic:compiler
+#topic:compiler optimisation
+Static Single Assignment Book
+
+^
+@http://ssabook.gforge.inria.fr/latest/book.pdf
+#topic:neural network
+#topic:auto-encoding
+#author:Diederik P. Kingma
+#author:Max Welling
+Auto-Encoding Variational Bayes
+How can we perform efficient inference and learning in directed probabilistic
+models, in the presence of continuous latent variables with intractable
+posterior distributions, and large datasets? We introduce a stochastic
+variational inference and learning algorithm that scales to large datasets
+and, under some mild differentiability conditions, even works in the
+intractable case. Our contributions is two-fold. First, we show that a
+reparameterization of the variational lower bound yields a lower bound
+estimator that can be straightforwardly optimized using standard stochastic
+gradient methods. Second, we show that for i.i.d. datasets with continuous
+latent variables per datapoint, posterior inference can be made especially
+efficient by fitting an approximate inference model (also called a recognition
+model) to the intractable posterior using the proposed lower bound estimator.
+Theoretical advantages are reflected in experimental results.
+^
+@https://arxiv.org/pdf/1312.6114.pdf
+#author:Thomas N. Kipf
+#author:Max Welling
+Variational Graph Auto-Encoders
+We introduce the variational graph auto-encoder (VGAE), a framework for
+unsupervised learning on graph-structured data based on the variational
+auto-encoder (VAE). This model makes use of latent variables and is capable
+of learning interpretable latent representations for undirected graphs. We
+demonstrate this model using a graph convolutional network (GCN) encoder and
+a simple inner product decoder. Our model achieves competitive results on a
+link prediction task in citation networks. In contrast to most existing models
+for unsupervised learning on graph-structured data and link prediction, our
+model can naturally incorporate node features, which significantly improves
+predictive performance on a number of benchmark datasets.
+^
+@https://arxiv.org/pdf/1611.07308.pdf
+#author:Carl Doersch
+Tutorial on Variational Autoencoders
+In just three years, Variational Autoencoders (VAEs) have emerged as one
+of the most popular approaches to unsupervised learning of complicated
+distributions. VAEs are appealing because they are built on top of standard
+function approximators (neural networks), and can be trained with stochastic
+gradient descent. VAEs have already shown promise in generating many kinds
+of complicated data, including handwritten digits, faces, house numbers,
+CIFAR images, physical models of scenes, segmentation, and predicting the
+future from static images. This tutorial introduces the intuitions behind
+VAEs, explains the mathematics behind them, and describes some empirical
+behavior. No prior knowledge of variational Bayesian methods is assumed.
+^
+@https://arxiv.org/pdf/1606.05908.pdf
+#author:Ronald Yu
+A Tutorial on VAEs: From Bayes' Rule to Lossless Compression
+The Variational Auto-Encoder (VAE) is a simple, efficient, and popular
+deep maximum likelihood model. Though usage of VAEs is widespread, the
+derivation of the VAE is not as widely understood. In this tutorial, we will
+provide an overview of the VAE and a tour through various derivations and
+interpretations of the VAE objective. From a probabilistic standpoint, we will
+examine the VAE through the lens of Bayes' Rule, importance sampling, and the
+change-of-variables formula. From an information theoretic standpoint, we will
+examine the VAE through the lens of lossless compression and transmission
+through a noisy channel. We will then identify two common misconceptions
+over the VAE formulation and their practical consequences. Finally, we will
+visualize the capabilities and limitations of VAEs using a code example
+(with an accompanying Jupyter notebook) on toy 2D data.
+^
+@https://arxiv.org/pdf/2006.10273.pdf
