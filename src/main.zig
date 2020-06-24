@@ -70,6 +70,7 @@ const StreamingParser = struct {
                     const token = Token{
                         .TagType = .{
                             .len = self.count,
+                            // TODO: move this out of the parser
                             .tag = switch (self.hash.final()) {
                                 fnv.hash("topic") => .Topic,
                                 fnv.hash("medium") => .Medium,
