@@ -211,3 +211,30 @@ subsequence of the given sequence of n positive integers in the range 1; : :
 subsequences of the given permutation.
 ^
 @http://www.ii.uni.wroc.pl/~lorys/IPL/article76-1-1.pdf
+#topic:single static assignment
+#topic:compiler
+#topic:compiler optimisation
+#author:Lori Carter
+#author:Beth Simon
+#author:Brad Calder
+#author:Larry Carter
+#author:Jeanne Ferrante
+Predicated Static Single Assignment
+Increases in instruction level parallelism are needed to exploit the potential
+parallelism available in future wide issue architectures. Predicated execution
+is an architectural mechanism that increases instruction level parallelism
+by removing branches and allowing simultaneous execution of multiple paths
+of control, only committing instructions from the correct path. In order
+for the compiler to expose such parallelism, traditional compiler data-flow
+analysis needs to be extended to predicated code.  In this paper, we present
+Predicated Static Single Assignment (PSSA) to enable aggressive predicated
+optimization and instruction scheduling. PSSA removes false dependences by
+exploiting renaming and information about the multiple control paths. We
+demonstrate the usefulness of PSSA for Predicated Speculation and Control
+Height Reduction. These two predicated code optimizations used during
+instruction scheduling reduce the dependence length of the critical paths
+through a predicated region. Our results show that using PSSA to enable
+speculation and control height reduction reduces execution time from 10%
+to 58%.
+^
+@http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.18.7756&rep=rep1&type=pdf
