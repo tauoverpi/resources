@@ -591,4 +591,4 @@ of using emergence in games, provides a model for simulating environmental
 systems in games and was used to identify core issues and considerations
 for future development and research of emergent game worlds.
 ^
-https://www.cp.eng.chula.ac.th/~vishnu/gameResearch/Sweetser_Thesis.pdf
+@https://www.cp.eng.chula.ac.th/~vishnu/gameResearch/Sweetser_Thesis.pdf
