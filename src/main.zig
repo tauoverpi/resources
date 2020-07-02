@@ -18,8 +18,9 @@ const Token = union(enum) {
 
     pub fn slice(self: Token, text: []const u8, index: usize) []const u8 {
         switch (self) {
-            .Tag, .Title, .Description, .Hash, .Link => |x| return text[index - x .. index],
-            .TagType => |x| return text[index - x.len .. index],
+            .Tag, .Title, .Hash, .Link => |x| return text[1 + index - x .. index],
+            .Description => |x| return text[1 + index - x .. index - 1],
+            .TagType => |x| return text[1 + index - x.len .. index],
         }
     }
 };

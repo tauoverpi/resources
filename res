@@ -592,3 +592,271 @@ systems in games and was used to identify core issues and considerations
 for future development and research of emergent game worlds.
 ^
 @https://www.cp.eng.chula.ac.th/~vishnu/gameResearch/Sweetser_Thesis.pdf
+#topic:raymarching
+#author:Erik S. V. Jansson
+#author:Matthäus G. Chajdas
+#author:Jason Lacroix
+#author:Ingemar Ragnemalm
+Real-Time Hybrid Hair Rendering
+Rendering hair is a challenging problem for real-time applications. Besides
+complex shading, the sheer amount of it poses a lot of problems, as a human
+scalp can have over 100,000 strands of hair, with animal fur often surpassing
+a million. For rendering, both strand-based and volume-based techniques have
+been used, but usually in isolation. In this work, we present a complete
+hair rendering solution based on a hybrid approach. The solution requires no
+pre-processing, making it a drop-in replacement, that combines the best of
+strand-based and volume-based rendering. Our approach uses this volume not
+only as a level-of-detail representation that is raymarched directly, but also
+to simulate global effects, like shadows and ambient occlusion in real-time.
+^
+@https://eriksvjansson.net/papers/rthhr.pdf
+#topic:raytracing
+#author:Joost van Dongen
+Interior Mapping A new technique for rendering realistic buildings
+Interior Mapping is a new real-time shader technique that renders the
+interior of a building when looking at it from the outside, without the need
+to actually model or store this interior. With Interior Mapping, raycasting
+in the pixel shader is used to calculate the positions of floors and walls
+behind the windows. Buildings are modelled in the same way as without Interior
+Mapping and are rendered on the GPU. The number of rooms rendered does not
+influence the framerate or memory usage. The rooms are lit and textured
+and can have furniture and animated characters. The interiors require very
+little additional asset creation and no extra memory. Interior Mapping is
+especially useful for adding more depth and detail to buildings in games
+and other applications that are situated in large virtual cities
+^
+@http://www.proun-game.com/Oogst3D/CODING/InteriorMapping/InteriorMapping.pdf
+#topic:cellular automata
+#author:Hidenosuke Nishio
+#author:Youichi Kobuchi
+Fault Tolerant Cellular Spaces*
+This paper treats the problem of designing a fault tolerant cellular
+space which simulates an arbitrary given cellular space in real time. A
+cellular space is called fault tolerant if it behaves normally even when its
+component cells misoperate.  First such notions as simulation, misoperation,
+and K-separated misoperation are defined. Then a new multidimensional coding
+of configurations is introduced and explained using as typical example the
+two-dimensional space.  The first main result is Theorem 1, which states
+that the introduced coding method is useful for correcting errors occurring
+at most :once in every K = 5 • 5 rectangle.  The general theory is given
+in Section 6, where the second main result is given in the form of Theorem
+8. It gives a necessary and sufficient condition for testing whether or not
+a given coding is adequate for error correction.
+^
+@https://core.ac.uk/download/pdf/82831011.pdf
+#topic:wildfire
+#author:Richard C. Rothermel
+How to Predict the Spread and Intensity of Forest and Range Fires
+This manual documents the procedures for estimating the rate of forward
+spread, intensity, flame length, and size of fires burning in forests and
+rangelands. It contains instructions for obtaining fuel and weather data,
+calculating fire behavior, and interpreting the results for application to
+actual fire problems. Potential uses include fire predict ion, fire planning,
+dispatching, prescribed fires, and monitoring managed fires.  Included are
+sections that deal with fuel model selection, fuel moisture, wind, slope,
+calculations with nomograms, TI-59 calculations, point source, line fire,
+interpretations of outputs, and growth predictions.
+^
+@https://www.fs.fed.us/rm/pubs_int/int_gtr143.pdf
+#topic:cellular automata
+#author:Manzil Zaheer
+#author:Michael Wick
+#author:Jean-Baptiste Tristan
+#author:Alex Smola
+#author:Guy L. Steele Jr.
+Exponential Stochastic Cellular Automata for Massively Parallel Inference
+We propose an embarrassingly parallel, memory efficient inference algorithm for
+latent variable models in which the complete data likelihood is in the exponential
+family. The algorithm is a stochastic cellular automaton and converges to a valid
+maximum a posteriori fixed point. Applied to latent Dirichlet allocation we find
+that our algorithm is over an order of magnitude faster than the fastest current
+approaches. A simple C++/MPI implementation on a 4-node cluster samples 570
+million tokens per second. We process 3 billion documents and achieve predictive
+power competitive with collapsed Gibbs sampling and variational inference.
+^
+@http://learningsys.org/papers/LearningSys_2015_paper_11.pdf
+#topic:cellular automata
+Neural Cellular Automata Manifold
+Very recently, a deep Neural Cellular Automata (NCA) [1] has been proposed
+to simulate the complex morphogenesis process with deep networks. This model
+learns to grow an image starting from a fixed single pixel. In this paper,
+we move a step further and propose a new model that extends the expressive
+power of NCA from a single image to an manifold of images. In biological terms,
+our approach would play the role of the transcription factors, modulating the
+mapping of genes into specific proteins that drive cellular differentiation,
+which occurs right before the morphogenesis. We accomplish this by introducing
+dynamic convolutions inside an Auto-Encoder architecture, for the first time
+used to join two different sources of information, the encoding and cell’s
+environment information. The proposed model also extends the capabilities
+of the NCA to a general purpose network, which can be used in a broad range
+of problems. We thoroughly evaluate our approach in a dataset of synthetic
+emojis and also in real images of CIFAR-10.
+^
+@https://arxiv.org/pdf/2006.12155.pdf
+#topic:automata
+#topic:polymorphism
+#author:John Von Neumann
+#author:Arthur W. Burks
+#author:Arthur Walter
+Theory of self-reproducing automata
+
+^
+@https://archive.org/download/theoryofselfrepr00vonn_0/theoryofselfrepr00vonn_0.pdf
+#topic:cellular automata
+#author:William Gilpin
+Cellular automata as convolutional neural networks
+Deep learning techniques have recently demonstrated broad success in predicting
+complex dynamical systems ranging from turbulence to human speech, motivating
+broader questions about how neural networks encode and represent dynamical
+rules. We explore this problem in the context of cellular automata (CA),
+simple dynamical systems that are intrinsically discrete and thus difficult
+to analyze using standard tools from dynamical systems theory. We show that
+any CA may readily be represented using a convolutional neural network
+with a network-in-network architecture. This motivates our development
+of a general convolutional multilayer perceptron architecture, which we
+find can learn the dynamical rules for arbitrary CA when given videos of
+the CA as training data.  In the limit of large network widths, we find
+that training dynamics are nearly identical across replicates, and that
+common patterns emerge in the structure of networks trained on different
+CA rulesets. We train ensembles of networks on randomly-sampled CA, and we
+probe how the trained networks internally represent the CA rules using an
+information-theoretic technique based on distributions of layer activation
+patterns. We find that CA with simpler rule tables produce trained networks
+with hierarchical structure and layer specialization, while more complex
+CA produce shallower representations—illustrating how the underlying
+complexity of the CA’s rules influences the specificity of these internal
+representations. Our results suggest how the entropy of a physical process
+can affect its representation when learned by neural networks.
+^
+@https://arxiv.org/pdf/1809.02942.pdf
+#topic:cellular automata
+#topic:self-replication
+#topic:universal computer
+#topic:universal constructor
+#author:Tim J. Hutton
+Codd’s self-replicating computer
+Edgar Codd’s 1968 design for a self-replicating cellular automata machine
+has never been implemented. Partly this is due to its enormous size but we
+have also identified four problems with the original specification that would
+prevent it from working. These problems potentially cast doubt on Codd’s
+central assertion, that the 8-state space he presents supports the existence
+of machines that can act as universal constructors and computers. However
+all these problems were found to be correctable and we present a complete
+and functioning implementation after making minor changes to the design and
+transition table. The body of the final machine occupies an area that is
+22,254 cells wide and 55,601 cells high, comprising over 45 million non-zero
+cells in its unsheathed form. The data tape is 208 million cells long,
+and self-replication is estimated to take at least 1.7 × 1018 timesteps.
+^
+@http://www.sq3.org.uk/papers/Hutton_CoddsSelfReplicatingComputer_2010.pdf
+#topic:string search
+#author:Bertrand Meyer
+Incremental String Matching
+The problem studied in this paper is to search a given text for occurrences of
+certain strings, in the particular case where the set of strings may change
+as the search proceeds.  A well-known algorithm by Aho and Corasick applies
+to the simpler case when the set of strings is known beforehand and does
+not change. This algorithm builds a transition diagram (finite automaton)
+from the strings, and uses it as a guide to traverse the text. The search can
+then be done in linear time.  We show how this algorithm can be modified to
+allow incremental diagram construction, so that new keywords may be entered
+at any time during the search. The incremental algorithm presented essentially
+retains the time and space complexities of the non-incremental one.
+^
+@http://se.ethz.ch/~meyer/publications/string/string_matching.pdf
+#topic:string search
+#author:Bruce William Watson
+Taxonomies and Toolkits of Regular Language Algorithms
+
+^
+@https://web.archive.org/web/20120324141930if_/http://www.diku.dk:80/hjemmesider/ansatte/henglein/papers/watson1995.pdf
+#topic:javascript
+#topic:exception
+#topic:continuation-passing style
+#author:Florian Loitsch
+Exceptional Continuations in JavaScript
+JavaScript, the main language for web-site development, does not feature
+continuation. However, as part of client-server communication they would be
+useful as a means to suspend the currently running execution.  In this paper
+we present our adaption of exception-based continuations to JavaScript. The
+enhanced technique deals with closures and features improvements that reduce
+the cost of the work-around for the missing goto-instruction. We furthermore
+propose a practical way of dealing with exception-based continuations in the
+context of non-linear executions, which frequently happen due to callbacks.
+Our benchmarks show that under certain conditions continuations are
+still expensive, but are often viable. Especially compilers translating
+to JavaScript could benefit from static control flow analyses to make
+continuations less costly
+^
+@http://www.schemeworkshop.org/2007/procPaper4.pdf
+#topic:file format
+#author:James D Murray
+#author:William VanRyper
+Encyclopedia of graphics file formats
+
+^
+@https://ia800202.us.archive.org/11/items/mac_Graphics_File_Formats_Second_Edition_1996/Graphics_File_Formats_Second_Edition_1996.pdf
+#topic:dithering
+#topic:parallel computation
+#topic:error-diffusion
+#author:Panagiotis Takis Metaxas
+Parallel Digital Halftoning by Error-Diffusion
+Digital halftoning, or dithering, is the technique commonly used to render a
+color or grayscale image on a printer, a computer monitor or other bi-level
+displays. A particular halftoning technique that has been used extensively
+in the past is the socalled error diffusion technique. For a number of
+years it was believed that this technique is inherently sequential and
+could not be parallelized. In this paper we present and analyze a simple,
+yet optimal, error-diffusion parallel algorithm for digital halftoning and we
+discuss an implementation on a parallel machine. In particular, we describe
+implementations on data-parallel computers that contain linear arrays and
+two-dimensional meshes of processing elements. Our algorithm runs in 2·n+m
+parallel steps, a considerable improvement over the 10·m·n sequential
+algorithm. We expect that this research will lead to the development of
+faster printers and larger high-resolution monitors
+^
+@http://cs.wellesley.edu/~pmetaxas/pck50-metaxas.pdf
+#topic:dithering
+#topic:error-diffusion
+#topic:parallel computation
+#topic:Ishan Misra
+#topic:P J Narayanan
+#author:Aditya Deshpande
+Hybrid Implementation of Error Diffusion Dithering
+Many image filtering operations provide ample parallelism, but progressive
+non-linear processing of images is among the hardest to parallelize due to
+long, sequential, and non-linear data dependency. A typical example of such
+an operation is error diffusion dithering, exemplified by the Floyd-Steinberg
+algorithm. In this paper, we present its parallelization on multicore CPUs
+using a block-based approach and on the GPU using a pixel based approach. We
+also present a hybrid approach in which the CPU and the GPU operate in parallel
+during the computation. High Performance Computing has traditionally been
+associated with high end CPUs and GPUs. Our focus is on everyday computers
+such as laptops and desktops, where significant compute power is available
+on the GPU as on the CPU. Our implementation can dither an 8K × 8K image on
+an off-the-shelf laptop with an Nvidia 8600M GPU in about 400 milliseconds
+when the sequential implementation on its CPU took about 4 seconds.
+^
+@http://www.cs.cmu.edu/~./imisra/projects/dithering/HybridDithering.pdf
+#topic:data type
+#author:Iavor S. Diatchki
+#author:Mark P. Jones
+#author:Rebekah Leslie
+High-level Views on Low-level Representations
+This paper explains how the high-level treatment of datatypes in
+functional languages—using features like constructor functions and
+pattern matching—can be made to coexist with bitdata. We use this term
+to describe the bit-level representations of data that are required in the
+construction of many different applications, including operating systems,
+device drivers, and assemblers. We explain our approach as a combination of
+two language extensions, each of which could potentially be adapted to any
+modern functional language. The first adds simple and elegant constructs
+for manipulating raw bitfield values, while the second provides a view-like
+mechanism for defining distinct new bitdata types with fine-control over the
+underlying representation. Our design leverages polymorphic type inference,
+as well as techniques for improvement of qualified types, to track both the
+type and the width of bitdata structures. We have implemented our extensions
+in a small functional language interpreter, and used it to show that our
+approach can handle a wide range of practical bitdata types.
+^
+@http://web.cecs.pdx.edu/~mpj/pubs/bitdata-icfp05.pdf
