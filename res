@@ -1,4 +1,5 @@
 #topic:actor
+#language:english
 #medium:paper
 Actor Model of Computation: Scalable Robust Information Systems
 The Actor Model is a mathematical theory that treats “Actors” as the
@@ -10,6 +11,7 @@ and many-core computer architectures has galvanized interest in the Actor Model
 ^
 @https://arxiv.org/pdf/1008.1459.pdf
 #topic:actor
+#language:english
 #medium:paper
 Formalizing common sense reasoning for scalable inconsistency-robust information integration using Direct LogicTM Reasoning and the Actor Model
 People use common sense in their interactions with large information systems.
@@ -23,6 +25,7 @@ language)
 @https://arxiv.org/pdf/0812.4852.pdf
 #topic:bigraphs
 #topic:category theory
+#language:english
 #medium:paper
 Bigraphical reactive systems: basic theory
 A notion of bigraph is proposed as the basis for a model of mobile
@@ -39,6 +42,7 @@ may all be widely distributed entities
 #topic:mbus
 #topic:wireless mbus
 #topic:security
+#language:english
 #medium:paper
 Wireless M-Bus Security Whitepaper
 This work aims to analyse the security of the Meter Bus as specified
@@ -58,6 +62,7 @@ on M-Bus wireless based communication – wM-Bus
 #topic:fpga
 #topic:neural network
 #topic:machine learning
+#language:english
 #medium:paper
 FPGA Implementations of Neural Networks
 During the 1980s and early 1990s there was significant work in the design
@@ -80,6 +85,7 @@ papers that were selected, after review, from a number of submissions.
 #topic:fpga
 #topic:neural network
 #topic:machine learning
+#language:english
 #medium:paper
 A General Neural Network Hardware Architecture on FPGA
 Field Programmable Gate Arrays (FPGAs) plays an increasingly important
@@ -101,6 +107,7 @@ to the type and scale of the neural networks.
 ^
 @https://arxiv.org/ftp/arxiv/papers/1711/1711.05860.pdf
 #topic:file system
+#language:english
 #medium:paper
 TagFS: A simple tag-based filesystem
 TagFS is a simple yet effective tag-based filesystem. Instead of organizing files and documents in
@@ -114,6 +121,7 @@ a strict hierarchy (like traditional filesystems), TagFS allows users to assign 
 #topic:differential evolution
 #topic:bee swarm algorithm
 #topic:ant colony optimisation
+#language:english
 #medium:book
 Clever Algorithms: Nature-Inspired Programming Recipes
 Implementing an Artificial Intelligence algorithm is difficult. Algorithm
@@ -139,6 +147,7 @@ Language.
 #topic:c++
 #topic:template metaprogramming
 #topic:type system
+#language:english
 #author:Bartosz Milewski
 Category Theory for Programmers
 For some time now I’ve been floating the idea of writing a book about
@@ -158,6 +167,7 @@ discussion and soliciting feedback.
 #topic:version control
 #author:Samuel Mimram
 #author:Cinzia Di Giusto
+#language:english
 #medium:paper
 A Categorical Theory of Patches
 When working with distant collaborators on the same documents, one often
@@ -182,6 +192,7 @@ relation and morphisms are partial functions respecting labeling and relations.
 @https://arxiv.org/pdf/1311.3903
 #topic:algorithm
 #author:Eugene W. Myers
+#language:english
 #medium:paper
 An O(ND) Difference Algorithm and Its Variations∗
 The problems of finding a longest common subsequence of two sequences A
@@ -201,6 +212,7 @@ of suffix trees leads to an O(NlgN + D^2) time variation
 #author:Sergei Bespamyatnikh
 #author:Michael Segal
 #medium:paper
+#language:english
 Enumerating Longest Increasing Subsequences and Patience Sorting (2000)
 In this paper we present three algorithms that solve three combinatorial
 optimization problems related to each other. One of them is the patience
@@ -219,6 +231,7 @@ subsequences of the given permutation.
 #author:Brad Calder
 #author:Larry Carter
 #author:Jeanne Ferrante
+#language:english
 Predicated Static Single Assignment
 Increases in instruction level parallelism are needed to exploit the potential
 parallelism available in future wide issue architectures. Predicated execution
@@ -241,6 +254,7 @@ to 58%.
 #topic:single static assignment
 #topic:compiler
 #topic:compiler optimisation
+#language:english
 Static Single Assignment Book
 
 ^
@@ -249,6 +263,7 @@ Static Single Assignment Book
 #topic:auto-encoding
 #author:Diederik P. Kingma
 #author:Max Welling
+#language:english
 Auto-Encoding Variational Bayes
 How can we perform efficient inference and learning in directed probabilistic
 models, in the presence of continuous latent variables with intractable
@@ -267,6 +282,7 @@ Theoretical advantages are reflected in experimental results.
 @https://arxiv.org/pdf/1312.6114.pdf
 #author:Thomas N. Kipf
 #author:Max Welling
+#language:english
 Variational Graph Auto-Encoders
 We introduce the variational graph auto-encoder (VGAE), a framework for
 unsupervised learning on graph-structured data based on the variational
@@ -281,6 +297,7 @@ predictive performance on a number of benchmark datasets.
 ^
 @https://arxiv.org/pdf/1611.07308.pdf
 #author:Carl Doersch
+#language:english
 Tutorial on Variational Autoencoders
 In just three years, Variational Autoencoders (VAEs) have emerged as one
 of the most popular approaches to unsupervised learning of complicated
@@ -295,6 +312,7 @@ behavior. No prior knowledge of variational Bayesian methods is assumed.
 ^
 @https://arxiv.org/pdf/1606.05908.pdf
 #author:Ronald Yu
+#language:english
 A Tutorial on VAEs: From Bayes' Rule to Lossless Compression
 The Variational Auto-Encoder (VAE) is a simple, efficient, and popular
 deep maximum likelihood model. Though usage of VAEs is widespread, the
@@ -312,6 +330,7 @@ visualize the capabilities and limitations of VAEs using a code example
 @https://arxiv.org/pdf/2006.10273.pdf
 #topic:signed distance field
 #author:Chris Green
+#language:english
 Improved Alpha-Tested Magnification for Vector Textures and Special Effects
 A simple and efficient method is presented which allows improved rendering
 of glyphs composed of curved and linear elements. A distance field is
@@ -330,6 +349,7 @@ images, and sharp corners.
 #author:Dantong Ji
 #author:Zhizhong Han
 #author:Matthias Zwicker
+#language:english
 SDFDiff: Differentiable Rendering of Signed Distance Fields for 3D Shape Optimization
 We propose SDFDiff, a novel approach for image-based shape optimization using
 differentiable rendering of 3D shapes represented by signed distance functions
@@ -348,6 +368,7 @@ without 3D supervision. In particular, we apply our method to single-view
 #topic:signed distance field
 #topic:multi-channel signed distance field
 #author:Viktor Chlumsk´
+#language:english
 Shape Decomposition for Multi-channel Distance Fields
 This work explores the possible improvements to a popular text rendering
 technique widely used in 3D applications and video games. It proposes a
@@ -362,6 +383,7 @@ in rendering with improved fidelity.
 #author:Zilong Zheng
 #author:Song-Chun Zhu
 #author:Ying Nian Wu
+#language:english
 Learning Dynamic Generator Model by Alternating Back-Propagation Through Time
 This paper studies the dynamic generator model for spatialtemporal processes
 such as dynamic textures and action sequences in video data. In this model,
@@ -383,6 +405,7 @@ method can learn realistic models for dynamic textures and action patterns.
 #topic:cellular neural network
 #author:N H Wulff
 #author:J A Hertz t
+#language:english
 Learning Cellular Automaton Dynamics with Neural Networks
 We have trained networks of E - II units with short-range connections
 to simulate simple cellular automata that exhibit complex or chaotic
@@ -397,6 +420,7 @@ automata provide new insight into their dynamics.
 #topic:cellular neural network
 #author:Paolo Arena
 #author:Luigi Fortuna
+#language:english
 Cellular neural networks: from chaos generation to compexity modelling.
 
 ^
@@ -407,6 +431,7 @@ Cellular neural networks: from chaos generation to compexity modelling.
 #author:Valeria Lupiano
 #author:Paolo Mazzanti
 #author:Salvatore Di Gregorio
+#language:english
 VALANCA: A Cellular Automata Model for Simulating Snow Avalanches
 Numerical modelling is a major challenge in the prevention of hazards related
 to the occurrence of catastrophic phenomena. Cellular Automata methods were
@@ -427,6 +452,7 @@ the presence of mitigation structures, were performed.
 @https://www.nhazca.it/wp-content/uploads/2020/06/VALANCA_2017.pdf
 #topic:neural network
 #topic:associative neural network
+#language:english
 Neural Associative Memories
 Neural associative memories (NAM) are neural network models consisting of
 neuronlike and synapse-like elements. At any given point in time the state of
@@ -445,6 +471,7 @@ inactive neurons is small.
 @https://courses.cit.cornell.edu/bionb330/readings/Associative%20Memories.pdf
 #topic:neural network
 #topic:associative neural network
+#language:english
 Auto-associative Memory: The First Step in Solving Cocktail Party Problem
 One of the most interesting and challenging problems in the area of Artificial
 Intelligence is solving the Cocktail Party problem. This is the task of
@@ -465,6 +492,7 @@ not make attending to one speaker in a cocktail party any harder.
 #topic:physarum
 #author:Jeff Jones
 #author:Andrew Adamatzky
+#language:english
 Emergence of Self-Organized Amoeboid Movement in a Multi-Agent Approximation of Physarum polycephalum
 The giant single-celled slime mould Physarum polycephalum exhibits complex
 morphological adaptation and amoeboid movement as it forages for food
@@ -495,6 +523,7 @@ potential of such material approaches to the field.
 #topic:pure functional programming
 #author:Jeremy Yallop
 #author:Hai Liu
+#language:english
 Causal Commutative Arrows Revisited
 Causal commutative arrows (CCA) extend arrows with additional constructs and
 laws that make them suitable for modelling domains such as functional reactive
@@ -517,6 +546,7 @@ the same dramatic improvements can be achieved without leaving the language.
 #author:Sherjil Ozair
 #author:Aaron Courville
 #author:Yoshua Bengio
+#language:english
 Generative Adversarial Nets
 We propose a new framework for estimating generative models via an adversarial
 process, in which we simultaneously train two models: a generative model
@@ -537,6 +567,7 @@ through qualitative and quantitative evaluation of the generated samples.
 #topic:compression
 #author:Takahiro Ota
 #author:Hiroyoshi Morita
+#language:english
 Relationship between Antidictionary Automata and Compacted Substring Automata
 There are two efficient static data compression algorithms called
 an antidictionary coding and a lossless data compression via substring
@@ -545,6 +576,7 @@ enumeration coding. We prove that both of the encoders are isomorphic.
 @http://ita.ucsd.edu/workshop/13/files/paper/paper_3113.pdf
 #topic:emergence
 #topic:cellular automata
+#language:english
 An Emergent Approach to Game Design – Development and Play
 Player enjoyment is the single-most important goal of games. Games that
 are not enjoyable are not bought or played. Within games, enjoyment of the
@@ -597,6 +629,7 @@ for future development and research of emergent game worlds.
 #author:Matthäus G. Chajdas
 #author:Jason Lacroix
 #author:Ingemar Ragnemalm
+#language:english
 Real-Time Hybrid Hair Rendering
 Rendering hair is a challenging problem for real-time applications. Besides
 complex shading, the sheer amount of it poses a lot of problems, as a human
@@ -612,6 +645,7 @@ to simulate global effects, like shadows and ambient occlusion in real-time.
 @https://eriksvjansson.net/papers/rthhr.pdf
 #topic:raytracing
 #author:Joost van Dongen
+#language:english
 Interior Mapping A new technique for rendering realistic buildings
 Interior Mapping is a new real-time shader technique that renders the
 interior of a building when looking at it from the outside, without the need
@@ -629,6 +663,7 @@ and other applications that are situated in large virtual cities
 #topic:cellular automata
 #author:Hidenosuke Nishio
 #author:Youichi Kobuchi
+#language:english
 Fault Tolerant Cellular Spaces*
 This paper treats the problem of designing a fault tolerant cellular
 space which simulates an arbitrary given cellular space in real time. A
@@ -646,6 +681,7 @@ a given coding is adequate for error correction.
 @https://core.ac.uk/download/pdf/82831011.pdf
 #topic:wildfire
 #author:Richard C. Rothermel
+#language:english
 How to Predict the Spread and Intensity of Forest and Range Fires
 This manual documents the procedures for estimating the rate of forward
 spread, intensity, flame length, and size of fires burning in forests and
@@ -664,6 +700,7 @@ interpretations of outputs, and growth predictions.
 #author:Jean-Baptiste Tristan
 #author:Alex Smola
 #author:Guy L. Steele Jr.
+#language:english
 Exponential Stochastic Cellular Automata for Massively Parallel Inference
 We propose an embarrassingly parallel, memory efficient inference algorithm for
 latent variable models in which the complete data likelihood is in the exponential
@@ -676,6 +713,7 @@ power competitive with collapsed Gibbs sampling and variational inference.
 ^
 @http://learningsys.org/papers/LearningSys_2015_paper_11.pdf
 #topic:cellular automata
+#language:english
 Neural Cellular Automata Manifold
 Very recently, a deep Neural Cellular Automata (NCA) [1] has been proposed
 to simulate the complex morphogenesis process with deep networks. This model
@@ -698,12 +736,14 @@ emojis and also in real images of CIFAR-10.
 #author:John Von Neumann
 #author:Arthur W. Burks
 #author:Arthur Walter
+#language:english
 Theory of self-reproducing automata
 
 ^
 @https://archive.org/download/theoryofselfrepr00vonn_0/theoryofselfrepr00vonn_0.pdf
 #topic:cellular automata
 #author:William Gilpin
+#language:english
 Cellular automata as convolutional neural networks
 Deep learning techniques have recently demonstrated broad success in predicting
 complex dynamical systems ranging from turbulence to human speech, motivating
@@ -734,6 +774,7 @@ can affect its representation when learned by neural networks.
 #topic:universal computer
 #topic:universal constructor
 #author:Tim J. Hutton
+#language:english
 Codd’s self-replicating computer
 Edgar Codd’s 1968 design for a self-replicating cellular automata machine
 has never been implemented. Partly this is due to its enormous size but we
@@ -751,6 +792,7 @@ and self-replication is estimated to take at least 1.7 × 1018 timesteps.
 @http://www.sq3.org.uk/papers/Hutton_CoddsSelfReplicatingComputer_2010.pdf
 #topic:string search
 #author:Bertrand Meyer
+#language:english
 Incremental String Matching
 The problem studied in this paper is to search a given text for occurrences of
 certain strings, in the particular case where the set of strings may change
@@ -766,6 +808,7 @@ retains the time and space complexities of the non-incremental one.
 @http://se.ethz.ch/~meyer/publications/string/string_matching.pdf
 #topic:string search
 #author:Bruce William Watson
+#language:english
 Taxonomies and Toolkits of Regular Language Algorithms
 
 ^
@@ -774,6 +817,7 @@ Taxonomies and Toolkits of Regular Language Algorithms
 #topic:exception
 #topic:continuation-passing style
 #author:Florian Loitsch
+#language:english
 Exceptional Continuations in JavaScript
 JavaScript, the main language for web-site development, does not feature
 continuation. However, as part of client-server communication they would be
@@ -792,6 +836,7 @@ continuations less costly
 #topic:file format
 #author:James D Murray
 #author:William VanRyper
+#language:english
 Encyclopedia of graphics file formats
 
 ^
@@ -800,6 +845,7 @@ Encyclopedia of graphics file formats
 #topic:parallel computation
 #topic:error-diffusion
 #author:Panagiotis Takis Metaxas
+#language:english
 Parallel Digital Halftoning by Error-Diffusion
 Digital halftoning, or dithering, is the technique commonly used to render a
 color or grayscale image on a printer, a computer monitor or other bi-level
@@ -822,6 +868,7 @@ faster printers and larger high-resolution monitors
 #topic:Ishan Misra
 #topic:P J Narayanan
 #author:Aditya Deshpande
+#language:english
 Hybrid Implementation of Error Diffusion Dithering
 Many image filtering operations provide ample parallelism, but progressive
 non-linear processing of images is among the hardest to parallelize due to
@@ -842,6 +889,7 @@ when the sequential implementation on its CPU took about 4 seconds.
 #author:Iavor S. Diatchki
 #author:Mark P. Jones
 #author:Rebekah Leslie
+#language:english
 High-level Views on Low-level Representations
 This paper explains how the high-level treatment of datatypes in
 functional languages—using features like constructor functions and

@@ -6,7 +6,7 @@ const Blake3 = std.crypto.Blake3;
 const b64 = std.base64.standard_encoder;
 const fnv = std.hash.Fnv1a_64;
 
-const TagType = enum { Topic, Medium, Author, License };
+const TagType = enum { Topic, Medium, Author, License, Isbn, Doi, Language };
 
 const Token = union(enum) {
     TagType: struct { len: usize, tag: TagType },
@@ -77,6 +77,9 @@ const StreamingParser = struct {
                                 fnv.hash("medium") => .Medium,
                                 fnv.hash("author") => .Author,
                                 fnv.hash("license") => .License,
+                                fnv.hash("isbn") => .Isbn,
+                                fnv.hash("doi") => .Doi,
+                                fnv.hash("language") => .Language,
                                 else => return error.InvalidTagType,
                             },
                         },
