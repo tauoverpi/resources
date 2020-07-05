@@ -908,3 +908,31 @@ in a small functional language interpreter, and used it to show that our
 approach can handle a wide range of practical bitdata types.
 ^
 @http://web.cecs.pdx.edu/~mpj/pubs/bitdata-icfp05.pdf
+#topic:bayesian network
+#topic:probability
+#author:Daphne Koller
+#author:Nir Friedman
+#medium:book
+#language:english
+Probabilistic Graphical Models
+Most tasks require a person or an automated system to reason: to take
+the available information and reach conclusions, both about what might be
+true in the world and about how to act.  For example, a doctor needs to
+take information about a patient — his symptoms, test results, personal
+characteristics (gender, weight) — and reach conclusions about what
+diseases he may have and what course of treatment to undertake. A mobile
+robot needs to synthesize data from its sonars, cameras, and other sensors
+to conclude where in the environment it is and how to move so as to reach
+its goal without hitting anything. A speech-recognition system needs to take
+a noisy acoustic signal and infer the words spoken that gave rise to it.
+In this book, we describe a general framework that can be used to allow a
+computer system to answer questions of this type. In principle, one could
+write a special-purpose computer program for every domain one encounters and
+every type of question that one may wish to answer. The resulting system,
+although possibly quite successful at its particular task, is often very
+brittle: If our application changes, significant changes may be required to
+the program.  Moreover, this general approach is quite limiting, in that it
+is hard to extract lessons from one successful solution and apply it to one
+which is very different.
+^
+@https://djsaunde.github.io/read/books/pdfs/probabilistic%20graphical%20models.pdf
