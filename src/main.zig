@@ -166,8 +166,6 @@ test "" {
     var p = StreamingParser.init();
 
     for (resources) |byte, i| {
-        if (try p.feed(byte)) |item| {
-            std.debug.warn("{}\n", .{item.slice(resources, i)});
-        }
+        if (try p.feed(byte)) |item| {}
     }
 }

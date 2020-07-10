@@ -936,3 +936,125 @@ is hard to extract lessons from one successful solution and apply it to one
 which is very different.
 ^
 @https://djsaunde.github.io/read/books/pdfs/probabilistic%20graphical%20models.pdf
+#author:Marc Ohm
+#author:Henrik Plate
+#author:Arnold Sykosch
+#author:Michael Meier
+#topic:open source
+#topic:security
+#topic:vulnrability
+Backstabber’s Knife Collection: A Review of Open Source Software Supply Chain Attacks
+A software supply chain attack is characterized by the injection of malicious
+code into a software package in order to compromise dependent systems
+further down the chain. Recent years saw a number of supply chain attacks
+that leverage the increasing use of open source during software development,
+which is facilitated by dependency managers that automatically resolve,
+download and install hundreds of open source packages throughout the software
+life cycle.  This paper presents a dataset of 174 malicious software packages
+that were used in real-world attacks on open source software supply chains,
+and which were distributed via the popular package repositories npm, PyPI,
+and RubyGems. Those packages, dating from November 2015 to November 2019,
+were manually collected and analyzed. The paper also presents two general
+attack trees to provide a structured overview about techniques to inject
+malicious code into the dependency tree of downstream users, and to execute
+such code at different times and under different conditions.  This work
+is meant to facilitate the future development of preventive and detective
+safeguards by open source and research communities.
+^
+@https://arxiv.org/pdf/2005.09535.pdf
+#topic:chunked sequence
+#topic:finger-tree
+#author:Umut A. Acar
+#author:Arthur Chargu´eraud
+#author:Mike Rainey
+#language:english
+#medium:paper
+Theory and Practice of Chunked Sequences
+Sequence data structures, i.e., data structures that provide
+operations on an ordered set of items, are heavily used by many
+applications. For sequence data structures to be efficient in practice, it
+is important to amortize expensive data-structural operations by chunking
+a relatively small, constant number of items together, and representing
+them by using a simple but fast (at least in the small scale) sequence
+data structure, such as an array or a ring buffer. In this paper, we
+present chunking techniques, one direct and one based on bootstrapping,
+that can reduce the practical overheads of sophisticated sequence data
+structures, such as finger trees, making them competitive in practice with
+specialpurpose data structures. We prove amortized bounds showing that our
+chunking techniques reduce runtime by amortizing expensive operations over a
+user-defined chunk-capacity parameter. We implement our techniques and show
+that they perform well in practice by conducting an empirical evaluation. Our
+evaluation features comparisons with other carefully engineered and optimized
+implementations.
+^
+@http://deepsea.inria.fr/chunkedseq/esa-2014-long.pdf
+#topic:hazard pointer
+#topic:lock-free
+#topic:concurrency
+#author:Maged M. Michael
+Hazard Pointers: Safe Memory Reclamation for Lock-Free Objects
+Lock-free objects offer significant performance and reliability advantages
+over conventional lock-based objects. However, the lack of an efficient
+portable lock-free method for the reclamation of the memory occupied by
+dynamic nodes removed from such objects is a major obstacle to their wide
+use in practice. This paper presents hazard pointers, a memory management
+methodology that allows memory reclamation for arbitrary reuse. It is very
+efficient, as demonstrated by our experimental results. It is suitable for
+user-level applications—as well as system programs—without dependence
+on special kernel or scheduler support. It is wait-free. It requires only
+single-word reads and writes for memory access in its core operations. It
+allows reclaimed memory to be returned to the operating system. In addition,
+it offers a lock-free solution for the ABA problem using only practical
+single-word instructions. Our experimental results on a multiprocessor system
+show that the new methodology offers equal and, more often, significantly
+better performance than other memory management methods, in addition to
+its qualitative advantages regarding memory reclamation and independence
+of special hardware support. We also show that lock-free implementations of
+important object types, using hazard pointers, offer comparable performance
+to that of efficient lock-based implementations under no contention and no
+multiprogramming, and outperform them by significant margins under moderate
+multiprogramming and/or contention, in addition to guaranteeing continuous
+progress and availability, even in the presence of thread failures and
+arbitrary delays.
+^
+@https://www.eecg.utoronto.ca/~amza/ece1747h/papers/hazard_pointers.pdf
+#topic:hazard pointer
+#topic:lock-free
+#author:Afroza Sultana
+#author:Helen A. Cameron
+#author:Peter C. J. Graham
+#language:english
+#medium:paper
+Concurrent B-trees with Lock-free Techniques
+B-trees and their variants are efficient data structures for finding records
+in a large collection (e.g., databases). The efficiency of B-trees increases
+when a number of users can manipulate the tree simultaneously. Many algorithms
+have been developed over the last three decades to achieve both concurrency
+and consistency in B-trees. However, current lock-based concurrency-control
+techniques limit concurrency. Moreover, lock-based B-trees suffer from
+certain negative scheduling anomalies, such as deadlock, convoying and
+priority inversion. Lock-free concurrency-control techniques using, for
+example, Compare And Swap (CAS) can provide improved concurrent access to
+data structures including B-trees and other search structures. Besides this,
+correctly designed lock-free techniques prevent deadlock, convoying and
+priority inversion. Considering the advantages of lock-free techniques for
+other concurrent data structures, we develop a lock-free B-tree to support
+high performance concurrent in-memory searching in a Non Uniform Memory Access
+(NUMA) parallel computing environment.  The use and parallelization of B-trees
+have both been widely explored in the past—primarily for application to
+database implementation and, hence, disk-based operations. Moving B-trees into
+memory for use in new online searching applications, however, fundamentally
+changes the characteristics of managing them and will allow us to effectively
+exploit the use of lock-free techniques, something that has previously not
+been applicable to B-trees.
+^
+@https://www.cs.umanitoba.ca/~hacamero/Research/BtreeTechrpt2011.pdf
+#topic:hazard pointer
+#author:Andrei Alexandrescu
+#author:Maged Michael
+#language:english
+#medium:paper
+Lock-Free Data Structures with Hazard Pointers
+
+^
+@http://erdani.com/publications/cuj-2004-12.pdf
