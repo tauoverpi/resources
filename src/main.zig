@@ -6,7 +6,7 @@ const Blake3 = std.crypto.Blake3;
 const b64 = std.base64.standard_encoder;
 const fnv = std.hash.Fnv1a_64;
 
-const TagType = enum { Topic, Medium, Author, License, Isbn, Doi, Language };
+const TagType = enum { topic, medium, author, license, isbn, doi, language };
 
 const Token = union(enum) {
     TagType: struct { len: usize, tag: TagType },
@@ -55,6 +55,15 @@ const StreamingParser = struct {
         self.hash = fnv.init();
     }
 
+    fn getTag(hash: u64) ?TagType {
+        inline for (@typeInfo(TagType).Enum.fields) |field| {
+            if (hash == comptime fnv.hash(field.name)) {
+                return std.meta.stringToEnum(TagType, field.name);
+            }
+        }
+        return null;
+    }
+
     pub fn feed(self: *StreamingParser, c: u8) !?Token {
         self.count += 1;
         switch (self.state) {
@@ -71,17 +80,7 @@ const StreamingParser = struct {
                     const token = Token{
                         .TagType = .{
                             .len = self.count,
-                            // TODO: move this out of the parser
-                            .tag = switch (self.hash.final()) {
-                                fnv.hash("topic") => .Topic,
-                                fnv.hash("medium") => .Medium,
-                                fnv.hash("author") => .Author,
-                                fnv.hash("license") => .License,
-                                fnv.hash("isbn") => .Isbn,
-                                fnv.hash("doi") => .Doi,
-                                fnv.hash("language") => .Language,
-                                else => return error.InvalidTagType,
-                            },
+                            .tag = getTag(self.hash.final()) orelse return error.InvalidTag,
                         },
                     };
                     self.hash = fnv.init();
@@ -159,6 +158,26 @@ const StreamingParser = struct {
         }
         return null;
     }
+};
+
+const TokenStream = struct {
+    sp: StreamingParser,
+    text: []const u8,
+    index: usize,
+
+    pub fn init(text: []const u8) TokenStream {
+        var p: TokenParser = undefined;
+        p.reset();
+        p.text = text;
+        return p;
+    }
+
+    pub fn next(self: *StreamingParser) void {
+        self.sp = StreamingParser.init();
+        self.index = 0;
+    }
+
+    pub fn next(self: *StreamingParser) !?Token {}
 };
 
 test "" {

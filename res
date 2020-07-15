@@ -1058,3 +1058,74 @@ Lock-Free Data Structures with Hazard Pointers
 
 ^
 @http://erdani.com/publications/cuj-2004-12.pdf
+#topic:category theory
+#author:Philip Wadler
+Monads for functional programming
+The use of monads to structure functional programs is described. Monads
+provide a convenient framework for simulating effects found in other languages,
+such as global state, exception handling, output, or non-determinism. Three
+case studies are looked at in detail: how monads ease the modification of
+a simple evaluator; how monads act as the basis of a datatype of arrays
+subject to in-place update; and how monads can be used to build parsers.
+^
+@http://homepages.inf.ed.ac.uk/wadler/papers/marktoberdorf/baastad.pdf
+#topic:genetic algorithm
+#author:Melanie Mitchell
+#medium:book
+#language:english
+An Introduction to Generic Algorithms
+Genetic algorithms have been used in science and engineering as adaptive
+algorithms for solving practical problems and as computational models of
+natural evolutionary systems. This brief, accessible introduction describes
+some of the most interesting research in the field and also enables readers
+to implement and experiment with genetic algorithms on their own. It focuses
+in depth on a small set of important and interesting topicsparticularly
+in machine learning, scientific modeling, and artificial lifeand reviews
+a broad span of research, including the work of Mitchell and her colleagues.
+
+The descriptions of applications and modeling projects stretch beyond the
+strict boundaries of computer science to include dynamical systems theory,
+game theory, molecular biology, ecology, evolutionary biology, and population
+genetics, underscoring the exciting "general purpose" nature of genetic
+algorithms as search methods that can be employed across disciplines.
+
+An Introduction to Genetic Algorithms is accessible to students and researchers
+in any scientific discipline. It includes many thought and computer exercises
+that build on and reinforce the reader's understanding of the text. The first
+chapter introduces genetic algorithms and their terminology and describes
+two provocative applications in detail. The second and third chapters look
+at the use of genetic algorithms in machine learning (computer programs,
+data analysis and prediction, neural networks) and in scientific models
+(interactions among learning, evolution, and culture; sexual selection;
+ecosystems; evolutionary activity). Several approaches to the theory of genetic
+algorithms are discussed in depth in the fourth chapter. The fifth chapter
+takes up implementation, and the last chapter poses some currently unanswered
+questions and surveys prospects for the future of evolutionary computation.
+^
+@https://boente.eti.br/fuzzy/ebook-fuzzy-mitchell.pdf
+#topic:markov process
+#author:John C. Baez
+#language:english
+#medium:paper
+Coarse-Graining Open Markov Processes
+Coarse-graining is a standard method of extracting a simpler Markov
+process from a more complicated one by identifying states. Here we extend
+coarse-graining to ‘open’ Markov processes: that is, those where
+probability can flow in or out of certain states called ‘inputs’ and
+‘outputs’. One can build up an ordinary Markov process from smaller open
+pieces in two basic ways: composition, where we identify the outputs of
+one open Markov process with the inputs of another, and tensoring, where
+we set two open Markov processes side by side. In previous work, Fong,
+Pollard and the first author showed that these constructions make open
+Markov processes into the morphisms of a symmetric monoidal category. Here
+we go further by constructing a symmetric monoidal double category where the
+2-morphisms include ways of coarse-graining open Markov processes. We also
+extend the already known ‘black-boxing’ functor from the category of
+open Markov processes to our double category. Black-boxing sends any open
+Markov process to the linear relation between input and output data that
+holds in steady states, including nonequilibrium steady states where there
+is a nonzero flow of probability through the process. To extend black-boxing
+to a functor between double categories, we need to prove that black-boxing
+is compatible with coarse-graining.
+^
+@https://arxiv.org/pdf/1710.11343.pdf
