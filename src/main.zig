@@ -6,7 +6,7 @@ const Blake3 = std.crypto.Blake3;
 const b64 = std.base64.standard_encoder;
 const fnv = std.hash.Fnv1a_64;
 
-const TagType = enum { topic, medium, author, license, isbn, doi, language };
+const TagType = enum { topic, author, medium, license, isbn, doi, language };
 
 const Token = union(enum) {
     TagType: struct { len: usize, tag: TagType },

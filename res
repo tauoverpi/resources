@@ -837,6 +837,7 @@ continuations less costly
 #author:James D Murray
 #author:William VanRyper
 #language:english
+#medium:book
 Encyclopedia of graphics file formats
 
 ^
@@ -1129,3 +1130,55 @@ to a functor between double categories, we need to prove that black-boxing
 is compatible with coarse-graining.
 ^
 @https://arxiv.org/pdf/1710.11343.pdf
+#topic:file format
+#language:english
+#medium:book
+Internet File Formats 1995
+
+^
+@https://ia801308.us.archive.org/2/items/mac_Internet_File_Formats_1995/Internet_File_Formats_1995.pdf
+#topic:distributed systems
+#author:Marcos K. Aguilera
+#author:Arif Merchant
+#author:Mehul Shah
+#author:Alistair Veitch
+#author:Christos Karamanolis†
+#medium:paper
+#language:english
+Sinfonia: a new paradigm for building scalable distributed systems
+We propose a new paradigm for building scalable distributed systems. Our
+approach does not require dealing with message-passing protocols—a major
+complication in existing distributed systems.  Instead, developers just design
+and manipulate data structures within our service called Sinfonia. Sinfonia
+keeps data for applications on a set of memory nodes, each exporting a
+linear address space. At the core of Sinfonia is a novel minitransaction
+primitive that enables efficient and consistent access to data, while hiding
+the complexities that arise from concurrency and failures. Using Sinfonia,
+we implemented two very different and complex applications in a few months:
+a cluster file system and a group communication service. Our implementations
+perform well and scale to hundreds of machines.
+^
+@https://www.cs.princeton.edu/courses/archive/fall08/cos597B/papers/sinfonia.pdf
+#topic:distributed systems
+#author:Tim Kraska
+#author:Gene Pang
+#author:Michael J. Franklin
+#author:Samuel Madden
+#author:Alan Fekete†
+#medium:paper
+#language:english
+MDCC: Multi-Data Center Consistency
+Replicating data across multiple data centers allows using data closer to
+the client, reducing latency for applications, and increases the availability
+in the event of a data center failure. MDCC (Multi-Data Center Consistency)
+is an optimistic commit protocol for geo-replicated transactions, that does
+not require a master or static partitioning, and is strongly consistent at
+a cost similar to eventually consistent protocols. MDCC takes advantage of
+Generalized Paxos for transaction processing and exploits commutative updates
+with value constraints in a quorum-based system. Our experiments show that
+MDCC outperforms existing synchronous transactional replication protocols,
+such as Megastore, by requiring only a single message round-trip in the normal
+operational case independent of the master-location and by scaling linearly
+with the number of machines as long as transaction conflict rates permit.
+^
+@https://amplab.cs.berkeley.edu/wp-content/uploads/2013/03/mdcc-eurosys13.pdf
