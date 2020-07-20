@@ -55,13 +55,13 @@ const StreamingParser = struct {
         self.hash = fnv.init();
     }
 
-    fn getTag(hash: u64) ?TagType {
-        inline for (@typeInfo(TagType).Enum.fields) |field| {
+    fn getTag(hash: u64) !TagType {
+        inline for (std.meta.fields(TagType)) |field| {
             if (hash == comptime fnv.hash(field.name)) {
-                return std.meta.stringToEnum(TagType, field.name);
+                return comptime @intToEnum(TagType, field.value);
             }
         }
-        return null;
+        return error.InvalidTag;
     }
 
     pub fn feed(self: *StreamingParser, c: u8) !?Token {
@@ -80,7 +80,7 @@ const StreamingParser = struct {
                     const token = Token{
                         .TagType = .{
                             .len = self.count,
-                            .tag = getTag(self.hash.final()) orelse return error.InvalidTag,
+                            .tag = try getTag(self.hash.final()),
                         },
                     };
                     self.hash = fnv.init();
@@ -172,7 +172,7 @@ const TokenStream = struct {
         return p;
     }
 
-    pub fn next(self: *StreamingParser) void {
+    pub fn reset(self: *StreamingParser) void {
         self.sp = StreamingParser.init();
         self.index = 0;
     }
