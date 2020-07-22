@@ -8,6 +8,21 @@ const fnv = std.hash.Fnv1a_64;
 
 const TagType = enum { topic, author, medium, license, isbn, doi, language };
 
+// required tags for a successful parse
+const Required = struct {
+    language: bool,
+    medium: bool,
+    topic: bool,
+};
+
+comptime {
+    for (std.meta.fields(Required)) |field| {
+        if (!@hasField(TagType, field.name)) {
+            @compileError("required field doesn't exist");
+        }
+    }
+}
+
 const Token = union(enum) {
     TagType: struct { len: usize, tag: TagType },
     Tag: usize,
@@ -29,6 +44,7 @@ const StreamingParser = struct {
     count: usize,
     state: State,
     hash: fnv,
+    required: Required,
 
     const State = enum {
         LinkEnd,
@@ -53,11 +69,17 @@ const StreamingParser = struct {
         self.count = 0;
         self.state = .LinkEnd;
         self.hash = fnv.init();
+        inline for (std.meta.fields(Required)) |field| {
+            @field(self.required, field.name) = false;
+        }
     }
 
-    fn getTag(hash: u64) !TagType {
+    fn getTag(self: *StreamingParser, hash: u64) !TagType {
         inline for (std.meta.fields(TagType)) |field| {
             if (hash == comptime fnv.hash(field.name)) {
+                if (@hasField(Required, field.name)) {
+                    @field(self.required, field.name) = true;
+                }
                 return comptime @intToEnum(TagType, field.value);
             }
         }
@@ -80,7 +102,7 @@ const StreamingParser = struct {
                     const token = Token{
                         .TagType = .{
                             .len = self.count,
-                            .tag = try getTag(self.hash.final()),
+                            .tag = try getTag(self, self.hash.final()),
                         },
                     };
                     self.hash = fnv.init();
@@ -150,6 +172,12 @@ const StreamingParser = struct {
             },
             .Link => switch (c) {
                 '\n' => {
+                    inline for (std.meta.fields(Required)) |field| {
+                        defer @field(self.required, field.name) = false;
+                        if (!@field(self.required, field.name)) {
+                            return error.MissingRequiredField;
+                        }
+                    }
                     self.state = .LinkEnd;
                     return Token{ .Link = self.count };
                 },
@@ -183,8 +211,16 @@ const TokenStream = struct {
 test "" {
     const resources = @embedFile("../res");
     var p = StreamingParser.init();
+    var line: usize = 0;
 
     for (resources) |byte, i| {
-        if (try p.feed(byte)) |item| {}
+        if (byte == '\n') line += 1;
+        if (p.feed(byte) catch |e| {
+            switch (e) {
+                error.MissingRequiredField => std.debug.print("missing required on line {}\n", .{line}),
+                else => {},
+            }
+            return e;
+        }) |item| {}
     }
 }

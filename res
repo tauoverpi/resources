@@ -147,8 +147,9 @@ Language.
 #topic:c++
 #topic:template metaprogramming
 #topic:type system
-#language:english
 #author:Bartosz Milewski
+#language:english
+#medium:book
 Category Theory for Programmers
 For some time now I’ve been floating the idea of writing a book about
 category theory that would be targeted at programmers. Mind you, not computer
@@ -211,8 +212,8 @@ of suffix trees leads to an O(NlgN + D^2) time variation
 #topic:sorting
 #author:Sergei Bespamyatnikh
 #author:Michael Segal
-#medium:paper
 #language:english
+#medium:paper
 Enumerating Longest Increasing Subsequences and Patience Sorting (2000)
 In this paper we present three algorithms that solve three combinatorial
 optimization problems related to each other. One of them is the patience
@@ -232,6 +233,7 @@ subsequences of the given permutation.
 #author:Larry Carter
 #author:Jeanne Ferrante
 #language:english
+#medium:paper
 Predicated Static Single Assignment
 Increases in instruction level parallelism are needed to exploit the potential
 parallelism available in future wide issue architectures. Predicated execution
@@ -255,6 +257,7 @@ to 58%.
 #topic:compiler
 #topic:compiler optimisation
 #language:english
+#medium:book
 Static Single Assignment Book
 
 ^
@@ -264,6 +267,7 @@ Static Single Assignment Book
 #author:Diederik P. Kingma
 #author:Max Welling
 #language:english
+#medium:paper
 Auto-Encoding Variational Bayes
 How can we perform efficient inference and learning in directed probabilistic
 models, in the presence of continuous latent variables with intractable
@@ -280,9 +284,11 @@ model) to the intractable posterior using the proposed lower bound estimator.
 Theoretical advantages are reflected in experimental results.
 ^
 @https://arxiv.org/pdf/1312.6114.pdf
+#topic:neural network
 #author:Thomas N. Kipf
 #author:Max Welling
 #language:english
+#medium:paper
 Variational Graph Auto-Encoders
 We introduce the variational graph auto-encoder (VGAE), a framework for
 unsupervised learning on graph-structured data based on the variational
@@ -296,8 +302,10 @@ model can naturally incorporate node features, which significantly improves
 predictive performance on a number of benchmark datasets.
 ^
 @https://arxiv.org/pdf/1611.07308.pdf
+#topic:neural network
 #author:Carl Doersch
 #language:english
+#medium:paper
 Tutorial on Variational Autoencoders
 In just three years, Variational Autoencoders (VAEs) have emerged as one
 of the most popular approaches to unsupervised learning of complicated
@@ -311,8 +319,10 @@ VAEs, explains the mathematics behind them, and describes some empirical
 behavior. No prior knowledge of variational Bayesian methods is assumed.
 ^
 @https://arxiv.org/pdf/1606.05908.pdf
+#topic:neural network
 #author:Ronald Yu
 #language:english
+#medium:paper
 A Tutorial on VAEs: From Bayes' Rule to Lossless Compression
 The Variational Auto-Encoder (VAE) is a simple, efficient, and popular
 deep maximum likelihood model. Though usage of VAEs is widespread, the
@@ -331,6 +341,7 @@ visualize the capabilities and limitations of VAEs using a code example
 #topic:signed distance field
 #author:Chris Green
 #language:english
+#medium:paper
 Improved Alpha-Tested Magnification for Vector Textures and Special Effects
 A simple and efficient method is presented which allows improved rendering
 of glyphs composed of curved and linear elements. A distance field is
@@ -350,6 +361,7 @@ images, and sharp corners.
 #author:Zhizhong Han
 #author:Matthias Zwicker
 #language:english
+#medium:paper
 SDFDiff: Differentiable Rendering of Signed Distance Fields for 3D Shape Optimization
 We propose SDFDiff, a novel approach for image-based shape optimization using
 differentiable rendering of 3D shapes represented by signed distance functions
@@ -369,6 +381,7 @@ without 3D supervision. In particular, we apply our method to single-view
 #topic:multi-channel signed distance field
 #author:Viktor Chlumsk´
 #language:english
+#medium:paper
 Shape Decomposition for Multi-channel Distance Fields
 This work explores the possible improvements to a popular text rendering
 technique widely used in 3D applications and video games. It proposes a
@@ -384,6 +397,7 @@ in rendering with improved fidelity.
 #author:Song-Chun Zhu
 #author:Ying Nian Wu
 #language:english
+#medium:paper
 Learning Dynamic Generator Model by Alternating Back-Propagation Through Time
 This paper studies the dynamic generator model for spatialtemporal processes
 such as dynamic textures and action sequences in video data. In this model,
@@ -406,6 +420,7 @@ method can learn realistic models for dynamic textures and action patterns.
 #author:N H Wulff
 #author:J A Hertz t
 #language:english
+#medium:paper
 Learning Cellular Automaton Dynamics with Neural Networks
 We have trained networks of E - II units with short-range connections
 to simulate simple cellular automata that exhibit complex or chaotic
@@ -421,6 +436,7 @@ automata provide new insight into their dynamics.
 #author:Paolo Arena
 #author:Luigi Fortuna
 #language:english
+#medium:paper
 Cellular neural networks: from chaos generation to compexity modelling.
 
 ^
@@ -432,6 +448,7 @@ Cellular neural networks: from chaos generation to compexity modelling.
 #author:Paolo Mazzanti
 #author:Salvatore Di Gregorio
 #language:english
+#medium:paper
 VALANCA: A Cellular Automata Model for Simulating Snow Avalanches
 Numerical modelling is a major challenge in the prevention of hazards related
 to the occurrence of catastrophic phenomena. Cellular Automata methods were
@@ -453,6 +470,7 @@ the presence of mitigation structures, were performed.
 #topic:neural network
 #topic:associative neural network
 #language:english
+#medium:paper
 Neural Associative Memories
 Neural associative memories (NAM) are neural network models consisting of
 neuronlike and synapse-like elements. At any given point in time the state of
@@ -472,6 +490,7 @@ inactive neurons is small.
 #topic:neural network
 #topic:associative neural network
 #language:english
+#medium:paper
 Auto-associative Memory: The First Step in Solving Cocktail Party Problem
 One of the most interesting and challenging problems in the area of Artificial
 Intelligence is solving the Cocktail Party problem. This is the task of
@@ -493,6 +512,7 @@ not make attending to one speaker in a cocktail party any harder.
 #author:Jeff Jones
 #author:Andrew Adamatzky
 #language:english
+#medium:paper
 Emergence of Self-Organized Amoeboid Movement in a Multi-Agent Approximation of Physarum polycephalum
 The giant single-celled slime mould Physarum polycephalum exhibits complex
 morphological adaptation and amoeboid movement as it forages for food
@@ -524,6 +544,7 @@ potential of such material approaches to the field.
 #author:Jeremy Yallop
 #author:Hai Liu
 #language:english
+#medium:paper
 Causal Commutative Arrows Revisited
 Causal commutative arrows (CCA) extend arrows with additional constructs and
 laws that make them suitable for modelling domains such as functional reactive
@@ -547,6 +568,7 @@ the same dramatic improvements can be achieved without leaving the language.
 #author:Aaron Courville
 #author:Yoshua Bengio
 #language:english
+#medium:paper
 Generative Adversarial Nets
 We propose a new framework for estimating generative models via an adversarial
 process, in which we simultaneously train two models: a generative model
@@ -568,6 +590,7 @@ through qualitative and quantitative evaluation of the generated samples.
 #author:Takahiro Ota
 #author:Hiroyoshi Morita
 #language:english
+#medium:paper
 Relationship between Antidictionary Automata and Compacted Substring Automata
 There are two efficient static data compression algorithms called
 an antidictionary coding and a lossless data compression via substring
@@ -577,6 +600,7 @@ enumeration coding. We prove that both of the encoders are isomorphic.
 #topic:emergence
 #topic:cellular automata
 #language:english
+#medium:paper
 An Emergent Approach to Game Design – Development and Play
 Player enjoyment is the single-most important goal of games. Games that
 are not enjoyable are not bought or played. Within games, enjoyment of the
@@ -630,6 +654,7 @@ for future development and research of emergent game worlds.
 #author:Jason Lacroix
 #author:Ingemar Ragnemalm
 #language:english
+#medium:paper
 Real-Time Hybrid Hair Rendering
 Rendering hair is a challenging problem for real-time applications. Besides
 complex shading, the sheer amount of it poses a lot of problems, as a human
@@ -646,6 +671,7 @@ to simulate global effects, like shadows and ambient occlusion in real-time.
 #topic:raytracing
 #author:Joost van Dongen
 #language:english
+#medium:paper
 Interior Mapping A new technique for rendering realistic buildings
 Interior Mapping is a new real-time shader technique that renders the
 interior of a building when looking at it from the outside, without the need
@@ -664,6 +690,7 @@ and other applications that are situated in large virtual cities
 #author:Hidenosuke Nishio
 #author:Youichi Kobuchi
 #language:english
+#medium:paper
 Fault Tolerant Cellular Spaces*
 This paper treats the problem of designing a fault tolerant cellular
 space which simulates an arbitrary given cellular space in real time. A
@@ -682,6 +709,7 @@ a given coding is adequate for error correction.
 #topic:wildfire
 #author:Richard C. Rothermel
 #language:english
+#medium:book
 How to Predict the Spread and Intensity of Forest and Range Fires
 This manual documents the procedures for estimating the rate of forward
 spread, intensity, flame length, and size of fires burning in forests and
@@ -701,6 +729,7 @@ interpretations of outputs, and growth predictions.
 #author:Alex Smola
 #author:Guy L. Steele Jr.
 #language:english
+#medium:paper
 Exponential Stochastic Cellular Automata for Massively Parallel Inference
 We propose an embarrassingly parallel, memory efficient inference algorithm for
 latent variable models in which the complete data likelihood is in the exponential
@@ -714,6 +743,7 @@ power competitive with collapsed Gibbs sampling and variational inference.
 @http://learningsys.org/papers/LearningSys_2015_paper_11.pdf
 #topic:cellular automata
 #language:english
+#medium:paper
 Neural Cellular Automata Manifold
 Very recently, a deep Neural Cellular Automata (NCA) [1] has been proposed
 to simulate the complex morphogenesis process with deep networks. This model
@@ -737,6 +767,7 @@ emojis and also in real images of CIFAR-10.
 #author:Arthur W. Burks
 #author:Arthur Walter
 #language:english
+#medium:paper
 Theory of self-reproducing automata
 
 ^
@@ -744,6 +775,7 @@ Theory of self-reproducing automata
 #topic:cellular automata
 #author:William Gilpin
 #language:english
+#medium:paper
 Cellular automata as convolutional neural networks
 Deep learning techniques have recently demonstrated broad success in predicting
 complex dynamical systems ranging from turbulence to human speech, motivating
@@ -775,6 +807,7 @@ can affect its representation when learned by neural networks.
 #topic:universal constructor
 #author:Tim J. Hutton
 #language:english
+#medium:paper
 Codd’s self-replicating computer
 Edgar Codd’s 1968 design for a self-replicating cellular automata machine
 has never been implemented. Partly this is due to its enormous size but we
@@ -793,6 +826,7 @@ and self-replication is estimated to take at least 1.7 × 1018 timesteps.
 #topic:string search
 #author:Bertrand Meyer
 #language:english
+#medium:paper
 Incremental String Matching
 The problem studied in this paper is to search a given text for occurrences of
 certain strings, in the particular case where the set of strings may change
@@ -809,6 +843,7 @@ retains the time and space complexities of the non-incremental one.
 #topic:string search
 #author:Bruce William Watson
 #language:english
+#medium:paper
 Taxonomies and Toolkits of Regular Language Algorithms
 
 ^
@@ -818,6 +853,7 @@ Taxonomies and Toolkits of Regular Language Algorithms
 #topic:continuation-passing style
 #author:Florian Loitsch
 #language:english
+#medium:paper
 Exceptional Continuations in JavaScript
 JavaScript, the main language for web-site development, does not feature
 continuation. However, as part of client-server communication they would be
@@ -847,6 +883,7 @@ Encyclopedia of graphics file formats
 #topic:error-diffusion
 #author:Panagiotis Takis Metaxas
 #language:english
+#medium:paper
 Parallel Digital Halftoning by Error-Diffusion
 Digital halftoning, or dithering, is the technique commonly used to render a
 color or grayscale image on a printer, a computer monitor or other bi-level
@@ -870,6 +907,7 @@ faster printers and larger high-resolution monitors
 #topic:P J Narayanan
 #author:Aditya Deshpande
 #language:english
+#medium:paper
 Hybrid Implementation of Error Diffusion Dithering
 Many image filtering operations provide ample parallelism, but progressive
 non-linear processing of images is among the hardest to parallelize due to
@@ -891,6 +929,7 @@ when the sequential implementation on its CPU took about 4 seconds.
 #author:Mark P. Jones
 #author:Rebekah Leslie
 #language:english
+#medium:paper
 High-level Views on Low-level Representations
 This paper explains how the high-level treatment of datatypes in
 functional languages—using features like constructor functions and
@@ -944,6 +983,8 @@ which is very different.
 #topic:open source
 #topic:security
 #topic:vulnrability
+#language:english
+#medium:paper
 Backstabber’s Knife Collection: A Review of Open Source Software Supply Chain Attacks
 A software supply chain attack is characterized by the injection of malicious
 code into a software package in order to compromise dependent systems
@@ -993,6 +1034,8 @@ implementations.
 #topic:lock-free
 #topic:concurrency
 #author:Maged M. Michael
+#language:english
+#medium:paper
 Hazard Pointers: Safe Memory Reclamation for Lock-Free Objects
 Lock-free objects offer significant performance and reliability advantages
 over conventional lock-based objects. However, the lack of an efficient
@@ -1061,6 +1104,8 @@ Lock-Free Data Structures with Hazard Pointers
 @http://erdani.com/publications/cuj-2004-12.pdf
 #topic:category theory
 #author:Philip Wadler
+#language:english
+#medium:paper
 Monads for functional programming
 The use of monads to structure functional programs is described. Monads
 provide a convenient framework for simulating effects found in other languages,
@@ -1182,3 +1227,123 @@ operational case independent of the master-location and by scaling linearly
 with the number of machines as long as transaction conflict rates permit.
 ^
 @https://amplab.cs.berkeley.edu/wp-content/uploads/2013/03/mdcc-eurosys13.pdf
+#topic:mathematics
+#topic:informatics
+#author:Eric Lehman
+#author:F Thomson Leighton
+#author:Albert R Meyer
+#medium:book
+#language:english
+Mathematics for Computer Science
+
+^
+@https://courses.csail.mit.edu/6.042/spring17/mcs.pdf
+#topic:containers
+#author:Adinda Riztia Putri
+#author:Rendy Munadi
+#author:Ridha Muldina Negara
+#medium:paper
+#language:english
+Performance analysis of multi services on container Docker, LXC, and LXD
+The emergence of the container in various cloud platforms from Open Stack
+to Google Cloud Platform has marked the industry interest in opting for
+container as their cloud service solution. However, the cloud users should
+aware of performance overheads of different virtualization solutions in
+order to avoid quality of service degradation because different container
+platforms delivered different performances. This research evaluated how
+different container platforms (Docker, LXC, and LXD) impacted in running
+different TCP services and also measured system performance of each container
+compared to the native system without any container solution based on
+overall performance metrics. This research focuses on the three most used
+PaaS: FTP Server, Web Server, and Mail Server. Related to previous works,
+our evaluation results show that performance could vary between containers.
+In terms of system performance, LXD shows better performance while server
+performance result varies depending on what service is being evaluated.
+^
+@http://www.beei.org/index.php/EEI/article/viewFile/1953/1596
+#topic:optimization
+#author:Bruce Tesar
+#language:paper
+#medium:paper
+Computing Optimal Forms in Optimality Theory: Basic Syllabification
+In Optimality Theory, grammaticality is defined in terms of optimization
+over a large (often infinite) space of candidates. This raises the question
+of how grammatical forms might be computed. This paper presents an analysis
+of the Basic CV Syllable Theory (Prince & Smolensky 1993) showing that,
+despite the nature of the formal definition, computing the optimal form does
+not require explicitly generating and evaluating all possible candidates. A
+specific algorithm is detailed which computes the optimal form in time
+that is linear in the length of the input. This algorithm will work for
+any grammar in Optimality Theory employing regular position structures and
+universal constraints which may be evaluated on the basis of local information
+^
+@http://roa.rutgers.edu/files/52-0295/roa-52-tesar-3.pdf
+#topic:simd
+#author:Franz Franchetti
+#author:Stefan Kral
+#author:Juergen Lorenz
+#author:Christoph W. Ueberhuber
+#language:english
+#medium:paper
+Efficient Utilization of SIMD Extensions
+This paper targets automatic performance tuning of numerical kernels in the
+presence of multi-layered memory hierarchies and SIMD parallelism. The studied
+SIMD instruction set extensions include Intel’s SSE family, AMD’s 3DNow!,
+Motorola’s AltiVec, and IBM’s BlueGene/L SIMD instructions.  FFTW, ATLAS,
+and SPIRAL demonstrate that near-optimal performance of numerical kernels
+across a variety of modern computers featuring deep memory hierarchies can
+be achieved only by means of automatic performance tuning. These software
+packages generate and optimize ANSI C code and feed it into the target
+machine’s general purpose C compiler to maintain portability.  The scalar
+C code produced by performance tuning systems poses a severe challenge for
+vectorizing compilers. The particular code structure hampers automatic
+vectorization and thus inhibits satisfactory performance on processors
+featuring short vector extensions.  This paper describes special purpose
+compiler technology that supports automatic performance tuning on machines with
+vector instructions. The work described includes (i) symbolic vectorization of
+DSP transforms, (ii) straight-line code vectorization for numerical kernels,
+and (iii) compiler backends for straight-line code with vector instructions.
+Methods from all three areas were combined with FFTW, SPIRAL, and ATLAS to
+optimize both for memory hierarchy and vector instructions. Experiments
+show that the presented methods lead to substantial speed-ups (up to 1.8
+for two-way and 3.3 for four-way vector extensions) over the best scalar
+C codes generated by the original systems as well as roughly matching the
+performance of hand-tuned vendor libraries.
+^
+@http://users.ece.cmu.edu/~franzf/papers/ieee-si.pdf
+#topic:parsing
+#author:Dan Klein
+#author:Christopher D. Manning
+#medium:paper
+#language:english
+A* Parsing: Fast Exact Viterbi Parse Selection
+We present an extension of the classic A* search procedure to tabular PCFG
+parsing. The use of A* search can dramatically reduce the time required to
+find a best parse by conservatively estimating the probabilities of parse
+completions. We discuss various estimates and give efficient algorithms
+for computing them. On average-length Penn treebank sentences, our most
+detailed estimate reduces the total number of edges processed to less than
+3% of that required by exhaustive parsing, and a simpler estimate, which
+requires less than a minute of precomputation, reduces the work to less
+than 5%. Unlike best-first and finite-beam methods for achieving this kind
+of speed-up, an A* method is guaranteed to find the most likely parse, not
+just an approximation.  Our parser, which is simpler to implement than an
+upward-propagating best-first parser, is correct for a wide range of parser
+control strategies and maintains worst-case cubic time.
+^
+@https://nlp.stanford.edu/pubs/klein2003astar.pdf
+#topic:parsing
+#author:Mark Johnson
+#language:english
+#medium:paper
+Parsing in Parallel on Multiple Cores and GPUs
+This paper examines the ways in which parallelism can be used to speed the
+parsing of dense PCFGs. We focus on two kinds of parallelism here: Symmetric
+Multi-Processing (SMP) parallelism on shared-memory multicore CPUs, and
+Single-Instruction MultipleThread (SIMT) parallelism on GPUs. We describe how
+to achieve speed-ups over an already very efficient baseline parser using both
+kinds of technology. For our dense PCFG parsing task we obtained a 60×speed-up
+using SMP and SSE parallelism coupled with a cache-sensitive algorithm design,
+parsing section 24 of the Penn WSJ treebank in a little over 2 secs.
+^
+@https://www.aclweb.org/anthology/U11-1006.pdf
