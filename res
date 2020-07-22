@@ -1347,3 +1347,45 @@ using SMP and SSE parallelism coupled with a cache-sensitive algorithm design,
 parsing section 24 of the Penn WSJ treebank in a little over 2 secs.
 ^
 @https://www.aclweb.org/anthology/U11-1006.pdf
+#topic:parser
+#author:Jenny Rose Finkel
+#author:Alex Kleeman
+#author:Christopher D. Manning
+#language:english
+#medium:paper
+Efficient, Feature-based, Conditional Random Field Parsing
+Discriminative feature-based methods are widely used in natural
+language processing, but sentence parsing is still dominated by generative
+methods. While prior feature-based dynamic programming parsers have restricted
+training and evaluation to artificially short sentences, we present the first
+general, featurerich discriminative parser, based on a conditional random
+field model, which has been successfully scaled to the full WSJ parsing
+data. Our efficiency is primarily due to the use of stochastic optimization
+techniques, as well as parallelization and chart prefiltering.  On WSJ15,
+we attain a state-of-the-art F-score of 90.9%, a 14% relative reduction in
+error over previous models, while being two orders of magnitude faster. On
+sentences of length 40, our system achieves an F-score of 89.0%, a 36%
+relative reduction in error over a generative baseline.
+^
+@https://nlp.stanford.edu/pubs/discpcfg.pdf
+#topic:constraint solving
+#author:Greg J. Badros
+#author:Alan Borning
+#author:Peter J. Stuckey
+#language:english
+#medium:paper
+The Cassowary Linear Arithmetic Constraint Solving Algorithm
+Linear equality and inequality constraints arise naturally in specifying
+many aspects of user interfaces, such as requiring that one window be to
+the left of another, requiring that a pane occupy the leftmost third of
+a window, or preferring that an ob ject be contained within a rectangle
+if possible. Previous constraint solvers designed for user interface
+applications cannot handle simultaneous linear equations and inequalities
+effciently. This is a ma jor limitation, as such systems of constraints
+arise often in natural declarative specifcations. We describe Cassowary,
+an incremental algorithm based on the dual simplex method, which can solve
+such systems of constraints effciently. We have implemented the algorithm
+as part of a constraint solving toolkit. We discuss the implementation of
+the toolkit, its application programming interface, and its performance.
+^
+@https://constraints.cs.washington.edu/solvers/cassowary-tochi.pdf

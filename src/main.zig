@@ -5,6 +5,7 @@ const std = @import("std");
 const Blake3 = std.crypto.Blake3;
 const b64 = std.base64.standard_encoder;
 const fnv = std.hash.Fnv1a_64;
+const TagMap = std.AutoHashMap([]const u8, std.SegmentedList([]const u8, 2));
 
 const TagType = enum { topic, author, medium, license, isbn, doi, language };
 
@@ -223,4 +224,20 @@ test "" {
             return e;
         }) |item| {}
     }
+}
+
+fn html(title: []const u8, desc: []const u8, link: []const u8, out_stream: anytype) void {
+    out_stream.writeAll("<div class=\"resource\">");
+    out_stream.writeAll("  <div class=\"resource-title\">");
+    out_stream.writeAll("</div");
+}
+
+fn markdown(title: []const u8, desc: []const u8, link: []const u8, out_stream: anytype) void {
+    out_stream.writeAll("[");
+    out_stream.writeAll(title);
+    out_stream.writeAll("](");
+    out_stream.writeAll(link);
+    out_stream.writeAll(")\n> ");
+    out_stream.writeAll(desc);
+    out_stream.writeAll("\n");
 }
