@@ -1389,3 +1389,88 @@ as part of a constraint solving toolkit. We discuss the implementation of
 the toolkit, its application programming interface, and its performance.
 ^
 @https://constraints.cs.washington.edu/solvers/cassowary-tochi.pdf
+#topic:constraint solving
+#author:Chen Wei
+#author:Lingxi Xie
+#author:Xutong Ren
+#author:Yingda Xia
+#author:Chi Su
+#author:Jiaying Liu
+#author:Qi Tian
+#author:Alan L. Yuille2
+#language:english
+#medium: paper
+Iterative Reorganization with Weak Spatial Constraints: Solving Arbitrary Jigsaw Puzzles for Unsupervised Representation Learning
+Learning visual features from unlabeled image data is an important yet
+challenging task, which is often achieved by training a model on some
+annotation-free information.  We consider spatial contexts, for which we
+solve so-called jigsaw puzzles, i.e., each image is cut into grids and then
+disordered, and the goal is to recover the correct configuration. Existing
+approaches formulated it as a classification task by defining a fixed mapping
+from a small subset of configurations to a class set, but these approaches
+ignore the underlying relationship between different configurations and also
+limit their applications to more complex scenarios.  This paper presents a
+novel approach which applies to jigsaw puzzles with an arbitrary grid size
+and dimensionality. We provide a fundamental and generalized principle,
+that weaker cues are easier to be learned in an unsupervised manner and also
+transfer better. In the context of puzzle recognition, we use an iterative
+manner which, instead of solving the puzzle all at once, adjusts the order of
+the patches in each step until convergence. In each step, we combine both unary
+and binary features of each patch into a cost function judging the correctness
+of the current configuration. Our approach, by taking similarity between
+puzzles into consideration, enjoys a more efficient way of learning visual
+knowledge. We verify the effectiveness of our approach from two aspects. First,
+it solves arbitrarily complex puzzles, including high-dimensional puzzles,
+that prior methods are difficult to handle. Second, it serves as a reliable
+way of network initialization, which leads to better transfer performance in
+visual recognition tasks including classification, detection and segmentation.
+^
+@https://openaccess.thecvf.com/content_CVPR_2019/papers/Wei_Iterative_Reorganization_With_Weak_Spatial_Constraints_Solving_Arbitrary_Jigsaw_Puzzles_CVPR_2019_paper.pdf
+#topic:constraint solving
+#author:Ingrid Daubechies
+#author:Gerd Teschke
+#author:Luminita Vese
+#language:english
+#medium:paper
+Iteratively Solving Linear Inverse Problems Under General Convex Constraints
+We consider linear inverse problems where the solution is assumed to fulfill
+some general homogeneous convex constraint. We develop an algorithm that
+amounts to a projected Landweber iteration and that provides and iterative
+approach to the solution of this inverse problem. For relatively moderate
+assumptions on the constraint we can always prove weak convergence of the
+iterative scheme. In certain cases, i.e. for special families of convex
+constraints, weak convergence implies norm convergence. The presented approach
+covers a wide range of problems, e.g. Besov– or BV–restoration for which
+we present also numerical experiments in the context of image processing.
+^
+@https://www.math.ucla.edu/~lvese/PAPERS/DaubechiesTeschkeVese.pdf
+#topic:constraint solving
+#author:Sharlee Climer
+#author:Weixiong Zhang
+#language:english
+#medium:paper
+Cut-and-solve: An iterative search strategy for combinatorial optimization problems
+Branch-and-bound and branch-and-cut use search trees to identify optimal
+solutions to combinatorial optimization problems.  In this paper, we introduce
+an iterative search strategy which we refer to as cut-and-solve and prove
+optimality and termination for this method. This search is different from
+traditional tree search as there is no branching. At each node in the search
+path, a relaxed problem and a sparse problem are solved and a constraint
+is added to the relaxed problem. The sparse problems provide incumbent
+solutions. When the constraining of the relaxed problem becomes tight enough,
+its solution value becomes no better than the incumbent solution value. At
+this point, the incumbent solution is declared to be optimal. This strategy is
+easily adapted to be an anytime algorithm as an incumbent solution is found
+at the root node and continuously updated during the search.  Cut-and-solve
+enjoys two favorable properties. Since there is no branching, there are
+no “wrong” subtrees in which the search may get lost. Furthermore, its
+memory requirement is negligible. For these reasons, it has potential for
+problems that are difficult to solve using depth-first or best-first search
+tree methods.  In this paper, we demonstrate the cut-and-solve strategy by
+implementing a generic version of it for the Asymmetric Traveling Salesman
+Problem (ATSP). Our unoptimized implementation outperformed state-of-the-art
+solvers for five out of seven real-world problem classes of the ATSP. For
+four of these classes, cut-and-solve was able to solve larger (sometimes
+substantially larger) problems. Our code is available at our websites.
+^
+@https://www.cse.wustl.edu/~zhang/publications/cutsolve.pdf
