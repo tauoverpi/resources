@@ -1855,3 +1855,484 @@ FUSE that we have developed. Our benchmarks show that FUSE offers adequate
 performance for several kinds of workloads
 ^
 @http://www.csl.sri.com/users/gehani/papers/SAC-2010.FUSE.pdf
+#topic:concurrency
+#author:Matthew Might
+#author:David Van Horn
+#language:english
+#medium:paper
+A family of abstract interpretations for static analysis of concurrent higher-order programs
+We develop a framework for computing two foundational analyses for concurrent
+higher-order programs: (control-)flow analysis (CFA) and may-happen-in-parallel
+analysis (MHP). We pay special attention to the unique challenges posed by the
+unrestricted mixture of first-class continuations and dynamically spawned
+threads. To set the stage, we formulate a concrete model of concurrent
+higher-order programs: the P(CEK*)S machine. We find that the systematic
+abstract interpretation of this machine is capable of computing both flow
+and MHP analyses. Yet, a closer examination finds that the precision for
+MHP is poor. As a remedy, we adapt a shape analytic technique—singleton
+abstraction—to dynamically spawned threads (as opposed to objects in
+the heap). We then show that if MHP analysis is not of interest, we can
+substantially accelerate the computation of flow analysis alone by collapsing
+thread interleavings with a second layer of abstraction.
+^
+@https://www.ccs.neu.edu/home/dvanhorn/pubs/might-vanhorn-sas11.pdf
+#topic:type theory
+#author:Xavier Leroy
+#language:english
+#medium:paper
+Polymorphic typing of an algorithmic language
+The polymorphic type discipline, as in the ML language, fits well within purely
+applicative languages, but does not extend naturally to the main feature of
+algorithmic languages: in-place update of data structures. Similar typing
+diculties arise with other extensions of applicative languages: logical
+variables, communication channels, continuation handling. This work studies
+(in the setting of relational semantics) two new approaches to the polymorphic
+typing of these non-applicative features. The first one relies on a restriction
+of generalization over types (the notion of dangerous variables), and on
+a rened typing of functional values (closure typing). The resulting type
+system is compatible with the ML core language, and is the most expressive
+type systems for ML with imperative features proposed so far. The second
+approach relies on switching to \by-name" semantics for the constructs
+of polymorphism, instead of the usual \by-value" semantics. The resulting
+language diers from ML, but lends itself easily to polymorphic typing. Both
+approaches smoothly integrate non-applicative features and polymorphic typing.
+^
+@https://xavierleroy.org/publi/phd-thesis.pdf
+#topic:markov chains
+#author:Peter Buhlmann
+#author:Abraham J. Wyner
+#language:english
+#medium:paper
+Variable Length Markov Chains
+We study estimation in the class of stationary variable length Markov
+chains VLMC on a finite space Ž . . The processes in this class are still
+Markovian of high order, but with memory of variable length yielding a much
+bigger and structurally richer class of models than ordinary highorder Markov
+chains. From an algorithmic view, the VLMC model class has attracted interest
+in information theory and machine learning, but statistical properties have not
+yet been explored. Provided that good estimation is available, the additional
+structural richness of the model class enhances predictive power by finding a
+better trade-off between model bias and variance and allowing better structural
+description which can be of specific interest. The latter is exemplified with
+some DNA data.  A version of the tree-structured context algorithm, proposed
+by Rissanen in an information theoretical set-up is shown to have new good
+asymptotic properties for estimation in the class of VLMCs. This remains
+true even when the underlying model increases in dimensionality. Furthermore,
+consistent estimation of minimal state spaces and mixing properties of fitted
+models are given.  We also propose a new bootstrap scheme based on fitted
+VLMCs. We show its validity for quite general stationary categorical time
+series and for a broad range of statistical procedures.
+^
+@https://www.stat.berkeley.edu/~binyu/212A/papers/vlmc.pdf
+#topic:type theory
+#language:english
+#medium:notes
+Row polymorphism
+
+^
+@https://www.cl.cam.ac.uk/teaching/1415/L28/rows.pdf
+#topic:prime numbers
+#author:Chris K. Caldwell
+#author:Angela Reddick
+#author:Yeng Xiong
+#language:english
+#medium:paper
+The History of the Primality of One: A Selection of Sources
+The way mathematicians have viewed the number one (unity, the monad) has
+changed throughout the years. Most of the early Greeks did not view one as a
+number, but rather as the origin, or generator, of number. Around the time
+of Simon Stevin (1548–1620), one (and zero) were first widely viewed as
+numbers. This created a period of confusion about whether or not the number
+one was prime. In this dynamic survey, we collect a cornucopia of sources
+which deal directly with the question “what is the smallest prime?” The
+goal is to create a source book for studying the history of the definition
+of prime, especially as applied to the number one.
+^
+@https://cs.uwaterloo.ca/journals/JIS/VOL15/Caldwell2/cald6.pdf
+#topic:distributed systems
+#topic:ponylang
+#author:Sebastian Blessing
+#language:english
+#medium:paper
+A String of Ponies - Transparent Distributed Programming with Actors
+We develop an extension to a concurrent, actor-based language runtime
+called Pony with the ability of transparent distributed programming, whereby
+programmers do not need to be aware of the underlying distributed system. Thus,
+any Pony application can be executed in a concurrent setting as well as
+in a distributed setting without any changes to the code being necessary.
+A distributed cluster of Ponies, managed based on a tree network topology,
+is easy to maintain and can be extended with slave nodes at runtime without
+any reconfiguration being necessary. We propose a joining algorithm which
+guarantees that the underlying tree topology is almost balanced at any point
+in time.  Distribution is reflected through actor mobility. We develop
+a hierarchical work stealing algorithm with constant space complexity,
+specifically tailored for tree network topologies. Work stealing is provably
+optimal for task and data parallelism. Furthermore, the implementation of the
+proposed distributed work stealing algorithm is itself based on the actor
+programming model, which allowed us to extend Pony without sacrificing the
+performance of single-node configurations.  Causal message delivery is a
+valuable property for message-passing systems, contributing to efficiency
+and improved reasonability. Pony guarantees causality for both the concurrent
+and distributed setting without any additional software overhead.  A property
+unique to Pony is fully concurrent garbage collection of actors. We present
+an extended algorithm for concurrent garbage collection (including cycle
+detection) in distributed actor-based applications. Concurrent Pony programs
+are terminated based on quiescence. In order to retain that property in
+a distributed context, we propose a protocol for detecting quiescence in
+distributed actor systems. Both schemes strongly depend on causal message
+delivery.  We evaluate our implementation based on a micro benchmark that
+allows us to simulate different application characteristics. Pony achieves
+considerable speed-up for computation-bound scenarios.
+^
+@https://www.ponylang.io/media/papers/a_string_of_ponies.pdf
+#topic:coq
+#author:Robbert Krebbers
+#author:Ralf Jung
+#author:Aleˇs Bizjak
+#author:Jacques-Henri Jourdan
+#author:Derek Dreyer
+#author:Lars Birkedal
+#language:english
+#medium:paper
+The Essence of Higher-Order Concurrent Separation Logic
+Concurrent separation logics (CSLs) have come of age, and with age
+they have accumulated a great deal of complexity. Previous work on the
+Iris logic attempted to reduce the complex logical mechanisms of modern
+CSLs to two orthogonal concepts: partial commutative monoids (PCMs) and
+invariants. However, the realization of these concepts in Iris still bakes in
+several complex mechanisms—such as weakest preconditions and mask-changing
+view shifts—as primitive notions.  In this paper, we take the Iris story to
+its (so to speak) logical conclusion, applying the reductionist methodology
+of Iris to Iris itself. Specifically, we define a small, resourceful base
+logic, which distills the essence of Iris: it comprises only the assertion
+layer of vanilla separation logic, plus a handful of simple modalities. We
+then show how the much fancier logical mechanisms of Iris—in particular,
+its entire program specification layer—can be understood as merely derived
+forms in our base logic. This approach helps to explain the meaning of
+Iris’s program specifications at a much higher level of abstraction than
+was previously possible. We also show that the step-indexed “later”
+modality of Iris is an essential source of complexity, in that removing it
+leads to a logical inconsistency.  All our results are fully formalized in
+the Coq proof assistant.
+^
+@https://iris-project.org/pdfs/2017-esop-iris3-final.pdf
+#topic:process calculi
+#topic:concurrency theory
+#author:Jorge A. P´erez P.
+#language:english
+#medium:paper
+Higher-Order Concurrency: Expressiveness and Decidability Results
+Higher-order process calculi are formalisms for concurrency in which processes
+can be passed around in communications. Higher-order (or process-passing)
+concurrency is often presented as an alternative paradigm to the first order
+(or name-passing) concurrency of the π-calculus for the description of mobile
+systems. These calculi are inspired by, and formally close to, the λ-calculus,
+whose basic computational step β-reduction involves term instantiation.
+The theory of higher-order process calculi is more complex than that of
+first-order process calculi. This shows up in, for instance, the definition
+of behavioral equivalences. A longstanding approach to overcome this burden
+is to define encodings of higher-order processes into a first-order setting,
+so as to transfer the theory of the first-order paradigm to the higherorder
+one. While satisfactory in the case of calculi with basic (higher-order)
+primitives, this indirect approach falls short in the case of higher-order
+process calculi featuring constructs for phenomena such as, e.g., localities
+and dynamic system reconfiguration, which are frequent in modern distributed
+systems. Indeed, for higher-order process calculi involving little more than
+traditional process communication, encodings into some first-order language
+are difficult to handle or do not exist. We then observe that foundational
+studies for higher-order process calculi must be carried out directly on
+them and exploit their peculiarities.  This dissertation contributes to
+such foundational studies for higher-order process calculi.  We concentrate
+on two closely interwoven issues in process calculi: expressiveness and
+decidability. Surprisingly, these issues have been little explored in the
+higher-order setting. Our research is centered around a core calculus for
+higher-order concurrency in which only the operators strictly necessary to
+obtain higher-order communication are retained. We develop the basic theory
+of this core calculus and rely on it to study the expressive power of issues
+universally accepted as basic in process calculi, namely synchrony, forwarding,
+and polyadic communication.
+^
+@https://core.ac.uk/download/pdf/11012451.pdf
+#topic:markov chains
+#author:Hengrun Zhang
+#author:Kai Zeng
+#language:english
+#medium:paper
+Pairwise Markov Chain: A Task Scheduling Strategy for Privacy-Preserving SIFT on Edge
+In this paper, we propose a task scheduling strategy, which can achieve
+image feature extraction on edge while ensuring privacy. Our task scheduling
+strategy applies to a fairly popular privacy-preserving Scale-Invariant
+Feature Transform (SIFT) scheme, where images to be processed are firstly
+randomly split into two portions for encryption and transmitted to two
+different edge nodes for feature extraction. Then, in the edge, our task
+scheduling strategy will re-assign these two portions to proper edge nodes
+for processing. During the whole process, two portions of the same image
+should not be assigned to the same edge node in order to preserve privacy. We
+show that this privacy constraint can be enforced through constructing a
+pairwise Markov chain, and carefully designing system states and transition
+probabilities. We further formulate the whole task scheduling problem as a
+stochastic latency minimization problem and solve it by converting it into a
+linear programming problem.  Simulation results show that our proposed task
+scheduling strategy can achieve lower latency than baseline strategies while
+satisfying the privacy constraint.
+^
+@mason.gmu.edu/~hzhang18/publications/Conf_Paper_2.pdf
+#topic:neural network
+#author:G. E. Hinton
+#author:T. J. Sejnowski
+#language:english
+#medium:book
+Learning and Relearning in Boltzmann Machines
+
+^
+@http://www.cs.toronto.edu/~hinton/absps/pdp7.pdf
+#topic:protocol
+#author:Kee Jefferys
+#author:Maxim Shishmarev
+#author:Simon Harman
+#language:english
+#medium:paper
+Session: A Model for End-To-End Encrypted Conversations With Minimal Metadata Leakage
+Session is an open-source, public-key-based secure messaging application
+which uses a set of decentralised storage servers and an onion routing
+protocol to send end-to-end encrypted messages with minimal exposure of user
+metadata. It does this while also providing common features of mainstream
+messaging applications.
+^
+@https://getsession.org/wp-content/uploads/2020/02/Session-Whitepaper.pdf
+#topic:markov chains
+#author:Yee Whye Teh
+#language:english
+#medium:presentation
+Markov Chains and Markov Chain Monte Carlo
+
+^
+@https://www.stats.ox.ac.uk/~teh/teaching/dtc2014/Markov4.pdf
+#topic:quantum computing
+#topic:security
+#author:Daniel Harlow
+#author:Patrick Hayden
+#language:english
+#medium:paper
+Quantum Computation vs. Firewalls
+In this paper we discuss quantum computational restrictions on the types
+of thought experiments recently used by Almheiri, Marolf, Polchinski, and
+Sully to argue against the smoothness of black hole horizons. We argue that
+the quantum computations required to do these experiments would take a time
+which is exponential in the entropy of the black hole under study, and we
+show that for a wide variety of black holes this prevents the experiments
+from being done. We interpret our results as motivating a broader type of
+nonlocality than is usually considered in the context of black hole thought
+experiments, and claim that once this type of nonlocality is allowed there
+may be no need for firewalls. Our results do not threaten the unitarity of
+of black hole evaporation or the ability of advanced civilizations to test it.
+^
+@https://arxiv.org/pdf/1301.4504v4.pdf
+#topic:computational complexity
+#author:Leonard Susskind
+#language:english
+#medium:paper
+Computational Complexity and Black Hole Horizons
+Computational complexity is essential to understanding the properties of black
+hole horizons. The problem of Alice creating a firewall behind the horizon
+of Bob’s black hole is a problem of computational complexity. In general we
+find that while creating firewalls is possible, it is extremely difficult and
+probably impossible for black holes that form in sudden collapse, and then
+evaporate. On the other hand if the radiation is bottled up then after an
+exponentially long period of time firewalls may be common.  It is possible
+that gravity will provide tools to study problems of complexity; especially
+the range of complexity between scrambling and exponential complexity.
+^
+@https://arxiv.org/pdf/1402.5674.pdf
+#topic:cryptography
+#author:Marc Kaplan
+#author:Ga¨etan Leurent
+#author:Anthony Leverrier
+#author:Mar´ıa Naya-Plasencia
+Breaking Symmetric Cryptosystems using Quantum Period Finding
+Due to Shor’s algorithm, quantum computers are a severe threat for
+public key cryptography. This motivated the cryptographic community to
+search for quantum-safe solutions. On the other hand, the impact of quantum
+computing on secret key cryptography is much less understood. In this paper,
+we consider attacks where an adversary can query an oracle implementing a
+cryptographic primitive in a quantum superposition of different states. This
+model gives a lot of power to the adversary, but recent results show that
+it is nonetheless possible to build secure cryptosystems in it.  We study
+applications of a quantum procedure called Simon’s algorithm (the simplest
+quantum period finding algorithm) in order to attack symmetric cryptosystems
+in this model. Following previous works in this direction, we show that
+several classical attacks based on finding collisions can be dramatically
+sped up using Simon’s algorithm: finding a collision requires Ω(2n/2 )
+queries in the classical setting, but when collisions happen with some hidden
+periodicity, they can be found with only O(n) queries in the quantum model.
+We obtain attacks with very strong implications. First, we show that the most
+widely used modes of operation for authentication and authenticated encryption
+(e.g. CBC-MAC, PMAC, GMAC, GCM, and OCB) are completely broken in this security
+model. Our attacks are also applicable to many CAESAR candidates: CLOC, AEZ,
+COPA, OTR, POET, OMD, and Minalpher. This is quite surprising compared to the
+situation with encryption modes: Anand et al. show that standard modes are
+secure with a quantum-secure PRF.  Second, we show that Simon’s algorithm
+can also be applied to slide attacks, leading to an exponential speed-up of
+a classical symmetric cryptanalysis technique in the quantum model.
+^
+@https://arxiv.org/pdf/1602.05973.pdf
+#topic:security
+#author:Saad Islam
+#author:Ahmad Moghimi
+#author:Ida Bruhns
+#author:Moritz Krebbel
+#author:Berk Gulmezoglu
+#author:Thomas Eisenbarth
+#author:Berk Sunar
+#language:english
+#medium:paper
+SPOILER: Speculative Load Hazards Boost Rowhammer and Cache Attacks
+Modern microarchitectures incorporate optimization techniques such as
+speculative loads and store forwarding to improve the memory bottleneck. The
+processor executes the load speculatively before the stores, and forwards the
+data of a preceding store to the load if there is a potential dependency. This
+enhances performance since the load does not have to wait for preceding
+stores to complete. However, the dependency prediction relies on partial
+address information, which may lead to false dependencies and stall hazards.
+In this work, we are the first to show that the dependency resolution logic
+that serves the speculative load can be exploited to gain information about
+the physical page mappings.  Microarchitectural side-channel attacks such as
+Rowhammer and cache attacks like Prime+Probe rely on the reverse engineering
+of the virtual-to-physical address mapping. We propose the SPOILER attack
+which exploits this leakage to speed up this reverse engineering by a factor
+of 256. Then, we show how this can improve the Prime+Probe attack by a 4096
+factor speed up of the eviction set search, even from sandboxed environments
+like JavaScript. Finally, we improve the Rowhammer attack by showing how
+SPOILER helps to conduct DRAM row conflicts deterministically with up to
+100% chance, and by demonstrating a double-sided Rowhammer attack with
+normal user’s privilege. The later is due to the possibility of detecting
+contiguous memory pages using the SPOILER leakage.
+^
+@https://arxiv.org/pdf/1903.00446.pdf
+#topic:constraint solving
+#author:Noreen Jamil
+#language:english
+#medium:paper
+Constraint Solvers for User Interface Layout
+Constraints have played an important role in the construction of GUIs , where
+they are mainly used to define the layout of the widgets. Resizing behavior is
+very important in GUIs because areas have domain specific parameters such as
+form the resizing of windows. If linear objective function is used and window
+is resized then error is not distributed equally. To distribute the error
+equally, a quadratic objective function is introduced. Different algorithms
+are widely used for solving linear constraints and quadratic problems in
+a variety of different scientific areas. The linear relxation, Kaczmarz,
+direct and linear programming methods are common methods for solving linear
+constraints for GUI layout. The interior point and active set methods are
+most commonly used techniques to solve quadratic programming problems. Current
+constraint solvers designed for GUI layout do not use interior point methods
+for solving a quadratic objective function subject to linear equality and
+inequality constraints. In this paper, performance aspects and the convergence
+speed of interior point and active set methods are compared along with one
+most commonly used linear programming method when they are implemented for
+graphical user interface layout. The performance and convergence of the
+proposed algorithms are evaluated empirically using randomly generated UI
+layout specifications of various sizes. The results show that the interior
+point algorithms perform significantly better than the Simplex method and
+QOCA-solver, which uses the active set method implementation for solving
+quadratic optimization.
+^
+@https://arxiv.org/pdf/1401.1031.pdf
+#topic:literate programming
+#author:Don Knuth
+#author:Doug McIlroy
+#language:english
+#medium:paper
+programming pearls - A Literate Program
+
+^
+@https://www.cs.tufts.edu/~nr/cs257/archive/don-knuth/pearls-2.pdf
+#topic:finger tree
+#author:Ralf Hinze
+#author:Ross Paterson
+#language:english
+#medium:paper
+Finger trees: a simple general-purpose data structure
+We introduce 2-3 finger trees, a functional representation of persistent
+sequences supporting access to the ends in amortized constant time, and
+concatenation and splitting in time logarithmic in the size of the smaller
+piece. Representations achieving these bounds have appeared previously, but
+2-3 finger trees are much simpler, as are the operations on them.  Further,
+by defining the split operation in a general form, we obtain a general purpose
+data structure that can serve as a sequence, priority queue, search tree,
+priority search queue and more.
+^
+@http://www.staff.city.ac.uk/~ross/papers/FingerTree.pdf
+#topic:security
+#author:Robert J. Colvin
+#author:Kirsten Winter
+#language:english
+#medium:paper
+An abstract semantics of speculative execution for reasoning about security vulnerabilities
+Reasoning about correctness and security of software is increasingly
+difficult due to the complexity of modern microarchitectural features
+such as out-of-order execution. A class of security vulnerabilities termed
+Spectre that exploits side effects of speculative, out-of-order execution
+was announced in 2018 and has since drawn much attention.  In this paper we
+formalise speculative execution and its side effects with the intention of
+allowing speculation to be reasoned about abstractly at the program level,
+limiting the exposure to processor-specific or lowlevel semantics. To this
+end we encode and expose speculative execution explicitly in the programming
+language, rather than solely in the operational semantics; as a result the
+effects of speculative execution are captured by redefining the meaning of a
+conditional statement, and introducing novel language constructs that model
+transient execution of an alternative branch. We add an abstract cache to
+the global state of the system, and derive some general refinement rules that
+expose cache side effects due to speculative loads. Underlying this extension
+is a semantic model that is based on instruction-level parallelism. The
+rules are encoded in a simulation tool, which we use to analyse an abstract
+specification of a Spectre attack and vulnerable code fragments.
+^
+@https://arxiv.org/pdf/2004.00577.pdf
+#topic:smart contracts
+#topic:security
+#author:Michael Coblenz
+#author:Jonathan Aldrich
+#author:Joshua Sunshine
+#author:Brad A. Myers
+#language:english
+#medium:paper
+An Empirical Study of Ownership, Typestate, and Assets in the Obsidian Smart Contract Language
+Some blockchain programs (smart contracts) have included serious security
+vulnerabilities. Obsidian is a new typestate-oriented programming language that
+uses a strong type system to rule out some of these vulnerabilities. Although
+Obsidian was designed to promote usability to make it as easy as possible
+to write programs, strong type systems can cause a language to be difficult
+to use. In particular, ownership, typestate, and assets, which Obsidian
+uses to provide safety guarantees, have not seen broad adoption in popular
+languages and result in significant usability challenges. We performed an
+empirical study with 20 participants comparing Obsidian to Solidity, which
+is the language most commonly used for writing smart contracts today. We
+observed that most of the Obsidian participants were able to successfully
+complete most of the programming tasks we gave them. We also found that
+asset-related bugs, which Obsidian detects at compile time, were commonly
+accidentally inserted by the Solidity participants. We identified potential
+opportunities to improve the usability of typestate as well as to apply the
+usability benefits of Obsidian’s ownership system to other languages
+^
+@https://arxiv.org/pdf/2003.12209.pdf
+#topic:ray tracing
+#topic:graphics
+#topic:parallel computation
+#topic:gpu
+#author:Morgan McGuire
+#author:Michael Mara
+#author:Williams College
+#language:english
+#medium:paper
+Efficient GPU Screen-Space Ray Tracing
+We present an efficient GPU solution for screen-space 3D ray tracing against
+a depth buffer by adapting the perspective-correct DDA line rasterization
+algorithm. Compared to linear ray marching, this ensures sampling at a
+contiguous set of pixels and no oversampling. This paper provides for the first
+time full implementation details of a method that has been proven in production
+of recent major game titles. After explaining the optimizations, we then
+extend the method to support multiple depth layers for robustness. We include
+GLSL code and examples of pixel-shader ray tracing for several applications.
+^
+@http://jcgt.org/published/0003/04/04/paper.pdf
