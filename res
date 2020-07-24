@@ -2149,6 +2149,8 @@ the range of complexity between scrambling and exponential complexity.
 #author:Ga¨etan Leurent
 #author:Anthony Leverrier
 #author:Mar´ıa Naya-Plasencia
+#language:english
+#medium:paper
 Breaking Symmetric Cryptosystems using Quantum Period Finding
 Due to Shor’s algorithm, quantum computers are a severe threat for
 public key cryptography. This motivated the cryptographic community to
@@ -2336,3 +2338,50 @@ extend the method to support multiple depth layers for robustness. We include
 GLSL code and examples of pixel-shader ray tracing for several applications.
 ^
 @http://jcgt.org/published/0003/04/04/paper.pdf
+#topic:philosophy
+#author:Scott Aaronson
+#language:english
+#medium:paper
+The Ghost in the Quantum Turing Machine
+In honor of Alan Turing’s hundredth birthday, I unwisely set out some
+thoughts about one of Turing’s obsessions throughout his life, the question
+of physics and free will. I focus relatively narrowly on a notion that
+I call “Knightian freedom”: a certain kind of in-principle physical
+unpredictability that goes beyond probabilistic unpredictability. Other,
+more metaphysical aspects of free will I regard as possibly outside the
+scope of science.  I examine a viewpoint, suggested independently by Carl
+Hoefer, Cristi Stoica, and even Turing himself, that tries to find scope for
+“freedom” in the universe’s boundary conditions rather than in the
+dynamical laws. Taking this viewpoint seriously leads to many interesting
+conceptual problems. I investigate how far one can go toward solving those
+problems, and along the way, encounter (among other things) the No-Cloning
+Theorem, the measurement problem, decoherence, chaos, the arrow of time, the
+holographic principle, Newcomb’s paradox, Boltzmann brains, algorithmic
+information theory, and the Common Prior Assumption. I also compare the
+viewpoint explored here to the more radical speculations of Roger Penrose.
+The result of all this is an unusual perspective on time, quantum mechanics,
+and causation, of which I myself remain skeptical, but which has several
+appealing features. Among other things, it suggests interesting empirical
+questions in neuroscience, physics, and cosmology; and takes a millennia-old
+philosophical debate into some underexplored territory
+^
+@https://www.scottaaronson.com/papers/giqtm3.pdf
+#topic:philosophy
+#author:Nick Bostrom
+#language:english
+#medium:paper
+The Superintelligent Will: Motivation And Instrumental Rationality In Advanced Artificial Agents
+This paper discusses the relation between intelligence and motivation in
+artificial agents, developing and briefly arguing for two theses. The first,
+the orthogonality thesis, holds (with some caveats) that intelligence and
+final goals (purposes) are orthogonal axes along which possible artificial
+intellects can freely vary—more or less any level of intelligence could
+be combined with more or less any final goal. The second, the instrumental
+convergence thesis, holds that as long as they possess a sufficient level of
+intelligence, agents having any of a wide range of final goals will pursue
+similar intermediary goals because they have instrumental reasons to do
+so. In combination, the two theses help us understand the possible range
+of behavior of superintelligent agents, and they point to some potential
+dangers in building such an agent.
+^
+@https://www.nickbostrom.com/superintelligentwill.pdf
