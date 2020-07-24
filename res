@@ -1187,7 +1187,7 @@ Internet File Formats 1995
 #author:Arif Merchant
 #author:Mehul Shah
 #author:Alistair Veitch
-#author:Christos Karamanolis†
+#author:Christos Karamanolis
 #medium:paper
 #language:english
 Sinfonia: a new paradigm for building scalable distributed systems
@@ -1209,7 +1209,7 @@ perform well and scale to hundreds of machines.
 #author:Gene Pang
 #author:Michael J. Franklin
 #author:Samuel Madden
-#author:Alan Fekete†
+#author:Alan Fekete
 #medium:paper
 #language:english
 MDCC: Multi-Data Center Consistency
@@ -1474,3 +1474,384 @@ four of these classes, cut-and-solve was able to solve larger (sometimes
 substantially larger) problems. Our code is available at our websites.
 ^
 @https://www.cse.wustl.edu/~zhang/publications/cutsolve.pdf
+#topic:game artificial intelligence
+#topic:F.E.A.R
+#author:Jeff Orkin
+#language:english
+#medium:paper
+Three States and a Plan: The A.I. of F.E.A.R.
+If the audience of GDC was polled to list the most common A.I. techniques
+applied to games, undoubtedly the top two answers would be A* and Finite State
+Machines (FSMs). Nearly every game that exhibits any A.I. at all uses some form
+of an FSM to control character behavior, and A* to plan paths. F.E.A.R. uses
+these techniques too, but in unconventional ways. The FSM for characters in
+F.E.A.R. has only three states, and we use A* to plan sequences of actions as
+well as to plan paths. This paper focuses on applying planning in practice,
+using F.E.A.R. as a case study. The emphasis is demonstrating how the planning
+system improved the process of developing character behaviors for F.E.A.R.
+We wanted F.E.A.R. to be an over-the-top action movie experience, with combat
+as intense as multiplayer against a team of experienced humans. A.I. take
+cover, blind fire, dive through windows, flush out the player with grenades,
+communicate with teammates, and more. So it seems counter-intuitive that
+our state machine would have only three states.
+^
+@http://alumni.media.mit.edu/~jorkin/gdc2006_orkin_jeff_fear.pdf
+#topic:logic programming
+#topic:logic plannig
+#author:Thomas Eiter
+#author:Wolfgang Faber
+#author:Nicola Leone
+#author:Gerald Pfeifer
+#author:Axel Polleres
+#language:english
+#medium:paper
+A logic programming approach to knowledge-state planning, II: The DLVK system ✩
+In Part I of this series of papers, we have proposed a new logic-based
+planning language, called K. This language facilitates the description of
+transitions between states of knowledge and it is well suited for planning
+under incomplete knowledge. Nonetheless, K also supports the representation of
+transitions between states of the world (i.e., states of complete knowledge)
+as a special case, proving to be very flexible. In the present Part II, we
+describe the DLVK planning system, which implements K on top of the disjunctive
+logic programming system DLV. This novel planning system allows for solving
+hard planning problems, including secure planning under incomplete initial
+states (often called conformant planning in the literature), which cannot
+be solved at all by other logic-based planning systems such as traditional
+satisfiability planners. We present a detailed comparison of the DLVK system
+to several state-of-the-art conformant planning systems, both at the level
+of system features and on benchmark problems. Our results indicate that,
+thanks to the power of knowledge-state problem encoding, the DLVK system is
+competitive even with special purpose conformant planning systems, and it often
+supplies a more natural and simple representation of the planning problems.
+^
+@https://core.ac.uk/download/pdf/82567995.pdf
+#topic:logic programming
+#topic:logic planning
+#author:Tran Cao Son
+#author:Enrico Pontelli
+#language:english
+#medium:paper
+Planning with Preferences using Logic Programming
+We present a declarative language, PP, for the high-level specification
+of preferences between possible solutions (or trajectories) of a planning
+problem. This novel language allows users to elegantly express non-trivial,
+multi-dimensional preferences and priorities over such preferences. The
+semantics of PP allows the identification of most preferred trajectories
+for a given goal. We also provide an answer set programming implementation
+of planning problems with PP preferences.
+^
+@https://www.cs.nmsu.edu/~tson/papers/tplp-plan-prefs.pdf
+#topic:prolog
+#author:Ulle Endriss
+#language:english
+#medium:book
+An Introduction to Prolog Programming
+
+^
+@https://staff.science.uva.nl/u.endriss/teaching/prolog/prolog.pdf
+#topic:package management
+#topic:transactional memory
+#author:Eelco Dolstra
+#author:Merijn de Jonge
+#author:Eelco Visser
+#language:english
+#medium:paper
+Nix: A Safe and Policy-Free System for Software Deployment
+Existing systems for software deployment are neither safe nor sufficiently
+flexible. Primary safety issues are the inability to enforce reliable
+specification of component dependencies, and the lack of support for multiple
+versions or variants of a component. This renders deployment operations
+such as upgrading or deleting components dangerous and unpredictable. A
+deployment system must also be flexible (i.e., policy-free) enough to support
+both centralised and local package management, and to allow a variety
+of mechanisms for transferring components. In this paper we present Nix,
+a deployment system that addresses these issues through a simple technique
+of using cryptographic hashes to compute unique paths for component instances.
+^
+@https://edolstra.github.io/pubs/nspfssd-lisa2004-final.pdf
+#topic:subtyping
+#topic:type theory
+#topic:type inference
+#author:Lionel Parreaux
+#language:english
+#medium:paper
+The Simple Essence of Algebraic Subtyping: Principal Type Inference with Subtyping Made Easy
+MLsub extends traditional Hindley-Milner type inference with subtyping while
+preserving compact principal types, an exciting new development. However,
+its specification in terms of biunification is difficult to understand,
+relying on the new concepts of bisubstitution and polar types, and making
+use of advanced notions from abstract algebra. In this paper, we show that
+these are in fact not essential to understanding the mechanisms at play
+in MLsub. We propose an alternative algorithm called Simple-sub, which can
+be implemented efficiently in under 500 lines of code (including parsing,
+simplification, and pretty-printing), looks more familiar, and is easier
+to understand. We present an experimental evaluation of Simple-sub against
+MLsub on a million randomly-generated well-scoped expressions, showing that
+the two systems agree. The mutable automaton-based implementation of MLsub
+is quite far from its algebraic specification, leaving a lot of space for
+errors; in fact, our evaluation uncovered several bugs in it. We sketch more
+straightforward soundness and completeness arguments for Simple-sub, based
+on a syntactic specification of the type system. This paper is meant to be
+light in formalism, rich in insights, and easy to consume for prospective
+designers of new type systems and programming languages. In particular,
+no abstract algebra is inflicted on readers.
+^
+@https://infoscience.epfl.ch/record/278576/files/%5Bv1.8%5D%20simple-essence-algebraic-subtyping.pdf
+#topic:proof carrying code
+#author:Manish Mahajan
+#language:english
+#medium:paper
+Proof Carrying Code
+Proof-Carrying Code (PCC) is a technique that can be used for safe execution
+of untrusted code. In a typical instance of PCC, a code receiver establishes
+a set of safety rules that guarantee safe behavior of programs, and the code
+producer creates a formal safety proof that proves, for the untrusted code,
+adherence to the safety rules. Then, the receiver is able to use a simple
+and fast proof validator to check, with certainty that the proof is valid
+and hence the untrusted code is safe to execute.
+^
+@https://www.researchgate.net/profile/Manish_Mahajan/publication/235940398_Proof_Carrying_Code/links/0c960515cf2dd5f654000000/Proof-Carrying-Code.pdf
+#topic:delta updates
+#topic:edit distance
+#author:Colin Percival
+#language:english
+#medium:paper
+Na¨ıve Differences of Executable Code
+The increasing frequency with which serious security flaws are discovered
+and the increasing rapidity with which they are exploited have made it
+necessary for programs to be updated far more frequently than in the past.
+While binary updates are generally far more convenient than source code
+updates, the distribution of pointers throughout executable files makes it
+much harder to produce compact patches.  In contrast to earlier work which
+relies upon knowledge of the internal structure of a particular platform’s
+executable files, we describe a na¨ıve method which produces competitively
+small patches for any executable files.
+^
+@http://www.daemonology.net/papers/bsdiff.pdf
+#topic:neural network
+#author:Felix Gers
+#author:Jurgen Schmidhuber
+#language:english
+#medium:paper
+Recurrent nets that time and count
+The size of the time intervals between events conveys information essential
+for numerous sequential tasks such as motor control and rhythm detection. While
+hidden Markov models tend to ignore this information, recurrent neural networks
+(RNN) can in principle learn to make use of it. We focus on long short-term
+memory (LSTM) because it usually outperforms other RNN. Surprisingly,
+LSTM augmented by “peephole connections” from its internal cells to
+its multiplicative gates can learn the fine distinction between sequences
+of spikes separated by either 50 or 49 discrete time steps, without the
+help of any short training exemplars. Without external resets or teacher
+forcing or loss of performance on tasks reported earlier, our LSTM variant
+also learns to generate very stable sequences of highly nonlinear, precisely
+timed spikes. This makes LSTM a promising approach for real-world tasks that
+require to time and count
+^
+@ftp://ftp.idsia.ch/pub/juergen/TimeCount-IJCNN2000.pdf
+#topic:coq
+#topic:cryptography
+#author:Andres Erbsen
+#author:Jade Philipoom
+#author:Jason Gross
+#author:Robert Sloan
+#author:Adam Chlipala
+#language:english
+#medium:paper
+Simple High-Level Code For Cryptographic Arithmetic – With Proofs, Without Compromises
+We introduce a new approach for implementing cryptographic arithmetic
+in short high-level code with machinechecked proofs of functional
+correctness. We further demonstrate that simple partial evaluation is
+sufficient to transform such initial code into the fastest-known C code,
+breaking the decadesold pattern that the only fast implementations are those
+whose instruction-level steps were written out by hand.  These techniques
+were used to build an elliptic-curve library that achieves competitive
+performance for 80 prime fields and multiple CPU architectures, showing
+that implementation and proof effort scales with the number and complexity
+of conceptually different algorithms, not their use cases. As one outcome,
+we present the first verified high-performance implementation of P-256,
+the most widely used elliptic curve. Implementations from our library were
+included in BoringSSL to replace existing specialized code, for inclusion
+in several large deployments for Chrome, Android, and CloudFlare.
+^
+@http://adam.chlipala.net/papers/FiatCryptoSP19/FiatCryptoSP19.pdf
+#topic:interval arithmetic
+#author:T. Hickey, Q. Ju
+#author:M.H. van Emden
+#language:english
+#medium:paper
+Interval Arithmetic: from Principles to Implementation
+We start with a mathematical definition of a real interval as a closed,
+connected set of reals. Interval arithmetic operations (addition, subtraction,
+multiplication and division) are likewise defined mathematically and we provide
+algorithms for computing these operations assuming exact real arithmetic. Next,
+we define interval arithmetic operations on intervals with IEEE 754 floating
+point endpoints to be sound and optimal approximations of the real interval
+operations and we show that the IEEE standard’s specification of operations
+involving the signed infinities, signed zeros, and the exact/inexact flag are
+such as to make a correct and optimal implementation more efficient. From
+the resulting theorems we derive data that are sufficiently detailed to
+convert directly to a program for efficiently implementing the interval
+operations. Finally we extend these results to the case of general intervals,
+which are defined as connected sets of reals that are not necessarily closed.
+^
+@https://fab.cba.mit.edu/classes/S62.12/docs/Hickey_interval.pdf
+#topic:neural network
+#author:Vincent Dumoulin
+#author:Francesco Visin
+#language:english
+#medium:paper
+A guide to convolution arithmetic for deep learning
+
+^
+@https://arxiv.org/pdf/1603.07285.pdf
+#topic:neural network
+#author:David A. Medler
+#author:Michael R. W. Dawson
+#language:english
+#medium:paper
+Using Redundancy to Improve the Performance of Artificial Neural Networks
+For Artificial Neural Networks (ANNs) to be effective modelling tools, they
+must draw upon biological characteristics: One characteristic often overlooked
+in the design of ANNs is the replication, or redundancy, of processes within
+the brain. This paper examines the effects of redundancy on the performance of
+ANNs trained on either a pattern classification task (e.g. parity, encoder)
+or a function approximation task (e.g. forward kinematics). Results suggest
+that there is an optimal level of redundancy that increases the likelihood
+of network convergence while decreasing overall network processing time. ANNs
+with this level of redundancy consistently perform better than standard ANNs
+on pattern classification tasks.  Furthermore, redundant ANNs trained on the
+function approximation task are more accurate in terms of overall system error
+than standard ANNs. These results imply that redundancy may be effectively
+used to increase the performance of ANNs, both in accuracy and speed.
+^
+@https://web.uvic.ca/~dmedler/files/ai94.pdf
+#topic:data structure
+#author:Charles Crowley
+#language:english
+#medium:paper
+Data Structures for Text Sequences
+The data structure used ot maintain the sequence of characters is an
+important part of a text editor. This paper investigates and evaluates the
+range of possible data structures for text sequences. The ADT interface
+to the text sequence component of a text editor is examined.  Six common
+sequence data structures (array, gap, list, line pointers, xed size bu
+ers and piece tables) are examined and then a general model of sequence
+data structures that encompasses all six structures is presented. The piece
+table method is explained in detail and its advantages are presented. The
+design space of sequence data structures is examined and several variations
+on the ones listed above are presented. These sequence data structures are
+compared experimentally and evaluated based on a number of criteria. The
+experimental comparison is done by implementing each data structure in an
+editing simulator and testing it using a synthetic load of many thousands
+of edits. We also report on experiments on the senstivity of the results to
+variations in the parameters used to generate the synthetic editing load.
+^
+@https://www.cs.unm.edu/~crowley/papers/sds.pdf
+#topic:neural network
+#topic:reinforcement learning
+#author:Pieter Abbeel
+#author:Adam Coates
+#author:Morgan Quigley
+#author:Andrew Y. Ng
+#language:english
+#medium:paper
+An Application of Reinforcement Learning to Aerobatic Helicopter Flight
+Autonomous helicopter flight is widely regarded to be a highly challenging
+control problem. This paper presents the first successful autonomous completion
+on a real RC helicopter of the following four aerobatic maneuvers: forward
+flip and sideways roll at low speed, tail-in funnel, and nose-in funnel. Our
+experimental results significantly extend the state of the art in autonomous
+helicopter flight.  We used the following approach: First we had a pilot
+fly the helicopter to help us find a helicopter dynamics model and a reward
+(cost) function. Then we used a reinforcement learning (optimal control)
+algorithm to find a controller that is optimized for the resulting model and
+reward function. More specifically, we used differential dynamic programming
+(DDP), an extension of the linear quadratic regulator (LQR).
+^
+@https://papers.nips.cc/paper/3151-an-application-of-reinforcement-learning-to-aerobatic-helicopter-flight.pdf
+#topic:neural network
+#author:Zelda Mariet
+#author:Suvrit Sra
+#language:english
+#medium:paper
+Diversity Networks: Neural Network Compression Using Determinantal Point Processes
+We introduce Divnet, a flexible technique for learning networks with diverse
+neurons. Divnet models neuronal diversity by placing a Determinantal Point
+Process (DPP) over neurons in a given layer. It uses this DPP to select a
+subset of diverse neurons and subsequently fuses the redundant neurons into
+the selected ones. Compared with previous approaches, Divnet offers a more
+principled, flexible technique for capturing neuronal diversity and thus
+implicitly enforcing regularization. This enables effective auto-tuning of
+network architecture and leads to smaller network sizes without hurting
+performance. Moreover, through its focus on diversity and neuron fusing,
+Divnet remains compatible with other procedures that seek to reduce memory
+footprints of networks. We present experimental results to corroborate our
+claims: for pruning neural networks, Divnet is seen to be notably superior
+to competing approaches.
+^
+@https://arxiv.org/pdf/1511.05077.pdf
+#topic:neural network
+#topic:reinforcement learning
+#author:Andrew Y. Ng
+#author:Adam Coates
+#author:Mark Diel
+#author:Varun Ganapathi
+#author:Jamie Schulte
+#author:Ben Tse
+#author:Eric Berger
+#author:Eric Liang
+#language:english
+#medium:paper
+Autonomous inverted helicopter flight via reinforcement learning
+Helicopters have highly stochastic, nonlinear, dynamics, and autonomous
+helicopter flight is widely regarded to be a challenging control problem. As
+helicopters are highly unstable at low speeds, it is particularly
+difficult to design controllers for low speed aerobatic maneuvers. In
+this paper, we describe a successful application of reinforcement learning
+to designing a controller for sustained inverted flight on an autonomous
+helicopter. Using data collected from the helicopter in flight, we began by
+learning a stochastic, nonlinear model of the helicopter’s dynamics. Then,
+a reinforcement learning algorithm was applied to automatically learn a
+controller for autonomous inverted hovering. Finally, the resulting controller
+was successfully tested on our autonomous helicopter platform.
+^
+@http://heli.stanford.edu/papers/iser04-invertedflight.pdf
+#topic:reinforcement learning
+#topic:neural network
+#author:Andrew Y. Ng
+#author:H. Jin Kim
+#author:Michael I. Jordan
+#author:Shankar Sastry
+#language:english
+#medium:paper
+Autonomous helicopter flight via reinforcement learning
+Autonomous helicopter flight represents a challenging control problem, with
+complex, noisy, dynamics. In this paper, we describe a successful application
+of reinforcement learning to autonomous helicopter flight.  We first fit
+a stochastic, nonlinear model of the helicopter dynamics. We then use the
+model to learn to hover in place, and to fly a number of maneuvers taken
+from an RC helicopter competition
+^
+@https://people.eecs.berkeley.edu/~jordan/papers/ng-etal03.pdf
+#topic:fuse
+#topic:file system
+#topic:file system in userspace
+#author:Aditya Rajgarhia
+#author:Ashish Gehani
+#language:english
+#medium:paper
+Performance and Extension of User Space File Systems
+Several efforts have been made over the years for developing file systems in
+user space. Many of these efforts have failed to make a significant impact
+as measured by their use in production systems. Recently, however, user space
+file systems have seen a strong resurgence. FUSE is a popular framework that
+allows file systems to be developed in user space while offering ease of use
+and flexibility.  In this paper, we discuss the evolution of user space file
+systems with an emphasis on FUSE, and measure its performance using a variety
+of test cases. We also discuss the feasibility of developing file systems in
+high-level programming languages, by using as an example Java bindings for
+FUSE that we have developed. Our benchmarks show that FUSE offers adequate
+performance for several kinds of workloads
+^
+@http://www.csl.sri.com/users/gehani/papers/SAC-2010.FUSE.pdf
