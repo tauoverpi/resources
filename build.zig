@@ -19,6 +19,15 @@ pub fn build(b: *Builder) void {
     const run_cmd = exe.run();
     run_cmd.step.dependOn(b.getInstallStep());
 
+    const test_cmd = b.addTest("src/main.zig");
+    const test_step = b.step("test", "run project tests");
+    test_step.dependOn(&test_cmd.step);
+
+    const git_commit_cmd = b.addSystemCommand(&[_][]const u8{ "git", "commit" });
+    const git_commit_step = b.step("commit", "perform a git commit");
+    git_commit_step.dependOn(&test_cmd.step);
+    git_commit_step.dependOn(&git_commit_cmd.step);
+
     const run_step = b.step("run", "Run the app");
     run_step.dependOn(&run_cmd.step);
 }

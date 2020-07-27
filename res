@@ -2385,3 +2385,67 @@ of behavior of superintelligent agents, and they point to some potential
 dangers in building such an agent.
 ^
 @https://www.nickbostrom.com/superintelligentwill.pdf
+#topic:graphics
+#topic:diagrams
+#topic:latex
+#author:Hauke Stieler
+#language:english
+#medium:paper
+Tikz for state-machines
+You’ll find a short explanation on how to draw state-machines with Tikz
+. Because I’m not a professional, please send ideas, mistakes, notes and
+suggestions to my e–mail–adress mail@hauke-stieler.de.  Generally this
+is a collection2 of examples for different state-machines and -models,
+which are dealt with in the summer-semester 2015 in the FGI I lecture.
+^
+@https://hauke-stieler.de/public/tikz-for-state-machines_en.pdf
+#topic:parsing
+#author:Chang Ge
+#author:Yinan Li
+#author:Eric Eilebrecht
+#author:Badrish Chandramouli
+#author:Donald Kossmann
+#language:english
+#medium:paper
+Speculative Distributed CSV Data Parsing for Big Data Analytics
+There has been a recent flurry of interest in providing query capability on
+raw data in today’s big data systems. These raw data must be parsed before
+processing or use in analytics.  Thus, a fundamental challenge in distributed
+big data systems is that of efficient parallel parsing of raw data. The
+difficulties come from the inherent ambiguity while independently parsing
+chunks of raw data without knowing the context of these chunks. Specifically,
+it can be difficult to find the beginnings and ends of fields and records
+in these chunks of raw data. To parallelize parsing, this paper proposes a
+speculation-based approach for the CSV format, arguably the most commonly
+used raw data format. Due to the syntactic and statistical properties of the
+format, speculative parsing rarely fails and therefore parsing is efficiently
+parallelized in a distributed setting. Our speculative approach is also
+robust, meaning that it can reliably detect syntax errors in CSV data. We
+experimentally evaluate the speculative, distributed parsing approach in
+Apache Spark using more than 11,000 real-world datasets, and show that our
+parser produces significant performance benefits over existing methods.
+^
+@https://www.microsoft.com/en-us/research/uploads/prod/2019/04/chunker-sigmod19.pdf
+#topic:finite state machine
+#author:Gerald Tripp
+#language:english
+#medium:paper
+A parallel ‘String Matching Engine’ for use in high speed network intrusion detection systems.
+This paper describes a finite state machine approach to string matching for
+an intrusion detection system. To obtain high performance, we typically need
+to be able to operate on input data that is several bytes wide. However,
+finite state machine designs become more complex when operating on large
+input data words, partly because of needing to match the starts and ends
+of a string that may occur part way through an input data word.  Here we
+use finite state machines that each operate on only a single byte wide data
+input. We then provide a separate finite state machine for each byte wide
+data path from a multi-byte wide input data word. By splitting the search
+strings into multiple interleaved substrings and by combining the outputs
+from the individual finite state machines in an appropriate way we can
+perform string matching in parallel across multiple finite state machines.
+A hardware design for a parallel string matching engine has been generated,
+built for implementation in a Xilinx Field Programmable Gate Array and tested
+by simulation. The design is capable of operating at a search rate of 4.7
+Gbps with a 32-bit input word size
+^
+@https://www.cs.kent.ac.uk/people/staff/gewt/Tripp-JinCV06.pdf
