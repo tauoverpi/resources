@@ -2449,3 +2449,20 @@ by simulation. The design is capable of operating at a search rate of 4.7
 Gbps with a 32-bit input word size
 ^
 @https://www.cs.kent.ac.uk/people/staff/gewt/Tripp-JinCV06.pdf
+#topic:parallel
+#topic:gpu
+#author:Cameron Alexander Fish
+#language:english
+#medium:paper
+A GPU approach to the Abelian sandpile model
+The Abelian sandpile model provides examples of groups with highly
+“non-trivial” identity elements. These elements are, at least in the
+case of sandpile groups on grid graphs, visually stunning. An appreciation
+of these visuals can be more than an aesthetic one, as they also serve to
+guide intuition and suggest further routes of study. However, these elements
+are in general difficult to compute, especially when the underlying graph
+becomes large. We make use of GPU computation to develop a new framework for
+the simulation and display of sandpiles, as well as suggest several methods
+for more efficient calculation of the identity sandpile on grid graphs.
+^
+@http://people.reed.edu/~davidp/homepage/students/fish.pdf
