@@ -2466,3 +2466,145 @@ the simulation and display of sandpiles, as well as suggest several methods
 for more efficient calculation of the identity sandpile on grid graphs.
 ^
 @http://people.reed.edu/~davidp/homepage/students/fish.pdf
+#topic:multithread
+#topic:allocator
+#author:Emery D. Berger
+#author:Kathryn S. McKinley
+#author:Robert D. Blumofe
+#author:Paul R. Wilson
+#language:english
+#medium:paper
+Hoard: A Scalable Memory Allocator for Multithreaded Applications
+Parallel, multithreaded C and C++ programs such as web servers, database
+managers, news servers, and scientific applications are becoming increasingly
+prevalent. For these applications, the memory allocator is often a bottleneck
+that severely limits program performance and scalability on multiprocessor
+systems. Previous allocators suffer from problems that include poor
+performance and scalability, and heap organizations that introduce false
+sharing. Worse, many allocators exhibit a dramatic increase in memory
+consumption when confronted with a producer-consumer pattern of object
+allocation and freeing. This increase in memory consumption can range from
+a factor of P (the number of processors) to unbounded memory consumption.
+This paper introduces Hoard, a fast, highly scalable allocator that largely
+avoids false sharing and is memory efficient. Hoard is the first allocator
+to simultaneously solve the above problems.  Hoard combines one global
+heap and per-processor heaps with a novel discipline that provably bounds
+memory consumption and has very low synchronization costs in the common
+case. Our results on eleven programs demonstrate that Hoard yields low
+average fragmentation and improves overall program performance over the
+standard Solaris allocator by up to a factor of 60 on 14 processors, and up
+to a factor of 18 over the next best allocator we tested.
+^
+@https://people.cs.umass.edu/~emery/pubs/berger-asplos2000.pdf
+#topic:allocator
+#topic:multithread
+#topic:message passing
+#author:Paul Liétar
+#author:Theodore Butler
+#author:Sylvan Clebsch
+#author:Sophia Drossopoulou
+#author:Juliana Franco
+#author:Matthew J. Parkinson
+#author:Alex Shamis
+#author:Christoph M. Wintersteiger
+#author:David Chisnall
+#language:english
+#medium:paper
+snmalloc: A Message Passing Allocator
+Snmalloc is an implementation of malloc aimed at workloads in which objects are
+typically deallocated by a different thread than the one that had allocated
+them. We use the term producer/consumer for such workloads. Snmalloc uses
+a novel message passing scheme which returns deallocated objects to the
+originating allocator in batches without taking any locks. It also uses
+a novel bump pointer-free list data structure with which just 64-bits of
+meta-data are sufficient for each 64 KiB slab. On such producer/consumer
+benchmarks our approach performs better than existing allocators
+^
+@https://github.com/microsoft/snmalloc/raw/master/snmalloc.pdf
+#topic:allocator
+#author:Daan Leijen
+#author:Benjamin Zorn
+#author:Leonardo De Moura
+#language:english
+#medium:paper
+Mimalloc: Free List Sharding in Action
+Modern memory allocators have to balance many simultaneous demands, including
+performance, security, the presence of concurrency, and application-specific
+demands depending on the context of their use. One increasing use-case for
+allocators is as back-end implementations of languages, such as Swift and
+Python, that use reference counting to automatically deallocate objects. We
+present mimalloc, a memory allocator that effectively balances these demands,
+shows significant performance advantages over existing allocators, and is
+tailored to support languages that rely on the memory allocator as a backend
+for reference counting.  Mimalloc combines several innovations to achieve
+this result. First, it uses three page-local sharded free lists to increase
+locality, avoid contention, and support a highly-tuned allocate and free
+fast path. These free lists also support temporal cadence, which allows the
+allocator to predictably leave the fast path for regular maintenance tasks
+such as supporting deferred freeing, handling frees from non-local threads,
+etc. While influenced by the allocation workload of the reference-counted Lean
+and Koka programming language, we show that mimalloc has superior performance
+to modern commercial memory allocators, including tcmalloc and jemalloc, with
+speed improvements of 7% and 14%, respectively, on redis, and consistently out
+performs over a wide range of sequential and concurrent benchmarks. Allocators
+tailored to provide an efficient runtime for reference-counting languages
+reduce the implementation burden on developers and encourage the creation
+of innovative new language designs.
+^
+@https://www.microsoft.com/en-us/research/uploads/prod/2019/06/mimalloc-tr-v1.pdf
+#topic:encryption
+#topic:cryptography
+#topic:lattice2 cryptography
+#author:Eric Crockett
+#author:Chris Peikert
+#language:english
+#medium:paper
+Λ◦λ : Functional Lattice Cryptography
+This work describes the design, implementation, and evaluation of Λ◦λ,
+a general-purpose software framework for lattice-based cryptography. The
+Λ◦λ framework has several novel properties that distinguish it from
+prior implementations of lattice cryptosystems, including the following.
+Generality, modularity, concision: Λ◦λ defines a collection of general,
+highly composable interfaces for mathematical operations used across lattice
+cryptography, allowing for a wide variety of schemes to be expressed very
+naturally and at a high level of abstraction. For example, we implement an
+advanced fully homomorphic encryption (FHE) scheme in as few as 2–5 lines
+of code per feature, via code that very closely matches the scheme’s
+mathematical definition.  Theory affinity: Λ◦λ is designed from the
+ground-up around the specialized ring representations, fast algorithms,
+and worst-case hardness proofs that have been developed for the Ring-LWE
+problem and its cryptographic applications. In particular, it implements
+fast algorithms for sampling from theoryrecommended error distributions
+over arbitrary cyclotomic rings, and provides tools for maintaining tight
+control of error growth in cryptographic schemes.  Safety: Λ◦λ has several
+facilities for reducing code complexity and programming errors, thereby aiding
+the correct implementation of lattice cryptosystems. In particular, it uses
+strong typing to statically enforce—i.e., at compile time—a wide variety
+of constraints among the various parameters.  Advanced features: Λ◦λ
+exposes the rich hierarchy of cyclotomic rings to cryptographic applications.
+We use this to give the first-ever implementation of a collection of FHE
+operations known as “ring switching,” and also define and analyze a
+more efficient variant that we call “ring tunneling.” Lastly, this work
+defines and analyzes a variety of mathematical objects and algorithms for
+the recommended usage of Ring-LWE in cyclotomic rings, which we believe will
+serve as a useful knowledge base for future implementations.
+^
+@https://eprint.iacr.org/2015/1134.pdf
+#topic:cryptography
+#topic:hash algorithm
+#topic:homomorphic
+#author:Maxwell N. Krohn
+#author:Michael J. Freedman
+#author:David Mazieres
+#language:english
+#medium:paper
+On-the-Fly Verification of Rateless Erasure Codes for Efficient Content Distribution
+The quality of peer-to-peer content distribution can suffer when malicious
+participants intentionally corrupt content. Some systems using simple
+block-by-block downloading can verify blocks with traditional cryptographic
+signatures and hashes, but these techniques do not apply well to more elegant
+systems that use rateless erasure codes for efficient multicast transfers. This
+paper presents a practical scheme, based on homomorphic hashing, that enables
+a downloader to perform on-the-fly verification of erasure-encoded blocks.
+^
+@https://pdos.csail.mit.edu/papers/otfvec/paper.pdf
