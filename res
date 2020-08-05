@@ -2672,3 +2672,12 @@ pattern to systematically develop relational specifications in a typed manner,
 and address the problem of relational and functional code integration.
 ^
 @https://oops.math.spbu.ru/papers/ocanren.pdf
+#topic:minikanren
+#topic:logic programming
+#author:William E. Byrd
+#language:english
+#medium:paper
+Relational Programming in miniKanren: Techniques, Applications, and Implementations
+
+^
+@https://github.com/webyrd/dissertation-single-spaced/raw/master/thesis.pdf
