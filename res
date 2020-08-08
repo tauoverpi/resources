@@ -2756,3 +2756,18 @@ the first implementation that has been successfully tested on an input of
 cardinality 1012. Source code: https://github.com/rizkg/BBHash
 ^
 @https://arxiv.org/pdf/1702.03154.pdf
+#topic:type system
+#topic:capability system
+#topic:ponylang
+#author:unknown
+#language:english
+#medium:paper
+Deny Capabilities for Safe, Fast Actors
+Combining the actor-model with shared memory for performance is efficient
+but can introduce data-races. Existing approaches to static data-race
+freedom are based on uniqueness and immutability, but lack flexibility and
+high performance implementations. Our approach, based on deny properties,
+allows reading, writing and traversing unique references, introduces a new
+form of write uniqueness, and guarantees atomic behaviours.
+^
+@https://www.ponylang.io/media/papers/fast-cheap-with-proof.pdf
