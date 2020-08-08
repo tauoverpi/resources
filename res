@@ -2681,3 +2681,78 @@ Relational Programming in miniKanren: Techniques, Applications, and Implementati
 
 ^
 @https://github.com/webyrd/dissertation-single-spaced/raw/master/thesis.pdf
+#topic:mathematics
+#author:Oliver Knill
+#language:english
+#medium:paper
+Some Fundamental Theorems In Mathematics
+Criteria for the current list of 172 theorems are whether the result can be
+formulated elegantly, whether it is beautiful or useful and whether it could
+serve as a guide [6] without leading to panic. The order is not a ranking
+but ordered along a time-line when things were written down. Since [350]
+stated “a mathematical theorem only becomes beautiful if presented as a
+crown jewel within a context” we try sometimes to give some context. Of
+course, any such list of theorems is a matter of personal preferences, taste
+and limitations. The number of theorems is arbitrary, the initial obvious
+goal was 42 but that number got eventually surpassed as it is hard to stop,
+once started. As a compensation, there are 42 “tweetable” theorems with
+included proofs. More comments on the choice of the theorems is included
+in an epilogue.  For literature on general mathematics, see [132, 128, 23,
+156, 167, 393, 267, 95], for history [147, 398, 242, 49, 37, 139, 244, 236,
+437, 78, 392, 54, 170, 219], for popular, beautiful or elegant things [9,
+332, 135, 123, 14, 425, 426, 35, 136, 129, 162, 285, 390, 195, 135, 2, 86,
+102, 87, 317]. For comprehensive overviews in large parts of mathematics,
+[50, 114, 115, 40, 373] or predictions on developments [38]. For reflections
+about mathematics in general [101, 290, 36, 197, 283, 70, 354].  Encyclopedic
+source examples are [127, 443, 423, 71, 131, 106, 150, 130, 76, 401].
+^
+@http://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf
+#topic:sorting
+#author:Stefan Edelkamp
+#author:Armin Weiß
+#author:Sebastian Wild
+#language:english
+#medium:paper
+QuickXsort – A Fast Sorting Scheme in Theory and Practice∗
+QuickXsort is a highly efficient in-place sequential sorting scheme that
+mixes Hoare’s Quicksort algorithm with X, where X can be chosen from a
+wider range of other known sorting algorithms, like Heapsort, Insertionsort
+and Mergesort. Its major advantage is that QuickXsort can be in-place even if
+X is not. In this work we provide general transfer theorems expressing the
+number of comparisons of QuickXsort in terms of the number of comparisons
+of X. More specifically, if pivots are chosen as medians of (not too fast)
+growing size samples, the average number of comparisons of QuickXsort and X
+differ only by o(n)-terms. For median-of-k pivot selection for some constant k,
+the difference is a linear term whose coefficient we compute precisely. For
+instance, median-of-three QuickMergesort uses at most n lg n − 0.8358n +
+O(log n) comparisons.  Furthermore, we examine the possibility of sorting base
+cases with some other algorithm using even less comparisons. By doing so the
+average-case number of comparisons can be reduced down to n lg n − 1.4112n +
+o(n) for a remaining gap of only 0.0315n comparisons to the known lower bound
+(while using only O(log n) additional space and O(n log n) time overall).
+Implementations of these sorting strategies show that the algorithms challenge
+well-established library implementations like Musser’s Introsort.
+^
+@https://www.wild-inter.net/publications/edelkamp-weiss-wild-2019.pdf
+#topic:perfect hash
+#author:Antoine Limasset
+#author:Guillaume Rizk
+#author:Rayan Chikhi
+#author:Pierre Peterlongo
+#language:english
+#medium:paper
+Fast and scalable minimal perfect hashing for massive key sets
+Minimal perfect hash functions provide space-efficient and collision-free
+hashing on static sets.  Existing algorithms and implementations that build
+such functions have practical limitations on the number of input elements
+they can process, due to high construction time, RAM or external memory
+usage. We revisit a simple algorithm and show that it is highly competitive
+with the state of the art, especially in terms of construction time and
+memory usage. We provide a parallel C++ implementation called BBhash. It
+is capable of creating a minimal perfect hash function of 1010 elements in
+less than 7 minutes using 8 threads and 5 GB of memory, and the resulting
+function uses 3.7 bits/element. To the best of our knowledge, this is also
+the first implementation that has been successfully tested on an input of
+cardinality 1012. Source code: https://github.com/rizkg/BBHash
+^
+@https://arxiv.org/pdf/1702.03154.pdf
