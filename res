@@ -2812,3 +2812,11 @@ Better Benchmarks Through Compiler Optimizations: CODASIP Jump Threading
 
 ^
 @https://codasip.com/wp-content/uploads/2019/08/Codasip_Jump_Threading.pdf
+#topic:mbus
+#author:unknown
+#language:english
+#medium:spec
+The M-Bus: A Documentation
+
+^
+@https://m-bus.com/assets/downloads/MBDOC48.PDF
