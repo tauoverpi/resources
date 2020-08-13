@@ -2804,3 +2804,11 @@ WebKit, to run in a CHERI C/C++ capability-based programming environment. We
 conclude by recommending further reading
 ^
 @https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-947.pdf
+#topic:optimization
+#author:codasip
+#language:english
+#medium:paper
+Better Benchmarks Through Compiler Optimizations: CODASIP Jump Threading
+
+^
+@https://codasip.com/wp-content/uploads/2019/08/Codasip_Jump_Threading.pdf
