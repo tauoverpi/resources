@@ -2838,3 +2838,11 @@ out there using some form of garbage collection: allocate, then worry about
 reclaiming unreachable objects later.
 ^
 @https://aardappel.github.io/lobster/memory_management.html
+#topic:tea-time
+#author:David P. Reed
+#language:english
+#medium:paper
+Naming and Synchronization in a Decenteralized Computer System
+
+^
+@http://publications.csail.mit.edu/lcs/pubs/pdf/MIT-LCS-TR-205.pdf
