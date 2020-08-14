@@ -2820,3 +2820,21 @@ The M-Bus: A Documentation
 
 ^
 @https://m-bus.com/assets/downloads/MBDOC48.PDF
+#topic:memory management
+#topic:lobster
+#author:Wouter van Oortmerssen
+#language:english
+#medium:web article
+Memory Management in Lobster
+Memory management is an aspect of a language that has one of the biggest
+influences on how a language turns out: it affects the type system and the
+kinds of types you can have, it affects efficiency in both time and space,
+it affects the cognitive model of the programmer in what data structures
+can be represented, it affects latency, interoperability, and much more.
+
+Yet, it is often ignored and almost invisble at the same time. Many consider
+it to be a “solved” problem with probably 95% of programming languages
+out there using some form of garbage collection: allocate, then worry about
+reclaiming unreachable objects later.
+^
+@https://aardappel.github.io/lobster/memory_management.html
