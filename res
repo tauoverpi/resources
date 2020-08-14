@@ -2846,3 +2846,33 @@ Naming and Synchronization in a Decenteralized Computer System
 
 ^
 @http://publications.csail.mit.edu/lcs/pubs/pdf/MIT-LCS-TR-205.pdf
+#topic:rump-kernel
+#author:Antti Kantee
+#language:english
+#medium:article
+The Rise and Fall of the Operating System
+An operating system is an arbitrary black box of overhead that enables
+well-behaving application programs to perform tasks that users are interested
+in. Why is there so much fuss about black boxes, and could we get things
+done with less?
+^
+@http://www.fixup.fi/misc/usenix-login-2015/login_oct15_02_kantee.pdf
+#topic:rump-kernel
+#author:Antti Kantee
+#language:english
+#medium:book
+This document is intended as an up-to-date description on the fundamental
+concepts related to the anykernel and rump kernels. It is based on the
+dissertation written in 2011 and early 2012: Flexible Operating System
+Internals: The Design and Implementation of the Anykernel and Rump Kernels.
+The major change with rump kernels since the first edition is a shift in
+focus and motivation. In work leading up to the first edition, rump kernels
+were about running kernel components in userspace. That work defined the
+core architecture, and that definition is still valid and accurate. Since
+then, work has focused on harnessing the potential of rump kernels for
+building entirely new computation stacks.  Since this edition of the book
+is no longer an academic document, we do not support every statement we make
+with a citation or experiment. In fact, we also take the liberty to present
+opinions which are open for debate.
+^
+@http://www.fixup.fi/misc/rumpkernel-book/rumpkernel-bookv2-20160802.pdf
