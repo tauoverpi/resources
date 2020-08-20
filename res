@@ -2928,3 +2928,19 @@ Calculus Made Easy
 
 ^
 @http://djm.cc/library/Calculus_Made_Easy_Thompson.pdf
+#topic:category theory
+#author:David I. Spivak
+#language:english
+#medium:book
+18-S996: Category Theory for Scientists
+
+^
+@http://math.mit.edu/~dspivak/teaching/sp13/CT4S--static.pdf
+#topic:logic
+#author:Peter Smith
+#language:english
+#medium:guide
+Teach Yourself Logic 2020a: A Study Guide
+
+^
+@https://www.logicmatters.net/wp-content/uploads/2020/07/TeachYourselfLogic2020.5.pdf
