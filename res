@@ -2944,3 +2944,13 @@ Teach Yourself Logic 2020a: A Study Guide
 
 ^
 @https://www.logicmatters.net/wp-content/uploads/2020/07/TeachYourselfLogic2020.5.pdf
+#topic:x11
+#topic:graphics
+#topic:protocol
+#author:Robert W. Scheifler
+#language:english
+#medium:specification
+X Window System Protocol: X Version 11, Release 6.8
+
+^
+@https://www.x.org/releases/X11R7.5/doc/x11proto/proto.pdf
