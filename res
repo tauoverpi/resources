@@ -2954,3 +2954,19 @@ X Window System Protocol: X Version 11, Release 6.8
 
 ^
 @https://www.x.org/releases/X11R7.5/doc/x11proto/proto.pdf
+#topic:markov chain
+#topic:constraint
+#author:Boris Miller
+#author:Gregory B. Miller
+#author:Konstantin V. Siemenikhin
+#language:english
+#medium:paper
+Optimal control of Markov chains with constraints
+A problem of optimal control of Markov chain with finite state space
+is considered. We consider a nonstationary finite horizon problem with
+constraints, given as a set of inequalities. Basing on recent results
+on existence of optimal solution we suggest to use the dual approach to
+optimization and thereby an approach to effective numerical algorithms. The
+approach is illustrated by numerical examples.
+^
+@https://www.researchgate.net/profile/Gregory_Miller13/publication/224109362_Optimal_control_of_Markov_chains_with_constraints/links/53fa1bf60cf2e3cbf5626442/Optimal-control-of-Markov-chains-with-constraints.pdf
