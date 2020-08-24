@@ -2970,3 +2970,24 @@ optimization and thereby an approach to effective numerical algorithms. The
 approach is illustrated by numerical examples.
 ^
 @https://www.researchgate.net/profile/Gregory_Miller13/publication/224109362_Optimal_control_of_Markov_chains_with_constraints/links/53fa1bf60cf2e3cbf5626442/Optimal-control-of-Markov-chains-with-constraints.pdf
+#topic:turing completeness
+#topic:neural network
+#author:Jorge Perez
+#author:Javier Marinković
+#author:Pablo Barceló
+#language:english
+#medium:paper
+On The Turing Completeness Of Modern Neural Network Architectures
+Alternatives to recurrent neural networks, in particular, architectures based
+on attention or convolutions, have been gaining momentum for processing input
+sequences. In spite of their relevance, the computational properties of these
+alternatives have not yet been fully explored. We study the computational power
+of two of the most paradigmatic architectures exemplifying these mechanisms:
+the Transformer (Vaswani et al., 2017) and the Neural GPU (Kaiser & Sutskever,
+2016). We show both models to be Turing complete exclusively based on their
+capacity to compute and access internal dense representations of the data. In
+particular, neither the Transformer nor the Neural GPU requires access to
+an external memory to become Turing complete. Our study also reveals some
+minimal sets of elements needed to obtain these completeness results.
+^
+@https://arxiv.org/pdf/1901.03429.pdf
