@@ -3016,3 +3016,19 @@ the context of classification, we found that this approach even outperforms
 a direct supervised setup.
 ^
 @https://arxiv.org/pdf/1908.03015v1
+#topic:reverse engineering
+#author:Dennis Yurichev
+#language:english
+#medium:book
+Reverse Engineering for Beginners
+
+^
+@https://beginners.re/RE4B-EN.pdf
+#topic:opengl
+#author:Joey de Vries
+#language:english
+#medium:book
+Learn OpenGL - Graphics Programming
+
+^
+@https://learnopengl.com/book/book_pdf.pdf
