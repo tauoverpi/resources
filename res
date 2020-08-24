@@ -3025,6 +3025,7 @@ Reverse Engineering for Beginners
 ^
 @https://beginners.re/RE4B-EN.pdf
 #topic:opengl
+#topic:graphics
 #author:Joey de Vries
 #language:english
 #medium:book
@@ -3032,3 +3033,19 @@ Learn OpenGL - Graphics Programming
 
 ^
 @https://learnopengl.com/book/book_pdf.pdf
+#topic:vulkan
+#topic:graphics
+#language:english
+#medium:book
+Vulkan Tutorial
+This tutorial will teach you the basics of using the Vulkan graphics and
+compute API. Vulkan is a new API by the Khronos group (known for OpenGL)
+that provides a much better abstraction of modern graphics cards. This new
+interface allows you to better describe what your application intends to do,
+which can lead to better performance and less surprising driver behavior
+compared to existing APIs like OpenGL and Direct3D. The ideas behind Vulkan
+are similar to those of Direct3D 12 and Metal, but Vulkan has the advantage
+of being fully cross-platform and allows you to develop for Windows, Linux
+and Android at the same time.
+^
+@https://raw.githubusercontent.com/Overv/VulkanTutorial/master/ebook/Vulkan%20Tutorial%20en.pdf
