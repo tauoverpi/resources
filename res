@@ -3049,3 +3049,11 @@ of being fully cross-platform and allows you to develop for Windows, Linux
 and Android at the same time.
 ^
 @https://raw.githubusercontent.com/Overv/VulkanTutorial/master/ebook/Vulkan%20Tutorial%20en.pdf
+#topic:spirv
+#topic:graphics
+#author:John Kessenich
+#author:Boaz Ouriel
+#author:Raun Krisch
+#language:english
+#medium:specification
+@https://www.khronos.org/registry/spir-v/specs/unified1/SPIRV.pdf
