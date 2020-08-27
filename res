@@ -3116,3 +3116,57 @@ methods, and can reduce the size of an AlexNet-style network up to 82 times
 without accuracy loss.
 ^
 @https://www.ijcai.org/Proceedings/2018/0330.pdf
+#topic:neural network
+#topic:compression
+#author:Haotao Wang
+#author:Shupeng Gui
+#author:Haichuan Yang
+#author:Ji Liu
+#author:Zhangyang Wang
+#language:english
+#medium:paper
+GAN Slimming: All-in-One GAN Compression by A Unified Optimization Framework
+Generative adversarial networks (GANs) have gained increasing popularity
+in various computer vision applications, and recently start to be deployed
+to resource-constrained mobile devices. Similar to other deep models,
+state-of-the-art GANs suffer from high parameter complexities. That
+has recently motivated the exploration of compressing GANs (usually
+generators). Compared to the vast literature and prevailing success in
+compressing deep classifiers, the study of GAN compression remains in its
+infancy, so far leveraging individual compression techniques instead of more
+sophisticated combinations. We observe that due to the notorious instability
+of training GANs, heuristically stacking different compression techniques
+will result in unsatisfactory results. To this end, we propose the first
+unified optimization framework combining multiple compression means for
+GAN compression, dubbed GAN Slimming (GS). GS seamlessly integrates three
+mainstream compression techniques: model distillation, channel pruning
+and quantization, together with the GAN minimax objective, into one unified
+optimization form, that can be efficiently optimized from end to end. Without
+bells and whistles, GS largely outperforms existing options in compressing
+image-to-image translation GANs. Specifically, we apply GS to compress
+CartoonGAN, a state-of-the-art style transfer network, by up to 47 times,
+with minimal visual quality degradation.
+^
+@https://arxiv.org/pdf/2008.11062.pdf
+#topic:simulated annealing
+#topic:ant colony optimization
+#topic:optimization
+#topic:compression
+#author:FARHAD KOLAHAN
+#author:AHMAD TAVAKOLI
+#author:SAEED SOHEILI
+#author:MAHDI ABACHIZADEH
+#author:GOLNAZ TADAYON
+#language:english
+#medium:paper
+Optimization of helical compression springs using simulated annealing and ant colony optimization
+In this paper, the optimization of compression helical springs is
+investigated. The design process involves determining wire material, end type
+of the spring and wire diameter. In this regards, important design constraints
+are taken into account. The objective is to minimize the figure of merit,
+which shows the relative cost of spring. Two heuristic algorithms, namely
+simulated annealing and ant colony optimization, are employed to optimize the
+spring. The results obtained by these methods are compared with each other,
+and with the exact solution of the problem.
+^
+@https://profdoc.um.ac.ir/articles/a/1015166.pdf
