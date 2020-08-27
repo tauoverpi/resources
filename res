@@ -3170,3 +3170,31 @@ spring. The results obtained by these methods are compared with each other,
 and with the exact solution of the problem.
 ^
 @https://profdoc.um.ac.ir/articles/a/1015166.pdf
+#topic:simulated annealing
+#topic:optimization
+#author:Ke Yang
+#author:Qingxi Duan
+#author:Yanghao Wang
+#author:Teng Zhang
+#author:Yuchao Yang1
+#author:Ru Huang
+#language:english
+#medium:paper
+Transiently chaotic simulated annealing based on intrinsic nonlinearity of memristors for efficient solution of optimization problems
+Optimization problems are ubiquitous in scientific research, engineering,
+and daily lives. However, solving a complex optimization problem often
+requires excessive computing resource and time and faces challenges in
+easily getting trapped into local optima. Here, we propose a memristive
+optimizer hardware based on a Hopfield network, which introduces transient
+chaos to simulated annealing in aid of jumping out of the local optima
+while ensuring convergence. A single memristor crossbar is used to store
+the weight parameters of a fully connected Hopfield network and adjust the
+network dynamics in situ. Furthermore, we harness the intrinsic nonlinearity
+of memristors within the crossbar to implement an efficient and simplified
+annealing process for the optimization. Solutions of continuous function
+optimizations on sphere function and Matyas function as well as combinatorial
+optimization on Max-cut problem are experimentally demonstrated, indicating
+great potential of the transiently chaotic memristive network in solving
+optimization problems in general.
+^
+@https://advances.sciencemag.org/content/advances/6/33/eaba9901.full.pdf
