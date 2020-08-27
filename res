@@ -3198,3 +3198,106 @@ great potential of the transiently chaotic memristive network in solving
 optimization problems in general.
 ^
 @https://advances.sciencemag.org/content/advances/6/33/eaba9901.full.pdf
+#topic:simd
+#topic:fft
+#author:Stefan Kral
+#author:Franz Franchetti
+#author:Juergen Lorenz
+#author:Christoph W. Ueberhuber
+#language:english
+#medium:paper
+SIMD Vectorization of Straight Line FFT Code
+This paper presents compiler technology that targets general purpose
+microprocessors augmented with SIMD execution units for exploiting data
+level parallelism. FFT kernels are accelerated by automatically vectorizing
+blocks of straight line code for processors featuring two-way short vector
+SIMD extensions like AMD’s 3DNow! and Intel’s SSE 2. Additionally,
+a special compiler backend is introduced which is able to (i) utilize
+particular code properties, (ii) generate optimized address computation,
+and (iii) apply specialized register allocation and instruction scheduling.
+Experiments show that automatic SIMD vectorization can achieve performance
+that is comparable to the optimal hand-generated code for FFT kernels. The
+newly developed methods have been integrated into the codelet generator of
+Fftw and successfully vectorized complicated code like real-to-halfcomplex
+non-power-of-two FFT kernels. The floatingpoint performance of Fftw’s
+scalar version has been more than doubled, resulting in the fastest FFT
+implementation to date.
+^
+@https://users.ece.cmu.edu/~franzf/papers/europar03.pdf
+#topic:simd
+#author:Umberto Santoni
+#author:Thomas Long
+#language:english
+#medium:paper
+Signal Processing on Intel® Architecture: Performance Analysis using Intel® Performance Primitives
+Signal processing functions have often required special-purpose hardware
+such as DSPs and FPGAs. However, recent enhancements to Intel® architecture
+processors are providing developers an alternative: execute signal processing
+workloads on an Intel® processor.  Signal processing on the latest
+Intel processors is now a viable option due to continued improvements in
+multi-core architectures. The increased parallelism from vector instructions,
+along with other continuing performance improvements, enables the efficient
+execution of data parallel workloads such as digital transforms and filters.
+Additionally, by consolidating signal processing functions with other
+workloads on a multi-core Intel processor, it is possible to save hardware
+cost, simplify the application development environment and reduce time to
+market. This approach can be applied to many applications in aerospace (radar,
+sonar), communications infrastructure (baseband processing, transcoding)
+and healthcare (medical imaging).  This paper describes an easy process
+that allows developers to quickly determine how fast 2nd generation Intel®
+Core™ i7-2710QE processor will execute their signal processing algorithms,
+based on performance data1 that is relatively easy to obtain.
+Developers can complete the process in a straightforward manner, as
+demonstrated with two simple examples in this paper: fast convolution
+and amplitude demodulation.  The paper concludes by reviewing some of the
+development tools available to developers to conduct their own evaluations.
+^
+@https://www.intel.com/content/dam/doc/white-paper/signal-processing-on-intel-architecture.pdf
+#topic:fft
+#author:Eric Postpischil
+#language:english
+#medium:paper
+Construction of a High-Performance FFT
+The FFT algorithm for computing the DFT is well known and provides an
+O(n log n)- time implementation of the DFT. However, constructing a high-performance
+FFT implementation that executes at the best possible speed requires careful
+and efficient organization.  This paper describes the mathematical composition
+of an FFT, some overall design considerations for implementing high-performance
+FFTs, and specific considerations for implementing a high-performance FFT
+on an AltiVec processor.
+^
+@https://edp.org/work/Construction.pdf
+#topic:cryptography
+#topic:testing
+#author:Andrew Rukhin
+#author:Juan Soto
+#author:James Nechvatal
+#author:Miles Smid
+#author:Elaine Barker
+#author:Stefan Leigh
+#author:Mark Levenson
+#author:Mark Vangel
+#author:David Banks
+#author:Alan Heckert
+#author:James Dray
+#author:San Vo
+#language:english
+#medium:paper
+A Statistical Test Suite for Random and Pseudorandom Number Generators for Cryptographic Applications
+This paper discusses some aspects of selecting and testing random and
+pseudorandom number generators.  The outputs of such generators may be
+used in many cryptographic applications, such as the generation of key
+material. Generators suitable for use in cryptographic applications may need
+to meet stronger requirements than for other applications. In particular,
+their outputs must be unpredictable in the absence of knowledge of the
+inputs. Some criteria for characterizing and selecting appropriate generators
+are discussed in this document. The subject of statistical testing and its
+relation to cryptanalysis is also discussed, and some recommended statistical
+tests are provided. These tests may be useful as a first step in determining
+whether or not a generator is suitable for a particular cryptographic
+application. However, no set of statistical tests can absolutely certify
+a generator as appropriate for usage in a particular application, i.e.,
+statistical testing cannot serve as a substitute for cryptanalysis. The
+design and cryptanalysis of generators is outside the scope of this paper.
+^
+@https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-22r1a.pdf
