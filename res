@@ -3089,3 +3089,30 @@ within the MapReduce framework), and structures larger than the available
 RAM can be directly built in mass storage.
 ^
 @https://epubs.siam.org/doi/pdf/10.1137/1.9781611976007.14
+#topic:neural network
+#topic:compression
+#author:Guiying Li
+#author:Chao Qian
+#author:Chunhui Jiang
+#author:Xiaofen Lu
+#author:Ke Tang
+#language:english
+#medium:paper
+Optimization based Layer-wise Magnitude-based Pruning for DNN Compression∗
+Layer-wise magnitude-based pruning (LMP) is a very popular method for deep
+neural network (DNN) compression. However, tuning the layerspecific thresholds
+is a difficult task, since the space of threshold candidates is exponentially
+large and the evaluation is very expensive. Previous methods are mainly by hand
+and require expertise. In this paper, we propose an automatic tuning approach
+based on optimization, named OLMP. The idea is to transform the threshold
+tuning problem into a constrained optimization problem (i.e., minimizing the
+size of the pruned model subject to a constraint on the accuracy loss), and
+then use powerful derivative-free optimization algorithms to solve it. To
+compress a trained DNN, OLMP is conducted within a new iterative pruning
+and adjusting pipeline. Empirical results show that OLMP can achieve the
+best pruning ratio on LeNet-style models (i.e., 114 times for LeNet-300-100
+and 298 times for LeNet-5) compared with some state-ofthe-art DNN pruning
+methods, and can reduce the size of an AlexNet-style network up to 82 times
+without accuracy loss.
+^
+@https://www.ijcai.org/Proceedings/2018/0330.pdf
