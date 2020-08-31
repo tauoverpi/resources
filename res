@@ -3301,3 +3301,20 @@ statistical testing cannot serve as a substitute for cryptanalysis. The
 design and cryptanalysis of generators is outside the scope of this paper.
 ^
 @https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-22r1a.pdf
+#topic:hazard pointers
+#author:Paul Khuong
+#language:english
+#medium:web article
+Flatter wait-free hazard pointers
+Back in February 2020, Blelloch and Wei submitted this cool preprint:
+Concurrent Reference Counting and Resource Management in Wait-free
+Constant Time. Their work mostly caught my attention because they propose a
+wait-free implementation of hazard pointers for safe memory reclamation.1
+Safe memory reclamation  is a key component in lock-free algorithms when
+garbage collection isn’t an option,2 and hazard pointers  let us bound
+the amount of resources stranded by delayed cleanups much more tightly than,
+e.g., epoch reclamation. However the usual implementation has a loop in its
+read barriers (in the garbage collection sense), which can be annoying for
+code generation and bad for worst-case time bounds.
+^
+@https://pvk.ca/Blog/2020/07/07/flatter-wait-free-hazard-pointers/
