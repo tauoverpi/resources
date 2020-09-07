@@ -3318,3 +3318,27 @@ read barriers (in the garbage collection sense), which can be annoying for
 code generation and bad for worst-case time bounds.
 ^
 @https://pvk.ca/Blog/2020/07/07/flatter-wait-free-hazard-pointers/
+#topic:page fault
+#topic:x86
+#topic:turing-complete
+#author:Julian Bangert
+#author:Sergey Bratus
+#author:Rebecca Shapiro
+#author:Sean W. Smith
+#language:english
+#medium:paper
+The Page-Fault Weird Machine: Lessons in Instruction-less Computation
+Trust Analysis, i.e. determining that a system will not execute some class
+of computations, typically assumes that all computation is captured by an
+instruction trace.  We show that powerful computation on x86 processors
+is possible without executing any CPU instructions. We demonstrate
+a Turing-complete execution environment driven solely by the IA32
+architecture’s interrupt handling and memory translation tables, in which
+the processor is trapped in a series of page faults and double faults, without
+ever successfully dispatching any instructions. The “hard-wired” logic
+of handling these faults is used to perform arithmetic and logic primitives,
+as well as memory reads and writes. This mechanism can also perform branches
+and loops if the memory is set up and mapped just right. We discuss the
+lessons of this execution model for future trustworthy architectures.
+^
+@https://www.usenix.org/system/files/conference/woot13/woot13-bangert.pdf
