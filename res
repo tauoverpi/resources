@@ -3400,3 +3400,27 @@ that it is crucial to consider synergies between different (Spectre vs. code
 reuse) threat models to fully comprehend the attack surface of modern systems.
 ^
 @https://download.vusec.net/papers/blindside_ccs20.pdf
+#topic:license
+#topic:gplv3
+#topic:gpl
+#author:James E.J. Bottomley
+#author:Mauro Carvalho Chehab
+#author:Thomas Gleixner
+#author:Christoph Hellwig
+#author:Dave Jones
+#author:Greg Kroah-Hartman
+#author:Tony Luck
+#author:Andrew Morton
+#author:Trond Myklebust
+#author:David Woodhouse
+#language:english
+#medium:paper
+The Dangers and Problems with GPLv3
+This document is a position statement on the GNU General Public License version
+3 (in its current Draft 2 form) and its surrounding process issued by some of
+the Maintainers of the Linux Kernel speaking purely in their role as kernel
+maintainers. In no regard should any opinion expressed herein be construed
+to represent the views of any entities employing or being associated with
+any of the authors.
+^
+@https://static.lwn.net/images/pdf/kernel_gplv3_position.pdf
