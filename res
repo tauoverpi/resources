@@ -3424,3 +3424,11 @@ to represent the views of any entities employing or being associated with
 any of the authors.
 ^
 @https://static.lwn.net/images/pdf/kernel_gplv3_position.pdf
+#topic:data oriented
+#author:Richard Fabian
+#language:english
+#medium:book
+Data-Oriented Design
+
+^
+@https://www.dataorienteddesign.com/dodbook/
