@@ -3432,3 +3432,55 @@ Data-Oriented Design
 
 ^
 @https://www.dataorienteddesign.com/dodbook/
+#topic:parsing
+#topic:error recovery
+#author:Tim A. Wagner
+#author:Susan L. Graham
+#language:english
+#medium:paper
+History-Sensitive Error Recovery
+We present a novel approach to incremental recovery from lexical and
+syntactic errors in an interactive software development environment. Unlike
+existing techniques, we utilize the history of changes to the program
+to discover the natural correlation between user modifications and
+errors detected during incremental lexical and syntactic analysis. Our
+technique is non-correcting—the analysis refuses to incorporate invalid
+modifications, while still permitting correct changes to be applied. Errors
+are presented to the user simply by highlighting the invalid changes.
+The approach is automated—no user action is required to detect or recover
+from errors. Multiple textual and structural edits, arbitrary timing of
+incremental analysis, multiple errors per analysis, and nested errors
+are supported. Historybased error recovery is language independent and is
+compatible with the best known methods for incremental lexing and parsing,
+adding neither time nor space overhead to those algorithms. Effective
+integration with the environment’s history services ensures that other
+tools can efficiently discover regions of the program (un)affected by errors,
+and that any transformations of the program required to isolate or present
+errors are themselves efficiently reversible operations.
+^
+@http://harmonia.cs.berkeley.edu/papers/twagner-er.pdf
+#topic:parsing
+#author:Lukas Diekmann
+#language:english
+#medium:paper
+Editing composed languages
+The development of domain-specific languages and the migration of legacy
+software have long been problems for which language composition offers
+an enticing solution.  Unfortunately, approaches thus far have failed
+to meet expectations, largely due to the difficulty of writing composed
+programs. Language composition editors have traditionally fallen into
+two extremes: traditional parsing, which is inflexible or ambiguous; or
+syntaxdirected editing, which programmers dislike. This thesis extends an
+incremental parser to create an approach that bridges the two extremes: an
+editor that ‘feels’ like a normal text editor, but always operates on
+a valid tree as in syntax-directed editing, which allows users to compose
+arbitrary syntaxes. I first take an existing incremental parsing algorithm
+and fix several errors in it. I then extend it with incremental abstract
+syntax trees and support for whitespace-sensitive languages, which increases
+the range of languages the algorithm can support. I then introduce the notion
+of language boxes, which allow an incremental parser to be used for language
+composition and implement them in a prototype editor.  Finally, I show how
+language boxes can, in many useful cases, be automatically inserted and
+removed without the need for user intervention.
+^
+@https://diekmann.co.uk/diekmann_phd.pdf
