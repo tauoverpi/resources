@@ -3484,3 +3484,39 @@ language boxes can, in many useful cases, be automatically inserted and
 removed without the need for user intervention.
 ^
 @https://diekmann.co.uk/diekmann_phd.pdf
+#topic:neural network
+#topic:machine learning
+#topic:voice synthesis
+#author:Sercan ̈O. Arık
+#author:Mike Chrzanowski
+#author:Adam Coates
+#author:Gregory Diamos
+#author:Andrew Gibiansky
+#author:Yongguo Kang
+#author:Xian Li
+#author:John Miller
+#author:Andrew Ng
+#author:Jonathan Raiman
+#author:Shubho Sengupta
+#author:Mohammad Shoeybi
+#language:english
+#medium:paper
+Deep Voice: Real-time Neural Text-to-Speech
+We present Deep Voice, a production-qualitytext-to-speech system constructed
+entirely fromdeep neural networks.Deep Voice lays thegroundwork for
+truly end-to-end neural speechsynthesis.The system comprises five ma-jor
+building blocks: a segmentation model forlocating phoneme boundaries, a
+grapheme-to-phoneme conversion model, a phoneme durationprediction model,
+a fundamental frequency pre-diction model, and an audio synthesis model.For
+the segmentation model, we propose a novelway of performing phoneme boundary
+detectionwith deep neural networks using connectionisttemporal classification
+(CTC) loss.  For the au-dio synthesis model, we implement a variantof WaveNet
+that requires fewer parameters andtrains faster than the original. By using
+a neu-ral network for each component, our system issimpler and more flexible
+than traditional text-to-speech systems, where each component requireslaborious
+feature engineering and extensive do-main expertise.  Finally, we show that
+inferencewith our system can be performed faster than realtime and describe
+optimized WaveNet inferencekernels on both CPU and GPU that achieve up to400x
+speedups over existing implementations.
+^
+@https://arxiv.org/pdf/1702.07825.pdf
