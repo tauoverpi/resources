@@ -3520,3 +3520,12 @@ optimized WaveNet inferencekernels on both CPU and GPU that achieve up to400x
 speedups over existing implementations.
 ^
 @https://arxiv.org/pdf/1702.07825.pdf
+#topic:interview
+#topic:humour
+#author:Kyle Kingsbury
+#language:english
+#medium:web article
+Rewriting the Technical Interview
+
+^
+@https://aphyr.com/posts/353-rewriting-the-technical-interview
