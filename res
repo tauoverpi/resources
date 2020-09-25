@@ -3529,3 +3529,18 @@ Rewriting the Technical Interview
 
 ^
 @https://aphyr.com/posts/353-rewriting-the-technical-interview
+#topic:pretty printing
+#author:David Christiansen
+#author:David Darais
+#author:Weixi Ma
+#language:english
+#medium:paper
+The Final Pretty Printer
+Widely-used pretty printing libraries are built on assump-tions from a previous
+age of computing that are no longeruniversally true, such as monospace fonts
+and batch-modecompilers. Furthermore, they are not extensible, which hasled
+to a plethora of similar libraries. We demonstrate anapproach to pretty
+printing that is independently extensibleand supports proportional fonts
+and interactive interfaces.
+^
+@http://davidchristiansen.dk/drafts/final-pretty-printer-draft.pdf
