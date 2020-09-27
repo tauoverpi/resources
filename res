@@ -3544,3 +3544,12 @@ printing that is independently extensibleand supports proportional fonts
 and interactive interfaces.
 ^
 @http://davidchristiansen.dk/drafts/final-pretty-printer-draft.pdf
+#topic:mpv
+#topic:locale
+#topic:humour
+#language:english
+#medium:commit
+stream_libarchive: workaround various types of locale braindeath
+
+^
+@https://github.com/mpv-player/mpv/commit/1e70e82baa9193f6f027338b0fab0f5078971fbe
