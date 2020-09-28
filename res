@@ -3553,3 +3553,21 @@ stream_libarchive: workaround various types of locale braindeath
 
 ^
 @https://github.com/mpv-player/mpv/commit/1e70e82baa9193f6f027338b0fab0f5078971fbe
+#topic:parsec
+#topic:parser combinators
+#author:Daan Leijen
+#author:Erik Meijer
+#language:english
+#medium:paper
+Parsec: Direct Style Monadic Parser Combinators For The Real World
+Despite the long list of publications on parser combinators, there doesnot yet
+exist a monadic parser combinator library that is applicable in realworld
+situations. In particular naive implementations of parser combina-tors
+are likely to suffer from space leaks and are often unable to reportprecise
+error messages in case of parse errors. The Parsec parser com-binator library
+described in this paper, utilizes a novel implementationtechnique for space
+and time efficient parser combinators that in case ofa parse error, report
+both the position of the error as well asallgrammarproductions that would
+have been legal at that point in the input.
+^
+@https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/parsec-paper-letter.pdf
