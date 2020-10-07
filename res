@@ -3571,3 +3571,31 @@ both the position of the error as well asallgrammarproductions that would
 have been legal at that point in the input.
 ^
 @https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/parsec-paper-letter.pdf
+#topic:x86
+#topic:memory model
+#author:Scott Owens
+#author:Susmit Sarkar
+#author:Peter Sewell
+#language:english
+#medium:paper
+A Better x86 Memory Model: x86-TSO
+Real multiprocessors do not provide the sequentially consis-tent memory
+that is assumed by most work on semantics and verifica-tion. Instead,
+they have relaxed memory models, typically described inambiguous prose,
+which lead to widespread confusion. These are primetargets for mechanized
+formalization. In previous work we produced a rig-orousx86-CCmodel,
+formalizing the Intel and AMD architecture spec-ifications of the time,
+but those turned out to be unsound with respectto actual hardware, as well
+as arguably too weak to program above.We discuss these issues and present
+a newx86-TSOmodel that suffersfrom neither problem, formalized in HOL4. We
+believe it is sound withrespect to real processors, reflects better the
+vendor’s intentions, and isalso better suited for programming. We give
+two equivalent definitionsofx86-TSO: an intuitive operational model based
+on local write buffers, andan axiomatic total store ordering model, similar
+to that of the SPARCv8.Both are adapted to handle x86-specific features. We
+have implementedthe axiomatic model in ourmemeventstool, which calculates the
+set of allvalid executions of test programs, and, for greater confidence,
+verify thewitnesses of such executions directly, with code extracted froma
+third,more algorithmic, equivalent version of the definition
+^
+@https://www.cl.cam.ac.uk/~pes20/weakmemory/x86tso-paper.tphols.pdf
