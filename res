@@ -3599,3 +3599,50 @@ verify thewitnesses of such executions directly, with code extracted froma
 third,more algorithmic, equivalent version of the definition
 ^
 @https://www.cl.cam.ac.uk/~pes20/weakmemory/x86tso-paper.tphols.pdf
+#topic:thread local storage
+#author:Ulrich Drepper
+#language:english
+#medium:paper
+ELF Handling For Thread-Local Storage
+Increasing  use  of  threads  lead  developers  to  wish  for  a  better
+way  of  dealing  withthread-local data.  The POSIX thread interface defines
+interfaces which allow storingvoid*objects separate for each thread. But
+the interface is cumbersome to use. A keyfor the object has to be allocated
+dynamically at run-time. If the key isn’t used anymoreit must be freed.
+While this is already a lot of work and error prone it becomes a realproblem
+when combined with dynamically loaded code.To counter these problems it
+was decided to extend the programming languages tolet the compiler take
+over the job.  For C and C++ the new keywordthreadcan beused in variable
+definitions and declarations.  This is not an official extension of
+thelanguage but compiler writers are encouraged to implement them to support
+the newABI. Variables defined and declared this way would automatically be
+allocated local toeach thread.
+^
+@https://akkadia.org/drepper/tls.pdf
+#topic:stack machine
+#topic:register machine
+#topic:performance
+#author:Ruijie Fang
+#author:Siqi Liu
+#language:english
+#medium:paper
+A Performance Survey on Stack-based and Register-based Virtual Machines
+Virtual machines have been widely adapted for high-level programming language
+implementations and forproviding a degree of platform neutrality.  As the
+overall use and adaptation of virtual machines grow, theoverall performance of
+virtual machines has become a widely-discussed topic. In this paper, we present
+a surveyon the performance differences of the two most widely adaptedtypes
+of virtual machines - the stack-basedvirtual machine and the register-based
+virtual machine - using various benchmark programs. Additionally, weadopted
+a new approach of measuring performance by measuring the overall dispatch
+time, amount of dispatches,fetch time, and execution time while running
+benchmarks on custom-implemented, lightweight virtual machines.Finally, we
+present two lightweight, custom-designed, Turing-equivalent virtual machines
+that are specificallydesigned in benchmarking virtual machine performance
+- the“Conceptum” stack-based virtual machine, and the“Inertia”
+register-based virtual machine. Our result showed that while on average
+the register machine spends20.39% less time in executing benchmarks than
+the stack machine, the stack-based virtual machine is still fasterthan the
+virtual machine regarding the instruction fetch time
+^
+@https://arxiv.org/pdf/1611.00467.pdf
