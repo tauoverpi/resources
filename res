@@ -3646,3 +3646,15 @@ the stack machine, the stack-based virtual machine is still fasterthan the
 virtual machine regarding the instruction fetch time
 ^
 @https://arxiv.org/pdf/1611.00467.pdf
+#topic:forth
+#topic:robotics
+#author:Howerd Oakford
+#author:Stephen Pelc
+#language:english
+#medium:paper
+Three Forths Make a Hole
+There are many theories about the best way to program a computer – the ACE
+project showed just what can be done with Forth, especially in a situation
+which was constantly changing.
+^
+@http://www.inventio.co.uk/threeforthsmakeahole.htm
