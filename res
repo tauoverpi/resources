@@ -3658,3 +3658,21 @@ project showed just what can be done with Forth, especially in a situation
 which was constantly changing.
 ^
 @http://www.inventio.co.uk/threeforthsmakeahole.htm
+#topic:return-oriented programming
+#topic:openbsd
+#topic:security
+#author:Todd Mortimer
+#language:english
+#medium:paper
+Removing ROP Gadgets from OpenBSD
+Return Oriented Programming (ROP) is a common exploita-tion technique that
+reuses existing code fragments (gadgets)to construct shellcode in a compromised
+program. Recentchanges in OpenBSD’s compiler have started to reduce thenumber
+of gadgets in x86 and arm64 binaries, with the aim ofmaking ROP exploitation
+more difficult or impossible. Thispaper will cover how ROP gadgets emerge
+from legitimatecode, how OpenBSD’s compiler removes these gadgets, andthe
+effects on performance, code size, and ROP tool capabil-ities. We find that
+it is possible to meaningfully reduce thenumber of ROP gadgets in programs,
+and to effectively hinderROP tool capabilities.
+^
+@https://doi.asiabsdcon.org/10.25263/asiabsdcon2019/p01b
