@@ -3676,3 +3676,30 @@ it is possible to meaningfully reduce thenumber of ROP gadgets in programs,
 and to effectively hinderROP tool capabilities.
 ^
 @https://doi.asiabsdcon.org/10.25263/asiabsdcon2019/p01b
+#topic:parsing
+#topic:information extraction
+#author:Wonseok Hwang
+#author:Jinyeong Yim
+#author:Seunghyun Park
+#author:Sohee Yang
+#author:Minjoon Seo
+#language:english
+#medium:paper
+Spatial Dependency Parsing forSemi-Structured Document Information Extraction
+Information  Extraction  (IE)  for  semi-structured  documentimages is often
+approached as a sequence tagging problemby  classifying  each  recognized
+input  token  into  one  of  theIOB (Inside, Outside, and Beginning)
+categories. However,such  problem  setup  has  two  inherent  limitations
+that  (1)  itcannot easily handle complex spatial relationships and (2)
+itis not suitable for highly structured information, which arenevertheless
+frequently observed in real-world document im-ages. To tackle these issues, we
+first formulate the IE task asspatial dependency parsingproblem that focuses
+on the rela-tionship among text segment nodes in the documents. Underthis
+setup, we then propose SPADE♠(SPAtial DEpendencyparser) that models highly
+complex spatial relationships andan arbitrary number of information layers
+in the documentsin an end-to-end manner. We evaluate it on various kinds
+ofdocuments such as receipts, name cards, forms, and invoices,and show that
+it achieves a similar or better performance com-pared to strong baselines
+including BERT-based IOB taggger,with up to 37.7% improvement.
+^
+@https://arxiv.org/pdf/2005.00642.pdf
