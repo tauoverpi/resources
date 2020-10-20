@@ -3703,3 +3703,30 @@ it achieves a similar or better performance com-pared to strong baselines
 including BERT-based IOB taggger,with up to 37.7% improvement.
 ^
 @https://arxiv.org/pdf/2005.00642.pdf
+#topic:repl
+#topic:program synthesis
+#author:Hila Peleg
+#author:Usaroi Gabay
+#author:Shachar Itzhaky
+#author:Eran Yahav
+#language:english
+#medium:paper
+A frequent programming pattern for small tasks, especially expressions, is
+to repeatedly evaluate the programon an input as its editing progresses. The
+Read-Eval-Print Loop (REPL) interaction model has been a successfulmodel
+for this programming pattern. We present the new notion of Read-Eval-Synth
+Loop (RESL) that extendsREPLby providing in-place synthesis on parts of the
+expression marked by the user.RESLeases programmingby synthesizing parts of
+a required solution. The underlying synthesizer relies on a partial solution
+from theprogrammer and a few examples.RESLhinges on bottom-up synthesis with
+general predicates and sketching, generalizing programming byexample. To
+makeRESLpractical, we present a formal framework that extends observational
+equivalence tonon-example specifications.We evaluateRESLby conducting a
+controlled within-subjects user-study on19programmers from8companies, where
+programmers are asked to solve a small but challenging set of competitive
+programmingproblems. We find that programmers usingRESLsolve these problems
+with far less need to edit the codethemselves and by browsing documentation
+far less. In addition, they are less likely to leave a task unfinishedand
+more likely to be correct.
+^
+@https://cseweb.ucsd.edu/~hpeleg/resl-oopsla20.pdf
