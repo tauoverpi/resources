@@ -3730,3 +3730,44 @@ far less. In addition, they are less likely to leave a task unfinishedand
 more likely to be correct.
 ^
 @https://cseweb.ucsd.edu/~hpeleg/resl-oopsla20.pdf
+#topic:webassembly
+#author:Andreas Rossberg
+#author:WebAssembly Community Group
+#language:english
+#medium:paper
+WebAssembly Specification Release 1.1
+WebAssembly (abbreviated Wasm2) is asafe, portable, low-level code
+formatdesigned for efficient execution andcompact representation. Its main
+goal is to enable high performance applications on the Web, but it does not
+makeany Web-specific assumptions or provide Web-specific features, so it
+can be employed in other environments aswell.WebAssembly is an open standard
+developed by a W3C Community Group1.This document describes version 1.1 of
+thecoreWebAssembly standard. It is intended that it will be supersededby
+new incremental releases with additional features in the future.
+^
+@https://webassembly.github.io/spec/core/_download/WebAssembly.pdf
+#topic:filesystem
+#topic:fat32
+#author:Microsoft Corporation
+#language:english
+#medium:book
+Microsoft FAT Specification
+This document describes the on-media FAT file system format. This document is
+written to help guide development of FAT implementations that are compatible
+with those provided by Microsoft. This document does not describe all
+algorithms contained in the Microsoft FAT file system driver implementation
+neither does it describe all algorithms contained in associated utilities
+(Microsoft format and chkdsk utilities). However, it is expected that the
+reader will refer to the Microsoft Corporation FAT file system reference
+source code for additional clarification as/when needed. There are three
+variants of the FAT on-disk format, namely:
+•  FAT12
+•  FAT16
+•  FAT32
+Data structures comprising all three variants are described here. Also
+provided are descriptions of specific algorithms that will be useful to the
+engineer implementing a FAT driver for reading and/or writing to media. It is
+expected that the FAT Test Specification document will be used by the reader to
+validate interoperability and correctness of the resultant FAT implementation.
+^
+@http://read.pudn.com/downloads77/ebook/294884/FAT32%20Spec%20(SDA%20Contribution).pdf
