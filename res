@@ -3771,3 +3771,82 @@ expected that the FAT Test Specification document will be used by the reader to
 validate interoperability and correctness of the resultant FAT implementation.
 ^
 @http://read.pudn.com/downloads77/ebook/294884/FAT32%20Spec%20(SDA%20Contribution).pdf
+#topic:linux
+#topic:kernel module
+#author:Peter Jay Salzman
+#author:Michael Burian
+#author:Ori Pomerantz
+#language:english
+#medium:book
+The Linux Kernel Module Programming Guide
+So, you want to write a kernel module. You know C, you've written a few normal
+programs to run asprocesses, and now you want to get to where the real action
+is, to where a single wild pointer can wipe outyour file system and a core
+dump means a reboot.What exactly is a kernel module? Modules are pieces of
+code that can be loaded and unloaded into the kernelupon demand. They extend
+the functionality of the kernel without the need to reboot the system. For
+example,one type of module is the device driver, which allows the kernel to
+access hardware connected to the system.Without modules, we would have to
+build monolithic kernels and add new functionality directly into thekernel
+image. Besides having larger kernels, this has the disadvantage of requiring
+us to rebuild and reboot thekernel every time we want new functionality
+^
+@https://tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
+#topic:rest
+#topic:protocol
+#author:Roy T. Fielding
+#author:Richard N. Taylor
+#language:english
+#medium:paper
+Principled Design of the ModernWeb Architecture
+The World Wide Web has succeeded in large part because its software
+architecture has been de-signed to meet the needs of an Internet-scale
+distributed hypermedia application. The modernWeb architecture emphasizes
+scalability of component interactions, generality of interfaces, inde-pendent
+deployment of components, and intermediary components to reduce interaction
+latency,enforce security, and encapsulate legacy systems. In this article
+we introduce the RepresentationalState Transfer (REST) architectural style,
+developed as an abstract model of the Web architectureand used to guide our
+redesign and definition of the Hypertext Transfer Protocol and UniformResource
+Identifiers. We describe the software engineering principles guiding REST and
+the inter-action constraints chosen to retain those principles, contrasting
+them to the constraints of otherarchitectural styles. We then compare the
+abstract model to the currently deployed Web architec-ture in order to
+elicit mismatches between the existing protocols and the applications they
+areintended to support.
+^
+@https://www.ics.uci.edu/~taylor/documents/2002-REST-TOIT.pdf
+#topic:subdivision
+#topic:graphics
+#author:E Catmull
+#author:J Clark
+#language:english
+#medium:paper
+Recursively generated B-spline surfaces on arbitrary topological meshes
+
+^
+@https://people.eecs.berkeley.edu/~sequin/CS284/PAPERS/CatmullClark_SDSurf.pdf
+#topic:neural network
+#topic:reinforcement leaning
+#author:Wojciech Jaśkowski
+#language:english
+#medium:paper
+Mastering 2048 with Delayed Temporal Coherence Learning, Multi-Stage Weight Promotion, Redundant Encoding and Carousel Shaping
+2048 is an engaging single-player, nondeterministic video puzzle game, which,
+thanks to the simple rules and hard-to-master gameplay, has gained massive
+popularity in recent years. As 2048 can be conveniently embedded into the
+discrete-state Markov decision processes framework, we treat it as a testbed
+for evaluating existing and new methods in reinforcement learning. With
+the aim to develop a strong 2048 playing program, we employ temporal
+difference learning with systematic n-tuple networks. We show that this
+basic method can be significantly improved with temporal coherence learning,
+multi-stage function approximator with weight promotion, carousel shaping,
+and redundant encoding. In addition, we demonstrate how to take advantage
+of the characteristics of the n-tuple network, to improve the algorithmic
+effectiveness of the learning process by i) delaying the (decayed) update
+and applying lock-free optimistic parallelism to effortlessly make advantage
+of multiple CPU cores. This way, we were able to develop the best known 2048
+playing program to date, which confirms the effectiveness of the introduced
+methods for discrete-state Markov decision problems.
+^
+@https://arxiv.org/pdf/1604.05085.pdf
