@@ -3850,3 +3850,159 @@ playing program to date, which confirms the effectiveness of the introduced
 methods for discrete-state Markov decision problems.
 ^
 @https://arxiv.org/pdf/1604.05085.pdf
+#topic:security
+#author:Trevor Perrin
+#author:Moxie Marlinspike
+#medium:paper
+#language:english
+The Double Ratchet Algorithm
+The Double Ratchet algorithm is used by two parties to exchange
+encrypted messages based on a shared secret key. Typically the parties will
+use some key agreement protocol (such as X3DH [1]) to agree on the shared
+secret key. Following this, the parties will use the Double Ratchet to send
+and receive encrypted messages.The parties derive new keys for every Double
+Ratchet message so that earlier keys cannot be calculated from later ones. The
+parties also send Diffie-Hellman public values attached to their messages. The
+results of Diffie-Hellman calculations are mixed into the derived keys so
+that later keys cannot be calculated from earlier ones. These properties
+gives some protection to earlier or later encrypted messages in case of a
+compromise of a party’s keys. The Double Ratchet and its header encryption
+variant are presented below, and their security properties are discussed.
+^
+@https://signal.org/docs/specifications/doubleratchet/doubleratchet.pdf
+#topic:neural network
+#topic:language model
+#author:Yoshua Bengio
+#author:Réjean Ducharme
+#author:Pascal Vincent
+#author:Christian Jauvin
+#medium:paper
+#language:english
+A Neural Probabilistic Language Model
+A goal of statistical language modeling is to learn the joint probability
+function of sequences ofwords in a language. This is intrinsically difficult
+because of thecurse of dimensionality:awordsequence on which the model will
+be tested is likely to be different from all the word sequences seenduring
+training. Traditional but very successful approaches based on n-grams
+obtain generalizationby concatenating very short overlapping sequences
+seen in the training set. We propose to fight thecurse of dimensionality
+bylearning a distributed representation for wordswhich allows eachtraining
+sentence to inform the model about an exponential number of semantically
+neighboringsentences.  The model learns simultaneously (1) a distributed
+representation for each word alongwith (2) the probability function for
+word sequences, expressed in terms of these representations.Generalization
+is obtained because a sequence of words that has never been seen before gets
+highprobability if it is made of words that are similar (in the sense of having
+a nearby representation) towords forming an already seen sentence. Training
+such large models (with millions of parameters)within a reasonable time is
+itself a significant challenge.  We report on experiments using neuralnetworks
+for the probability function, showing on two  text corpora that the proposed
+approachsignificantly improves on state-of-the-art n-gram models, and that
+the proposed approach allows totake advantage of longer contexts.
+^
+@https://jmlr.org/papers/volume3/bengio03a/bengio03a.pdf
+#topic:neural network
+#author:Ashish Vaswani
+#author:Noam Shazeer
+#author:Niki Parmar
+#author:Jakob Uszkoreit
+#author:Llion Jones
+#author:Aidan N. Gomez
+#author:Łukasz Kaiser
+#author:Illia Polosukhin
+#medium:paper
+#language:english
+Attention Is All You Need
+The dominant sequence transduction models are based on complex recurrent
+orconvolutional neural networks that include an encoder and a decoder.
+The bestperforming models also connect the encoder and decoder through
+an attentionmechanism.  We propose a new simple network architecture, the
+Transformer,based solely on attention mechanisms, dispensing with recurrence
+and convolutionsentirely.  Experiments on two machine translation tasks show
+these models tobe superior in quality while being more parallelizable and
+requiring significantlyless time to train.  Our model achieves 28.4 BLEU on the
+WMT 2014 English-to-German translation task, improving over the existing best
+results, includingensembles, by over 2 BLEU. On the WMT 2014 English-to-French
+translation task,our model establishes a new single-model state-of-the-art
+BLEU score of 41.8 aftertraining for 3.5 days on eight GPUs, a small fraction
+of the training costs of thebest models from the literature. We show that
+the Transformer generalizes well toother tasks by applying it successfully
+to English constituency parsing both withlarge and limited training data.
+^
+@https://arxiv.org/pdf/1706.03762.pdf
+#topic:neural network
+#author:Bryan McCann
+#author:Nitish Shirish Keskar
+#author:Caiming Xiong
+#author:Richard Socher
+#medium:paper
+#language:english
+The Natural Language Decathlon:Multitask Learning as Question Answering
+Deep learning has improved performance on many natural language processing(NLP)
+tasks individually. However, general NLP models cannot emerge within aparadigm
+that focuses on the particularities of a single metric, dataset, and task.We
+introduce the Natural Language Decathlon (decaNLP), a challenge that spansten
+tasks:  question answering, machine translation, summarization, natural
+lan-guage inference, sentiment analysis, semantic role labeling, relation
+extraction,goal-oriented dialogue, semantic parsing, and commonsense pronoun
+resolution.We cast all tasks as question answering over a context. Furthermore,
+we present anew multitask question answering network (MQAN) that jointly learns
+all tasks indecaNLP without any task-specific modules or parameters. MQAN
+shows improve-ments in transfer learning for machine translation and named
+entity recognition,domain adaptation for sentiment analysis and natural
+language inference,  andzero-shot capabilities for text classification.
+We demonstrate that the MQAN’smulti-pointer-generator decoder is key to
+this success and that performance furtherimproves with an anti-curriculum
+training strategy. Though designed for decaNLP,MQAN also achieves state
+of the art results on the WikiSQL semantic parsing taskin the single-task
+setting. We also release code for procuring and processing data,training
+and evaluating models, and reproducing all experiments for decaNLP.
+^
+@https://arxiv.org/pdf/1806.08730.pdf
+#topic:neural network
+#author:Ilya Sutskever
+#author:Rafal Jozefowicz
+#author:Karol Gregor
+#author:Danilo Rezende
+#author:Tim Lillicrap
+#author:Oriol Vinyals
+#medium:paper
+#language:english
+Towards Principled Unsupervised Learning
+General unsupervised learning is a long-standing conceptual problem in
+machinelearning.  Supervised learning is successful because it can be solved by
+the mini-mization of the training error cost function.  Unsupervised learning
+is not as suc-cessful,  because the unsupervised objective may be unrelated
+to the supervisedtask of interest. For an example, density modelling and
+reconstruction have oftenbeen used for unsupervised learning, but they did not
+produced the sought-afterperformance gains, because they have no knowledge of
+the supervised tasks.In this paper, we present an unsupervised cost function
+which we name the Out-put Distribution Matching (ODM) cost, which measures
+a divergence between thedistribution of predictions and distributions of
+labels. The ODM cost is appealingbecause it is consistent with the supervised
+cost in the following sense: a perfectsupervised classifier is also perfect
+according to the ODM cost.   Therefore,  byaggressively optimizing the ODM
+cost, we are almost guaranteed to improve oursupervised performance whenever
+the space of possible predictions is exponen-tially large.We demonstrate
+that the ODM cost works well on number of small and semi-artificial datasets
+using no (or almost no) labelled training cases. Finally, we showthat the
+ODM cost can be used for one-shot domain adaptation, which allows themodel
+to classify inputs that differ from the input distribution in significant
+wayswithout the need for prior exposure to the new domain.
+^
+@https://arxiv.org/pdf/1511.06440.pdf
+#topic:support vector machine
+#topic:machine learning
+#author:Alexandre Kowalczyk
+#language:english
+#medium:book
+Support Vector Machines
+Support Vector Machines (SVMs) are some of the most performant off-the-shelf,
+supervised machine-learning algorithms. In Support Vector Machines Succinctly,
+author Alexandre Kowalczyk guides readers through the building blocks of SVMs,
+from basic concepts to crucial problem-solving algorithms. He also includes
+numerous code examples and a lengthy bibliography for further study. By
+the end of the book, SVMs should be an important tool in the reader’s
+machine-learning toolbox.
+^
+@http://ebooks.syncfusion.com/downloads/support_vector_machines_succinctly/support_vector_machines_succinctly.pdf
