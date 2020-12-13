@@ -4006,3 +4006,32 @@ the end of the book, SVMs should be an important tool in the reader’s
 machine-learning toolbox.
 ^
 @http://ebooks.syncfusion.com/downloads/support_vector_machines_succinctly/support_vector_machines_succinctly.pdf
+#topic:machine learning
+#topic:id3
+#author:Jerzy W. Grzymala-Busse
+#language:english
+#medium:paper
+Selected Algorithms of Machine Learning from Examples
+This paper presents and compares two algorithms of machine learning
+from examples, ID3 and AQ, and one recent algorithm from the same class,
+called LEM2.  All three algorithms are illustrated using the same example.
+Production rules induced by these algorithms from the well-known Small Soybean
+Database are presented. Finally, some advantages and disadvantages of these
+algorithms are shown.
+^
+@https://people.eecs.ku.edu/~jerzygb/j24-sel.pdf
+#topic:k nearest neighbor
+#topic:regression
+#author:N. S. Altman
+#language:english
+#medium:paper
+An Introduction to Kernel and Nearest Neighbor Nonparametric Regression
+Nonparametric regression is a set of techniques for estimating a regression
+curve without making strong assumptions about the shape of the true regression
+function. These techniques are therefore useful for building and checking
+parametric models, as well as for data description. Kernel and nearest neighbor
+regression estimators are local versions of univariate location estimators,
+and so they can readily be introduced to beginning students, and consulting
+clients who are familiar with such summaries as the sample mean and median.
+^
+@https://ecommons.cornell.edu/bitstream/1813/31637/1/BU-1065-MA.pdf
